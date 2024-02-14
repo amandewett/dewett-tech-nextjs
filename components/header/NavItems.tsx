@@ -12,7 +12,9 @@ const NavItems: FC<PropsWithChildren<{ href: string }>> = ({
     <li className={href === `/` ? undefined : `ml-5`}>
       <Link
         href={href}
-        className={path === href ? "underline underline-offset-2" : ""}
+        className={
+          path === href ? "underline underline-offset-2 font-bold" : ""
+        }
       >
         {children}
       </Link>
