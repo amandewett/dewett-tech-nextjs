@@ -4,10 +4,12 @@ import { AnimatePresence } from "framer-motion";
 
 const ProjectsPage: React.FC = () => {
   return (
-    <main>
-      <div>PropjectsPage</div>
+    <>
       <PageTransition />
-    </main>
+      <main>
+        <div>Projects Page</div>
+      </main>
+    </>
   );
 };
 

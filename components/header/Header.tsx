@@ -1,7 +1,7 @@
 import { FC } from "react";
 import Image from "next/image";
-import logo from "@/public/images/logo.png";
-import { NavItem, HeaderTitle } from "./";
+import { AppLogo, Github, LinkedIn, MenuIcon } from "@/public";
+import { NavItem, HeaderTitle, NavLogoItem, MobileNavBar } from "./";
 import Link from "next/link";
 
 const Header: FC = () => {
@@ -10,7 +10,12 @@ const Header: FC = () => {
       <div className="flex items-center">
         <Link href="/">
           <div className="rounded-[50%] w-10 h-10 overflow-hidden ml-5 relative">
-            <Image src={logo} alt="logo" fill style={{ objectFit: "cover" }} />
+            <Image
+              src={AppLogo}
+              alt="logo"
+              fill
+              style={{ objectFit: "cover" }}
+            />
           </div>
         </Link>
 
@@ -18,11 +23,35 @@ const Header: FC = () => {
       </div>
 
       <nav>
-        <ul className="flex justify-end rounded-2xl overflow-hidden mr-5 pt-1 pb-1 pl-5 pr-5 backdrop-blur-xl">
-          <NavItem href="/">Home</NavItem>
-          <NavItem href="/projects">Projects</NavItem>
-          <NavItem href="/about">About</NavItem>
-        </ul>
+        {/* large screen nav bar */}
+        <div id="lg-nav" className="hidden md:block">
+          <ul className="flex justify-end rounded-2xl overflow-hidden mr-5 pt-1 pb-1 pl-5 pr-5 backdrop-blur-lg items-center">
+            <NavItem href="/">Home</NavItem>
+            <NavItem href="/projects">Projects</NavItem>
+            <NavItem href="/about">About</NavItem>
+            <NavLogoItem
+              radius={50}
+              href="https://github.com/amandewett?tab=repositories"
+            >
+              <Image
+                src={Github}
+                alt="github logo"
+                fill
+                style={{ objectFit: "cover" }}
+              />
+            </NavLogoItem>
+            <NavLogoItem radius={0} href="https://linkedin.com/in/amandewett">
+              <Image
+                src={LinkedIn}
+                alt="github logo"
+                fill
+                style={{ objectFit: "cover" }}
+              />
+            </NavLogoItem>
+          </ul>
+        </div>
+        {/* small screens nav bar */}
+        <MobileNavBar />
       </nav>
     </header>
   );
