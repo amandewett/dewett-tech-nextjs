@@ -1,0 +1,39 @@
+name: Development CI
+
+on:
+  push:
+    branches: [master]
+
+jobs:
+  fetch-env-file:
+    runs-on: [self-hosted, development]
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@v3
+      # - name: Get .env file
+      # run: cp -r /root/env_files/twitter/.env /root/actions_runners/twitter-action-runner/_work/react-twitter-clone/react-twitter-clone/
+  build:
+    runs-on: [self-hosted, development]
+    # needs: fetch-env-file
+    strategy:
+      matrix:
+        node-version: [20.x]
+    steps:
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: "npm"
+      - run: npm install --save
+      - run: npm run build
+      - run: shopt -s extglob
+      - name: Remove previous build
+        run: if [ -d "/root/frontend_applications/" ]; then rm -r /root/frontend_applications/ !("samples"); fi
+      - name: Move new build
+        run: ls && mv -f * /root/frontend_applications/
+  cleanning:
+    runs-on: [self-hosted, development]
+    needs: build
+    steps:
+      - name: Remove pulled project files
+        run: rm -r /root/actions_runners/dewett-tech-nextjs-action-runner/_work/dewett-tech-nextjs/dewett-tech-nextjs/*
