@@ -5,16 +5,16 @@ on:
     branches: [master]
 
 jobs:
-  fetch-env-file:
+  stop-docker-container:
     runs-on: [self-hosted, development]
     steps:
       - name: Checkout source code
         uses: actions/checkout@v3
-      # - name: Get .env file
-      # run: cp -r /root/env_files/twitter/.env /root/actions_runners/twitter-action-runner/_work/react-twitter-clone/react-twitter-clone/
+      - name: Stop previous container
+        run: docker-compose down
   build:
     runs-on: [self-hosted, development]
-    # needs: fetch-env-file
+    needs: stop-docker-container
     strategy:
       matrix:
         node-version: [20.x]
@@ -24,13 +24,10 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: "npm"
-      - run: npm install --save
-      - run: npm run build
-      - run: shopt -s extglob
-      - name: Remove previous build
-        run: if [ -d "/root/frontend_applications/" ]; then rm -r /root/frontend_applications/ !("samples"); fi
-      - name: Move new build
-        run: ls && mv -f * /root/frontend_applications/
+      - name: Check if docker is installed
+        run: docker --version
+      - name: Build docker image
+        run: docker compose up -d --build
   cleanning:
     runs-on: [self-hosted, development]
     needs: build
