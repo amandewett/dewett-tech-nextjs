@@ -1,13 +1,12 @@
 import React from "react";
 import PageTransition from "@/components/PageTransition";
-import { AnimatePresence, motion } from "framer-motion";
 
 const HomePage: React.FC = () => {
   return (
     <>
       <PageTransition />
       <main>
-        <div>Home</div>
+        <div>HomePage</div>
         <ul>
           <li>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos unde

@@ -5,4 +5,4 @@ COPY ./package.json ./
 RUN npm i
 COPY ./ ./
 EXPOSE 3000
-RUN npm run dev
+CMD ["npm", "run", "dev"]

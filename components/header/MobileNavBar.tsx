@@ -27,10 +27,10 @@ const MobileNavBar: FC = () => {
         />
       </div>
       <motion.div
-        className="fixed left-0 top-0 bottom-0 w-1/3 h-screen z-[100] rounded-r-xl backdrop-blur-3xl md:hidden"
+        className="fixed left-0 top-0 bottom-0 w-1/2 h-screen z-[100] rounded-r-xl backdrop-blur-3xl md:hidden"
         initial={false}
-        animate={{ x: isMenuOpen ? 0 : -1000 }}
-        transition={{ duration: 0.2, type: "spring", stiffness: 60 }}
+        animate={{ x: isMenuOpen ? -40 : -1000 }}
+        transition={{ duration: 0.2, type: "spring", stiffness: 40 }}
       >
         <ul className="flex flex-col justify-start w-full h-full items-end p-10">
           <li className="mb-10">
