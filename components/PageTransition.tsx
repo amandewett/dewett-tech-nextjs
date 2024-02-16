@@ -12,7 +12,7 @@ const PageTransition: React.FC<React.PropsWithChildren> = ({ children }) => {
           scaleX: 0,
           transition: { duration: 0.8, ease: "circOut" },
         }}
-        // exit={{ scaleX: 1, transition: { duration: 1, ease: "circIn" } }}
+        exit={{ scaleX: 1, transition: { duration: 1, ease: "circIn" } }}
         style={{ originX: isPresent ? 0 : 1 }}
         transition={{ type: "spring" }}
         className="fixed top-0 bottom-0 left-0 right-0 z-30 bg-black"
@@ -23,7 +23,7 @@ const PageTransition: React.FC<React.PropsWithChildren> = ({ children }) => {
           scaleX: 0,
           transition: { duration: 1, ease: "circOut" },
         }}
-        // exit={{ scaleX: 0, transition: { duration: 2, ease: "circIn" } }}
+        exit={{ scaleX: 0, transition: { duration: 2, ease: "circIn" } }}
         transition={{ type: "spring" }}
         style={{ originX: isPresent ? 0 : 1 }}
         className="fixed top-0 bottom-0 left-0 right-0 z-20 bg-white"
@@ -34,7 +34,7 @@ const PageTransition: React.FC<React.PropsWithChildren> = ({ children }) => {
           scaleX: 0,
           transition: { duration: 1.5, ease: "circOut" },
         }}
-        // exit={{ scaleX: 0, transition: { duration: 2, ease: "circIn" } }}
+        exit={{ scaleX: 0, transition: { duration: 2, ease: "circIn" } }}
         style={{ originX: isPresent ? 0 : 1 }}
         className="fixed top-0 bottom-0 left-0 right-0 z-10 bg-primary"
       />

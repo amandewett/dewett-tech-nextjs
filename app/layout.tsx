@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Header } from "@/components/header";
+import Layout2 from "@/components/Layout2";
 
 export const metadata: Metadata = {
   title: "Aman Dewett",
@@ -12,7 +13,7 @@ const RootLayout: React.FC<React.PropsWithChildren> = ({ children }) => {
     <html lang="en">
       <body className="font-Ubuntu">
         <Header />
-        {children}
+        <Layout2>{children}</Layout2>
       </body>
     </html>
   );

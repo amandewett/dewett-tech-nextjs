@@ -1,39 +1,18 @@
-version: "3.8"
+version: "3.9"
 services:
-  # database:
-  #   container_name: my-database-container
-  #   image: mysql:8.0.35
-  #   # command: --default-authentication-plugin=mysql_native_password
-  #   # command: --authentication_policy=caching_sha2_password
-  #   restart: unless-stopped
-  #   env_file:
-  #     - ./.env
-  #   environment:
-  #     - MYSQL_ROOT_PASSWORD=$DB_PASSWORD
-  #     - MYSQL_DATABASE=$DB_NAME
-  #   ports:
-  #     - $DOCKER_DB_PORT:$DB_PORT
-  #   volumes:
-  #     - db_volume:/var/lib/mysql
-  nextjs:
-    container_name: dewett-tech-nextjs
+  app:
+    container_name: dewett-tech-nextjs-dev
     build:
       context: .
       dockerfile: Dockerfile
-    restart: unless-stopped
-    # env_file:
-    #   - ./.env
     ports:
       - 3000:3000
-    # environment:
-    #   - DB_HOST=database
-    #   - DB_USER=$DB_USERNAME
-    #   - DB_PASSWORD=$DB_PASSWORD
-    #   - DB_NAME=$DB_NAME
-    #   - DB_PORT=$DB_PORT
-    #   - ENV=$ENV
-    #   - PORT=$PORT
-    #   - APP_NAME=$APP_NAME
-    #   - JWT_SECRET=$JWT_SECRET
-    #   - JWT_EXPIRE_DURATION=$JWT_EXPIRE_DURATION
-    #   - ALLOWED_FILE_SIZE=$ALLOWED_FILE_SIZE
+    develop:
+      watch:
+        - action: sync+restart
+          path: ./
+          target: /app/
+          ignore:
+            - node_modules/
+        - action: rebuild
+          path: package.json

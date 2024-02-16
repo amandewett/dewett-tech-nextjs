@@ -7,7 +7,7 @@ const HomePage: React.FC = () => {
     <>
       <PageTransition />
       <main>
-        <div>HomePage</div>
+        <div>Home</div>
         <ul>
           <li>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos unde
