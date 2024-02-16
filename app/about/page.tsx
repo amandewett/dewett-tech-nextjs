@@ -5,7 +5,7 @@ import { AnimatePresence } from "framer-motion";
 const AboutPage: React.FC = () => {
   return (
     <>
-      <PageTransition />
+      {/* <PageTransition /> */}
       <main>
         <div>About Page</div>
       </main>
