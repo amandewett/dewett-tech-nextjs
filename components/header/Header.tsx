@@ -1,6 +1,6 @@
 import { FC } from "react";
 import Image from "next/image";
-import { AppLogo, Github, LinkedIn, MenuIcon } from "@/public";
+import { AppLogo, GithubWhite, LinkedIn } from "@/public";
 import { NavItem, HeaderTitle, NavLogoItem, MobileNavBar } from "./";
 import Link from "next/link";
 
@@ -34,7 +34,7 @@ const Header: FC = () => {
               href="https://github.com/amandewett?tab=repositories"
             >
               <Image
-                src={Github}
+                src={GithubWhite}
                 alt="github logo"
                 fill
                 style={{ objectFit: "cover" }}

@@ -14,7 +14,7 @@ const PageTransition: React.FC<PageTransitionType> = ({ isPresent }) => {
         exit={{ scaleX: 1 }}
         transition={{ duration: 0.8, ease: "easeInOut" }}
         style={{ originX: isPresent ? 0 : 1 }}
-        className="fixed top-0 bottom-0 left-0 right-0 z-30 bg-black"
+        className="fixed top-0 bottom-0 left-0 right-0 z-30 bg-mTextColor"
       />
       <motion.div
         initial={{ scaleX: 1 }}
@@ -22,7 +22,7 @@ const PageTransition: React.FC<PageTransitionType> = ({ isPresent }) => {
         exit={{ scaleX: 1 }}
         transition={{ delay: 0.2, duration: 0.8, ease: "easeInOut" }}
         style={{ originX: isPresent ? 0 : 1 }}
-        className="fixed top-0 bottom-0 left-0 right-0 z-20 bg-white"
+        className="fixed top-0 bottom-0 left-0 right-0 z-20 bg-mBgColor"
       />
       <motion.div
         initial={{ scaleX: 1 }}
@@ -30,7 +30,7 @@ const PageTransition: React.FC<PageTransitionType> = ({ isPresent }) => {
         exit={{ scaleX: 1 }}
         transition={{ delay: 0.4, duration: 0.8, ease: "easeInOut" }}
         style={{ originX: isPresent ? 0 : 1 }}
-        className="fixed top-0 bottom-0 left-0 right-0 z-10 bg-primary"
+        className="fixed top-0 bottom-0 left-0 right-0 z-10 bg-mRedColor"
       />
     </>
   );

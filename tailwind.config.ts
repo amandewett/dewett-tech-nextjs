@@ -15,9 +15,9 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       colors: {
-        textColor: "#212121",
-        bgColor: "#F5F5F5",
-        primary: "#D80621",
+        mTextColor: "#FAFAFA",
+        mBgColor: "#131418",
+        mRedColor: "#D80621",
       },
       fontFamily: {
         Roboto: ["Roboto", "sans-serif", ...defaultTheme.fontFamily.sans],

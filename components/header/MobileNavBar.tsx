@@ -1,6 +1,6 @@
 "use client";
 import { FC, useState } from "react";
-import { MenuIcon, Github, LinkedIn, CloseIcon } from "@/public";
+import { MenuIcon, GithubWhite, LinkedIn, CloseIcon } from "@/public";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { NavItem, NavLogoItem } from "./";
@@ -24,6 +24,7 @@ const MobileNavBar: FC = () => {
           alt="menu icon"
           style={{ objectFit: "cover" }}
           animate={{ rotate: isMenuOpen ? -90 : 0 }}
+          className="text-mTextColor"
         />
       </div>
       <motion.div
@@ -87,7 +88,7 @@ const MobileNavBar: FC = () => {
               href="https://github.com/amandewett?tab=repositories"
             >
               <Image
-                src={Github}
+                src={GithubWhite}
                 alt="github logo"
                 onClick={handleMenuOnClick}
                 fill
