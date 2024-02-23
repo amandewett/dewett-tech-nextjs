@@ -20,8 +20,7 @@ const config: Config = {
         mRedColor: "#D80621",
       },
       fontFamily: {
-        Roboto: ["Roboto", "sans-serif", ...defaultTheme.fontFamily.sans],
-        Ubuntu: ["Ubuntu", "sans-serif", ...defaultTheme.fontFamily.sans],
+        mUbuntu: [`var(--font-ubuntu)`],
       },
     },
   },

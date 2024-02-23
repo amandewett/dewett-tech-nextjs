@@ -3,7 +3,7 @@ import { FC, useState } from "react";
 import { MenuIcon, GithubWhite, LinkedIn, CloseIcon } from "@/public";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { NavItem, NavLogoItem } from "./";
+import { NavLogoItem } from "./";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -24,7 +24,6 @@ const MobileNavBar: FC = () => {
           alt="menu icon"
           style={{ objectFit: "cover" }}
           animate={{ rotate: isMenuOpen ? -90 : 0 }}
-          className="text-mTextColor"
         />
       </div>
       <motion.div
@@ -33,13 +32,16 @@ const MobileNavBar: FC = () => {
         animate={{ x: isMenuOpen ? -40 : -1000 }}
         transition={{ duration: 0.2, type: "spring", stiffness: 40 }}
       >
-        <ul className="flex flex-col justify-start w-full h-full items-end p-10">
+        <motion.ul
+          layout
+          className="flex flex-col justify-start w-full h-full items-end p-10"
+        >
           <li className="mb-10">
             <img
               src={CloseIcon.src}
               alt="close icon"
               style={{ objectFit: "cover" }}
-              className="size-5"
+              className="size-5 cursor-pointer"
               onClick={handleMenuOnClick}
             />
           </li>
@@ -105,7 +107,7 @@ const MobileNavBar: FC = () => {
               />
             </NavLogoItem>
           </div>
-        </ul>
+        </motion.ul>
       </motion.div>
     </>
   );
