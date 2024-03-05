@@ -1,14 +1,12 @@
 import type { Metadata } from "next";
-import { Ubuntu } from "next/font/google";
+import { Nunito } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/header";
 import PageTransitionLayout from "@/layouts/PageTransitionLayout";
-import { mNextComponent } from "@/utils/customTypes";
 
-const ubuntuFont = Ubuntu({
-  weight: "300",
+const appFont = Nunito({
   subsets: ["latin"],
-  variable: "--font-ubuntu",
+  variable: "--app-font",
 });
 
 export const metadata: Metadata = {
@@ -16,10 +14,10 @@ export const metadata: Metadata = {
   description: "Aman Dewett's portfolio",
 };
 
-const RootLayout: mNextComponent = ({ children }) => {
+const RootLayout: React.FC<React.PropsWithChildren> = ({ children }) => {
   return (
-    <html lang="en" className={`${ubuntuFont.variable} font-mUbuntu`}>
-      <body>
+    <html lang="en">
+      <body className={`${appFont.className}`}>
         <Header />
         <PageTransitionLayout>{children}</PageTransitionLayout>
       </body>

@@ -7,21 +7,27 @@
     "build": "next build",
     "start": "next start -p 3000",
     "lint": "next lint",
+    "prod": "rmdir .next /s /q && next build && next start -p 3000",
     "dev:docker": "docker-compose watch",
     "start:docker": "docker-compose -f compose.prod.yaml up -d --build",
     "stop:docker": "docker-compose -f compose.prod.yaml down"
   },
   "dependencies": {
+    "@twistezo/react-text-scramble": "^1.0.6",
     "framer-motion": "^11.0.3",
     "next": "14.1.0",
     "react": "^18",
+    "react-alice-carousel": "^2.8.0",
     "react-dom": "^18",
+    "react-icons": "^5.0.1",
+    "react-vertical-timeline-component": "^3.6.0",
     "sharp": "^0.33.2"
   },
   "devDependencies": {
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@types/react-vertical-timeline-component": "^3.3.6",
     "autoprefixer": "^10.0.1",
     "eslint": "^8",
     "eslint-config-next": "14.1.0",

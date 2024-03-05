@@ -3,8 +3,9 @@
 @tailwind utilities;
 
 :root {
-  --color: #FAFAFA;
-  --bg-color: #131418;
+  --color-white-smoke: #F5F5F5;
+  --color-dim-black: #252525;
+  --color-primary: #0A66C2;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -17,13 +18,18 @@
 }
 
 body {
-  color: var(--color);
-  background: var(--bg-color);
+  color: var(--color-white-smoke);
+  background: #141E30;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #131418, #212229);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #131418, #212229);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .un {
   display: inline-block;
-  background-image: linear-gradient(var(--color) 0 0);
+  background-image: linear-gradient(var(--color-primary) 0 0);
   background-position: 0 100%;
   background-size: 0% 2px;
   background-repeat: no-repeat;
@@ -34,5 +40,5 @@ body {
 
 .un:hover {
   background-position: 100% 100%;
-  background-size: 100% 2px;
+  background-size: 100% 4px;
 }

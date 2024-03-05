@@ -15,8 +15,8 @@ const NavItems: FC<PropsWithChildren<{ href: string }>> = ({
         href={href}
         className={
           path === href
-            ? "underline decoration-2 underline-offset-4 font-bold"
-            : "un"
+            ? "underline decoration-[4px] text-appPrimaryColor underline-offset-4 font-extrabold"
+            : "un font-extrabold"
         }
       >
         {children}
