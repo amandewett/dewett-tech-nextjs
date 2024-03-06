@@ -13,6 +13,7 @@ import {
 import ImageContainer from "../shared/ImageContainer";
 import AppButton from "../shared/AppButton";
 import Link from "next/link";
+import { FaExternalLinkAlt } from "react-icons/fa";
 
 const HomeHeader = () => {
   const arrCarouselImages = [
@@ -62,9 +63,23 @@ const HomeHeader = () => {
               through quality softwares.
             </p>
           </div>
-          <div className="self-end pt-8 xxlMonitor:pt-12 z-10">
-            <Link href="mailto:amandewett@gmail.com?subject=Requirement">
-              <AppButton label="Reach Out" />
+          <div className="self-end pt-8 xxlMonitor:pt-12 z-10 flex flex-row mr-10">
+            <Link
+              href="/resume/aman_dewett_full_stack_resume.pdf"
+              target="_blank"
+              download
+            >
+              <AppButton revert>
+                <div className="flex items-center">
+                  Resume <FaExternalLinkAlt className="ml-1" size={12} />
+                </div>
+              </AppButton>
+            </Link>
+            <Link
+              href="mailto:amandewett@gmail.com?subject=Requirement"
+              className="ml-5"
+            >
+              <AppButton>Reach Out</AppButton>
             </Link>
           </div>
         </div>

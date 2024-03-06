@@ -40,3 +40,6 @@ export { default as VectorSeven } from "@/public/images/vectors/7.svg";
 export { default as VectorEight } from "@/public/images/vectors/8.svg";
 export { default as VectorNine } from "@/public/images/vectors/9.svg";
 export { default as VectorTen } from "@/public/images/vectors/10.svg";
+
+/* resume */
+// export { default as Resume } from "@/public/resume/aman_dewett_full_stack_resume.pdf";

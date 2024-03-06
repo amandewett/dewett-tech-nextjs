@@ -13,7 +13,7 @@ const ImageCarousel = ({ items, className }: ImageCarouselProps) => {
         autoPlayInterval={3500}
         animationDuration={300}
         animationEasingFunction="ease-in-out"
-        animationType="slide"
+        animationType="fadeout"
         infinite
         touchTracking={false}
         mouseTracking={false}

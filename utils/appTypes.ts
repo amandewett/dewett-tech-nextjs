@@ -45,3 +45,8 @@ export type TimelineImageContainer = {
   src: string;
   className?: string;
 };
+
+export type AppButtonProps = Props & {
+  onClick?: () => void;
+  revert?: boolean;
+};

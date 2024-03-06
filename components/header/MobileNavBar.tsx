@@ -38,13 +38,6 @@ const MobileNavBar: FC = () => {
           className="flex flex-col justify-start w-full h-full items-end p-10"
         >
           <li className="mb-10">
-            {/* <img
-              src={CloseIcon.src}
-              alt="close icon"
-              style={{ objectFit: "cover" }}
-              className="size-5 cursor-pointer"
-              onClick={handleMenuOnClick}
-            /> */}
             <div onClick={handleMenuOnClick} className="size-5 cursor-pointer">
               <ImageContainer src={CloseIcon.src} alt="close icon" priority />
             </div>
