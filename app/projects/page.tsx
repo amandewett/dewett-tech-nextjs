@@ -1,16 +1,4 @@
-import React from "react";
-import PageTransition from "@/components/PageTransition";
-import { AnimatePresence } from "framer-motion";
-
-const ProjectsPage: React.FC = () => {
-  return (
-    <>
-      {/* <PageTransition /> */}
-      <main>
-        <div>Projects Page</div>
-      </main>
-    </>
-  );
+const ProductsPage = () => {
+  return <div>ProductsPage</div>;
 };
-
-export default ProjectsPage;
+export default ProductsPage;

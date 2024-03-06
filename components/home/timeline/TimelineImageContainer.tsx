@@ -15,6 +15,7 @@ const TimelineImageContainer = ({
       width={width}
       src={src}
       className={className}
+      priority
     />
   );
 };

@@ -3,6 +3,7 @@ import Image from "next/image";
 import { AppLogo, GithubWhite, LinkedIn } from "@/public";
 import { NavItem, HeaderTitle, NavLogoItem, MobileNavBar } from "./";
 import Link from "next/link";
+import ImageContainer from "../shared/ImageContainer";
 
 const Header: FC = () => {
   return (
@@ -10,12 +11,7 @@ const Header: FC = () => {
       <div className="flex items-center">
         <Link href="/">
           <div className="rounded-[50%] w-10 h-10 overflow-hidden ml-5 relative">
-            <Image
-              src={AppLogo}
-              alt="logo"
-              fill
-              style={{ objectFit: "cover" }}
-            />
+            <ImageContainer src={AppLogo.src} alt="logo" priority />
           </div>
         </Link>
 
@@ -33,20 +29,14 @@ const Header: FC = () => {
               radius={50}
               href="https://github.com/amandewett?tab=repositories"
             >
-              <Image
-                src={GithubWhite}
+              <ImageContainer
+                src={GithubWhite.src}
                 alt="github logo"
-                fill
-                style={{ objectFit: "cover" }}
+                priority
               />
             </NavLogoItem>
             <NavLogoItem radius={0} href="https://linkedin.com/in/amandewett">
-              <Image
-                src={LinkedIn}
-                alt="github logo"
-                fill
-                style={{ objectFit: "cover" }}
-              />
+              <ImageContainer src={LinkedIn.src} alt="linkedIn logo" priority />
             </NavLogoItem>
           </ul>
         </div>

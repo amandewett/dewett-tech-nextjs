@@ -51,7 +51,7 @@ const Skills = () => {
               alt="skills 1"
               width={500}
               height={500}
-              className="xxlMonitor:w-[650px] xxlMonitor:h-[650px] laptop:w-[400px] laptop:h-[400px] tablet:w-[300px] tablet:h-[300px]"
+              className="xxlMonitor:w-[650px] xxlMonitor:h-[650px] xlMonitor:w-[500px] xlMonitor:h-[500px] laptop:w-[400px] laptop:h-[400px] tablet:w-[300px] tablet:h-[300px]"
             />
           </Reveal>
           <Reveal>
@@ -60,7 +60,7 @@ const Skills = () => {
               alt="skills 1"
               width={500}
               height={500}
-              className="xxlMonitor:w-[650px] xxlMonitor:h-[650px] laptop:w-[400px] laptop:h-[400px] mt-20  tablet:w-[300px] tablet:h-[300px]"
+              className="xxlMonitor:w-[650px] xxlMonitor:h-[650px] xlMonitor:w-[500px] xlMonitor:h-[500px] laptop:w-[400px] laptop:h-[400px] mt-20  tablet:w-[300px] tablet:h-[300px]"
             />
           </Reveal>
           <Reveal>

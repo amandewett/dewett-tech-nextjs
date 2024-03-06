@@ -13,9 +13,10 @@ export type HomeHeaderProps = {
 export type ImageContainerProps = {
   src: string;
   className?: string;
-  alt: string;
-  width: number;
-  height: number;
+  alt?: string;
+  width?: number;
+  height?: number;
+  priority?: boolean;
 };
 
 export type ImageCarouselProps = {
