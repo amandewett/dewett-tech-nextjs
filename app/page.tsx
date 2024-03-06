@@ -3,6 +3,7 @@ import HomeHeader from "@/components/home/HomeHeader";
 import ScrollMessage from "@/components/home/ScrollMessage";
 import Skills from "@/components/home/Skills";
 import Reveal from "@/components/shared/Reveal";
+import Footer from "@/components/shared/Footer";
 
 const HomePage: React.FC = () => {
   return (
@@ -14,6 +15,7 @@ const HomePage: React.FC = () => {
         <ScrollMessage />
         <Skills />
       </main>
+      <Footer />
     </>
   );
 };

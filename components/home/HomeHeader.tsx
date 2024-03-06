@@ -12,6 +12,7 @@ import {
 } from "@/public";
 import ImageContainer from "../shared/ImageContainer";
 import AppButton from "../shared/AppButton";
+import Link from "next/link";
 
 const HomeHeader = () => {
   const arrCarouselImages = [
@@ -61,7 +62,9 @@ const HomeHeader = () => {
           </p>
         </div>
         <div className="self-end pt-8 xxlMonitor:pt-12">
-          <AppButton label="Reach Out" />
+          <Link href="mailto:amandewett@gmail.com?subject=Requirement">
+            <AppButton label="Reach Out" />
+          </Link>
         </div>
       </div>
       {/* right side */}

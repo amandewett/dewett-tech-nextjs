@@ -1,5 +1,6 @@
 "use client";
-import { AnimatePresence, motion, useScroll } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
+
 const AppButton = ({ label }: any) => {
   return (
     <AnimatePresence initial>

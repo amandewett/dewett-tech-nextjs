@@ -25,6 +25,7 @@ export type ImageCarouselProps = {
 
 export type RevealProps = Props & {
   willSwipe?: boolean;
+  willSwipeUp?: boolean;
 };
 
 export type TimelineIconProps = {
