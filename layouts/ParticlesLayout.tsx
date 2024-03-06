@@ -100,14 +100,11 @@ const ParticlesLayout = () => {
         id="tsparticles"
         particlesLoaded={particlesLoaded}
         options={options}
+        className="z-0"
       />
     );
   }
 
-  return (
-    <>
-      <div className="bg-red-500 text-9xl">Emptyyyyyyyyyyyyyyyyyyyyyyyyyy</div>
-    </>
-  );
+  return <></>;
 };
 export default ParticlesLayout;

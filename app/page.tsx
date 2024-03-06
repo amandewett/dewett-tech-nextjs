@@ -4,11 +4,6 @@ import ScrollMessage from "@/components/home/ScrollMessage";
 import Skills from "@/components/home/Skills";
 import Reveal from "@/components/shared/Reveal";
 import Footer from "@/components/shared/Footer";
-// import ParticlesLayout from "@/layouts/ParticlesLayout";
-import dynamic from "next/dynamic";
-const ParticlesLayout = dynamic(() => import("@/layouts/ParticlesLayout"), {
-  ssr: false,
-});
 
 const HomePage: React.FC = () => {
   return (
@@ -21,7 +16,6 @@ const HomePage: React.FC = () => {
         <Skills />
       </main>
       <Footer />
-      <ParticlesLayout />
     </>
   );
 };

@@ -6,6 +6,7 @@ import Image from "next/image";
 import { NavLogoItem } from "./";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import ImageContainer from "../shared/ImageContainer";
 
 const MobileNavBar: FC = () => {
   const path = usePathname();
@@ -16,7 +17,7 @@ const MobileNavBar: FC = () => {
     <>
       <div
         id="sm-nav"
-        className="block md:hidden mr-5 size-5 cursor-pointer"
+        className="block md:hidden mr-5 size-5 cursor-pointer z-[70]"
         onClick={handleMenuOnClick}
       >
         <motion.img
@@ -37,13 +38,16 @@ const MobileNavBar: FC = () => {
           className="flex flex-col justify-start w-full h-full items-end p-10"
         >
           <li className="mb-10">
-            <img
+            {/* <img
               src={CloseIcon.src}
               alt="close icon"
               style={{ objectFit: "cover" }}
               className="size-5 cursor-pointer"
               onClick={handleMenuOnClick}
-            />
+            /> */}
+            <div onClick={handleMenuOnClick} className="size-5 cursor-pointer">
+              <ImageContainer src={CloseIcon.src} alt="close icon" priority />
+            </div>
           </li>
           <li className="mb-5">
             <Link
@@ -51,7 +55,7 @@ const MobileNavBar: FC = () => {
               onClick={handleMenuOnClick}
               className={
                 path === "/"
-                  ? "underline decoration-2 underline-offset-4 font-bold"
+                  ? "underline decoration-[4px] text-appPrimaryColor underline-offset-4 font-bold"
                   : "un"
               }
             >
@@ -64,7 +68,7 @@ const MobileNavBar: FC = () => {
               onClick={handleMenuOnClick}
               className={
                 path === "/projects"
-                  ? "underline decoration-2 underline-offset-4 font-bold"
+                  ? "underline decoration-[4px] text-appPrimaryColor underline-offset-4 font-bold"
                   : "un"
               }
             >
@@ -77,7 +81,7 @@ const MobileNavBar: FC = () => {
               onClick={handleMenuOnClick}
               className={
                 path === "/about"
-                  ? "underline decoration-2 underline-offset-4 font-bold"
+                  ? "underline decoration-[4px] text-appPrimaryColor underline-offset-4 font-bold"
                   : "un"
               }
             >
@@ -89,22 +93,14 @@ const MobileNavBar: FC = () => {
               radius={50}
               href="https://github.com/amandewett?tab=repositories"
             >
-              <Image
-                src={GithubWhite}
+              <ImageContainer
+                src={GithubWhite.src}
                 alt="github logo"
-                onClick={handleMenuOnClick}
-                fill
-                style={{ objectFit: "cover" }}
+                priority
               />
             </NavLogoItem>
             <NavLogoItem radius={0} href="https://linkedin.com/in/amandewett">
-              <Image
-                src={LinkedIn}
-                onClick={handleMenuOnClick}
-                alt="github logo"
-                fill
-                style={{ objectFit: "cover" }}
-              />
+              <ImageContainer src={LinkedIn.src} alt="linkedIn logo" priority />
             </NavLogoItem>
           </div>
         </motion.ul>

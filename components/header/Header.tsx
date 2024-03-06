@@ -7,7 +7,7 @@ import ImageContainer from "../shared/ImageContainer";
 
 const Header: FC = () => {
   return (
-    <header className="sticky top-0 left-0 right-0 h-14 flex justify-between items-center z-20">
+    <header className="sticky top-0 left-0 right-0 h-14 flex justify-between items-center z-[70]">
       <div className="flex items-center">
         <Link href="/">
           <div className="rounded-[50%] w-10 h-10 overflow-hidden ml-5 relative">

@@ -3,6 +3,10 @@ import { Nunito } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/header";
 import PageTransitionLayout from "@/layouts/PageTransitionLayout";
+import dynamic from "next/dynamic";
+const ParticlesLayout = dynamic(() => import("@/layouts/ParticlesLayout"), {
+  ssr: false,
+});
 
 const appFont = Nunito({
   subsets: ["latin"],
@@ -20,6 +24,7 @@ const RootLayout: React.FC<React.PropsWithChildren> = ({ children }) => {
       <body className={`${appFont.className}`}>
         <Header />
         <PageTransitionLayout>{children}</PageTransitionLayout>
+        <ParticlesLayout />
       </body>
     </html>
   );

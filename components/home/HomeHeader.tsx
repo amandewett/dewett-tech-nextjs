@@ -13,7 +13,6 @@ import {
 import ImageContainer from "../shared/ImageContainer";
 import AppButton from "../shared/AppButton";
 import Link from "next/link";
-import ParticlesLayout from "@/layouts/ParticlesLayout";
 
 const HomeHeader = () => {
   const arrCarouselImages = [
@@ -63,14 +62,14 @@ const HomeHeader = () => {
               through quality softwares.
             </p>
           </div>
-          <div className="self-end pt-8 xxlMonitor:pt-12">
+          <div className="self-end pt-8 xxlMonitor:pt-12 z-10">
             <Link href="mailto:amandewett@gmail.com?subject=Requirement">
               <AppButton label="Reach Out" />
             </Link>
           </div>
         </div>
         {/* right side */}
-        <div className="w-[60%] tablet:pt-20 phone:pt-20">
+        <div className="w-[60%] tablet:pt-20 phone:pt-20 z-10">
           <ImageCarousel
             items={arrCarouselImages.map((image: any) => {
               return (

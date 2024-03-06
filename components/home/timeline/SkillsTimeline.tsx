@@ -39,7 +39,11 @@ import TimelineImageContainer from "./TimelineImageContainer";
 const SkillsTimeline = () => {
   return (
     <div className="mt-5 pl-5 xxlMonitor:mt-10 xxlMonitor:pl-10">
-      <VerticalTimeline lineColor="#0A66C2" layout="1-column-left">
+      <VerticalTimeline
+        lineColor="#0A66C2"
+        layout="1-column-left"
+        className="z-10"
+      >
         <TimelineElement
           icon={TbBrandNextjs}
           className="bg-appColorWhiteSmoke cursor-pointer rounded-full w-36 h-14 flex justify-center items-center overflow-hidden group transition"

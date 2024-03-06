@@ -9,7 +9,7 @@ const ImageContainer = ({
   width = 50,
   priority = false,
 }: ImageContainerProps) => {
-  className = className + " w-auto";
+  className = className + " w-auto z-10";
   return (
     <Image
       src={src}

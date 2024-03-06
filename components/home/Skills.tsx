@@ -44,7 +44,7 @@ const Skills = () => {
           <SkillsTimeline />
         </div>
         {/* right side */}
-        <div className="w-[50%]">
+        <div className="w-[50%] z-10">
           <Reveal>
             <ImageContainer
               src={VectorFive.src}
