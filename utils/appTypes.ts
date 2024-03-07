@@ -1,5 +1,6 @@
 import { ScrambleTexts } from "@twistezo/react-text-scramble";
 import { IconType } from "react-icons";
+import { Options } from "react-lottie";
 
 export type Props = {
   children?: React.ReactNode;
@@ -27,6 +28,7 @@ export type ImageCarouselProps = {
 export type RevealProps = Props & {
   willSwipe?: boolean;
   willSwipeUp?: boolean;
+  once?: boolean;
 };
 
 export type TimelineIconProps = {
@@ -49,4 +51,35 @@ export type TimelineImageContainer = {
 export type AppButtonProps = Props & {
   onClick?: () => void;
   revert?: boolean;
+};
+
+export type StaggeredTextProps = {
+  text: string;
+  className?: string;
+};
+
+export type PhotoFramerProps = {
+  arrText: string[];
+};
+
+export type NumbersProps = {
+  count: number;
+  text: string;
+};
+
+export type ExperienceCardProps = {
+  position: string;
+  duration: string;
+  company: string;
+  stack?: string;
+  location: string;
+  description: string[] | string;
+  isLeft?: boolean;
+};
+
+export type LottieAnimationProps = {
+  animationData: any;
+  width?: string;
+  height?: string;
+  className?: string;
 };

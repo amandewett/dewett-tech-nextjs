@@ -9,11 +9,14 @@ import {
   VectorEight,
   VectorNine,
   VectorTen,
+  CodingLottieOne,
+  CodingLottieTwo,
 } from "@/public";
 import ImageContainer from "../shared/ImageContainer";
 import AppButton from "../shared/AppButton";
 import Link from "next/link";
 import { FaExternalLinkAlt } from "react-icons/fa";
+import LottieAnimation from "../about/LottieAnimation";
 
 const HomeHeader = () => {
   const arrCarouselImages = [
@@ -84,8 +87,8 @@ const HomeHeader = () => {
           </div>
         </div>
         {/* right side */}
-        <div className="w-[60%] tablet:pt-20 phone:pt-20 z-10">
-          <ImageCarousel
+        <div className="w-[60%] z-10 tablet:mt-28 phone:mt-28">
+          {/* <ImageCarousel
             items={arrCarouselImages.map((image: any) => {
               return (
                 <ImageContainer
@@ -99,6 +102,10 @@ const HomeHeader = () => {
                 />
               );
             })}
+          /> */}
+          <LottieAnimation
+            animationData={CodingLottieOne}
+            className="ml-auto mr-auto p-0 z-10 xxlMonitor:w-[550px] xxlMonitor:h-[550px] m-0 xlMonitor:w-[450px] xlMonitor:h-[450px] lgMonitor:w-[400px] lgMonitor:h-[400px] laptop:w-[400px] laptop:h-[400px] tablet:w-[350px] tablet:h-[350px] phone:w-[300px] phone:h-[300px]"
           />
         </div>
       </div>

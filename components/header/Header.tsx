@@ -1,6 +1,6 @@
 import { FC } from "react";
 import Image from "next/image";
-import { AppLogo, GithubWhite, LinkedIn } from "@/public";
+import { GithubWhite, LinkedIn, Aman1 } from "@/public";
 import { NavItem, HeaderTitle, NavLogoItem, MobileNavBar } from "./";
 import Link from "next/link";
 import ImageContainer from "../shared/ImageContainer";
@@ -10,8 +10,8 @@ const Header: FC = () => {
     <header className="sticky top-0 left-0 right-0 h-14 flex justify-between items-center z-[70]">
       <div className="flex items-center">
         <Link href="/">
-          <div className="rounded-[50%] w-10 h-10 overflow-hidden ml-5 relative">
-            <ImageContainer src={AppLogo.src} alt="logo" priority />
+          <div className="rounded-[50%] w-10 h-10 overflow-hidden ml-5">
+            <ImageContainer src="/images/aman_header.jpg" alt="logo" priority />
           </div>
         </Link>
 
@@ -25,6 +25,9 @@ const Header: FC = () => {
             <NavItem href="/">Home</NavItem>
             <NavItem href="/projects">Projects</NavItem>
             <NavItem href="/about">About</NavItem>
+            <NavItem href="mailto:amandewett@gmail.com?subject=Requirement">
+              Contact
+            </NavItem>
             <NavLogoItem
               radius={50}
               href="https://github.com/amandewett?tab=repositories"

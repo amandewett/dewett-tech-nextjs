@@ -1,15 +1,8 @@
 "use client";
-import {
-  SkillsVector,
-  SkillsVector1,
-  VectorFive,
-  VectorTen,
-  VectorThree,
-} from "@/public";
+import { VectorTwo, VectorEight, VectorSix } from "@/public";
 import ImageContainer from "../shared/ImageContainer";
 import Reveal from "@/components/shared/Reveal";
 import { motion } from "framer-motion";
-// import SkillsTimeline from "./SkillsTimeline";
 import dynamic from "next/dynamic";
 const SkillsTimeline = dynamic(() => import("./timeline/SkillsTimeline"), {
   ssr: false,
@@ -18,7 +11,7 @@ const SkillsTimeline = dynamic(() => import("./timeline/SkillsTimeline"), {
 const Skills = () => {
   return (
     <>
-      <div className="flex flex-row justify-between w-full mt-10 xxlMonitor:mt-20 tablet:mt-40 phone:mt-40">
+      <div className="flex flex-row justify-between w-full mt-10 xxlMonitor:mt-20 tablet:mt-64 phone:mt-72">
         {/* left side */}
         <div className="w-[50%]">
           <div className="pl-14">
@@ -47,7 +40,7 @@ const Skills = () => {
         <div className="w-[50%] z-10">
           <Reveal>
             <ImageContainer
-              src={VectorFive.src}
+              src={VectorEight.src}
               alt="skills 1"
               width={500}
               height={500}
@@ -56,7 +49,7 @@ const Skills = () => {
           </Reveal>
           <Reveal>
             <ImageContainer
-              src={VectorTen.src}
+              src={VectorSix.src}
               alt="skills 1"
               width={500}
               height={500}
@@ -65,7 +58,7 @@ const Skills = () => {
           </Reveal>
           <Reveal>
             <ImageContainer
-              src={VectorThree.src}
+              src={VectorTwo.src}
               alt="skills 1"
               width={500}
               height={500}

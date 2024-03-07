@@ -8,9 +8,14 @@ import {
 } from "framer-motion";
 import { useEffect, useRef } from "react";
 
-const Reveal = ({ children, willSwipe, willSwipeUp = true }: RevealProps) => {
+const Reveal = ({
+  children,
+  willSwipe,
+  willSwipeUp = true,
+  once = true,
+}: RevealProps) => {
   const viewRef = useRef<any>();
-  const isInView = useInView(viewRef, { once: true });
+  const isInView = useInView(viewRef, { once: once });
   const animationControl = useAnimation();
   const swipeControl = useAnimation();
 
@@ -18,12 +23,13 @@ const Reveal = ({ children, willSwipe, willSwipeUp = true }: RevealProps) => {
     if (isInView) {
       animationControl.start("visible");
       swipeControl.start("visible");
+    } else {
+      if (!once) {
+        animationControl.start("hidden");
+        swipeControl.start("hidden");
+      }
     }
-    /* else {
-      animationControl.start("hidden");
-      swipeControl.start("hidden");
-    } */
-  }, [isInView, animationControl, swipeControl]);
+  }, [isInView, animationControl, swipeControl, once]);
 
   return (
     <>

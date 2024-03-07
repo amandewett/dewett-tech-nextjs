@@ -13,6 +13,9 @@ export { default as DevVector } from "@/public/images/dev-vector.png";
 export { default as SkillsVector } from "@/public/images/skills.png";
 export { default as SkillsVector1 } from "@/public/images/skills1.png";
 
+/* my images */
+export { default as Aman1 } from "@/public/images/aman1.jpg";
+
 /* skills */
 export { default as NextJSLogo } from "@/public/images/skills/nextjs.png";
 export { default as ReactJSLogo } from "@/public/images/skills/reactjs.png";
@@ -41,5 +44,7 @@ export { default as VectorEight } from "@/public/images/vectors/8.svg";
 export { default as VectorNine } from "@/public/images/vectors/9.svg";
 export { default as VectorTen } from "@/public/images/vectors/10.svg";
 
-/* resume */
-// export { default as Resume } from "@/public/resume/aman_dewett_full_stack_resume.pdf";
+/* animations */
+export { default as MeditationLottie } from "@/public/animation/meditation.json";
+export { default as CodingLottieOne } from "@/public/animation/coding_one.json";
+export { default as CodingLottieTwo } from "@/public/animation/coding_two.json";

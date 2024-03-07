@@ -81,6 +81,19 @@ const MobileNavBar: FC = () => {
               About
             </Link>
           </li>
+          <li className="mb-5">
+            <Link
+              href="mailto:amandewett@gmail.com?subject=Requirement"
+              onClick={handleMenuOnClick}
+              className={
+                path === "/contact"
+                  ? "underline decoration-[4px] text-appPrimaryColor underline-offset-4 font-bold"
+                  : "un"
+              }
+            >
+              Contact
+            </Link>
+          </li>
           <div className="flex">
             <NavLogoItem
               radius={50}
