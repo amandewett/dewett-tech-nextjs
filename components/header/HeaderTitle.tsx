@@ -15,6 +15,16 @@ const HeaderTitle = () => {
     [1, 0.7, 0.4, 0.1, 0]
   );
 
+  const blinkVariants = {
+    visible: { opacity: 1 },
+    hidden: { opacity: 0 },
+  };
+
+  const blinkTransition = {
+    duration: 0.5,
+    repeat: Infinity, // This makes the animation repeat indefinitely
+  };
+
   return (
     <motion.h1
       initial={{ y: -10, opacity: 0 }}
@@ -26,7 +36,25 @@ const HeaderTitle = () => {
       transition={{ type: "tween", delay: 1, duration: 0.5 }}
       className="ml-5 font-bold text-2xl"
     >
+      <motion.span
+        className="text-appPrimaryColor"
+        variants={blinkVariants}
+        initial="hidden"
+        animate="visible"
+        transition={blinkTransition}
+      >
+        &#123;
+      </motion.span>
       Aman Dewett
+      <motion.span
+        className="text-appPrimaryColor"
+        variants={blinkVariants}
+        initial="hidden"
+        animate="visible"
+        transition={blinkTransition}
+      >
+        &#125;
+      </motion.span>
     </motion.h1>
   );
 };
