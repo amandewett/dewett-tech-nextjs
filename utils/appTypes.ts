@@ -40,7 +40,7 @@ export type TimelineElementProps = Props & {
   className: string;
 };
 
-export type TimelineImageContainer = {
+export type TimelineImageContainerProps = {
   height?: number;
   width?: number;
   alt?: string;

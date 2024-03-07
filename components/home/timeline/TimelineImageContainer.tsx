@@ -1,5 +1,5 @@
 import ImageContainer from "@/components/shared/ImageContainer";
-import { TimelineImageContainer } from "@/utils/appTypes";
+import { TimelineImageContainerProps } from "@/utils/appTypes";
 
 const TimelineImageContainer = ({
   height = 0,
@@ -7,7 +7,7 @@ const TimelineImageContainer = ({
   alt = "skill",
   src,
   className = "group-hover:scale-125 transition-all z-10",
-}: TimelineImageContainer) => {
+}: TimelineImageContainerProps) => {
   return (
     <ImageContainer
       alt={alt}
