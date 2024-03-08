@@ -32,83 +32,86 @@ const ProjectsTimeline = () => {
             Sample Projects
           </h1>
         </Reveal>
+
         <div className="w-full mt-10 transition-all duration-500">
-          <VerticalTimeline
-            lineColor="#0A66C2"
-            layout="2-columns"
-            className="z-10 transition-all duration-500"
-          >
-            <ProjectsTimelineElement
-              icon={FaAirbnb}
-              aboutProject="Its an airbnb clone made with NextJS, Typescript and
+          <Reveal>
+            <VerticalTimeline
+              lineColor="#0A66C2"
+              layout="2-columns"
+              className="z-10 transition-all duration-500"
+            >
+              <ProjectsTimelineElement
+                icon={FaAirbnb}
+                aboutProject="Its an airbnb clone made with NextJS, Typescript and
             Tailwind for styling. I have used MongoDB a NoSql database
             to store listings and users. In addition, I have used
             power of NextAuth and implemented Google, Github and
             Credentials authentications."
-              imageSrc={ProjectsAirBnb.src}
-              projectName="AirBnb Clone"
-            />
-            <ProjectsTimelineElement
-              icon={FaAirbnb}
-              aboutProject="Its an airbnb clone made with NextJS, Typescript and
+                imageSrc={ProjectsAirBnb.src}
+                projectName="AirBnb Clone"
+              />
+              <ProjectsTimelineElement
+                icon={FaAirbnb}
+                aboutProject="Its an airbnb clone made with NextJS, Typescript and
             Tailwind for styling. I have used MongoDB a NoSql database
             to store listings and users. In addition, I have used
             power of NextAuth and implemented Google, Github and
             Credentials authentications."
-              imageSrc={ProjectsAirBnb.src}
-              projectName="AirBnb Clone"
-            />
-            <ProjectsTimelineElement
-              icon={FaAirbnb}
-              aboutProject="Its an airbnb clone made with NextJS, Typescript and
+                imageSrc={ProjectsAirBnb.src}
+                projectName="AirBnb Clone"
+              />
+              <ProjectsTimelineElement
+                icon={FaAirbnb}
+                aboutProject="Its an airbnb clone made with NextJS, Typescript and
             Tailwind for styling. I have used MongoDB a NoSql database
             to store listings and users. In addition, I have used
             power of NextAuth and implemented Google, Github and
             Credentials authentications."
-              imageSrc={ProjectsAirBnb.src}
-              projectName="AirBnb Clone"
-            />
-            <ProjectsTimelineElement
-              icon={FaAirbnb}
-              aboutProject="Its an airbnb clone made with NextJS, Typescript and
+                imageSrc={ProjectsAirBnb.src}
+                projectName="AirBnb Clone"
+              />
+              <ProjectsTimelineElement
+                icon={FaAirbnb}
+                aboutProject="Its an airbnb clone made with NextJS, Typescript and
             Tailwind for styling. I have used MongoDB a NoSql database
             to store listings and users. In addition, I have used
             power of NextAuth and implemented Google, Github and
             Credentials authentications."
-              imageSrc={ProjectsAirBnb.src}
-              projectName="AirBnb Clone"
-            />
-            <ProjectsTimelineElement
-              icon={FaAirbnb}
-              aboutProject="Its an airbnb clone made with NextJS, Typescript and
+                imageSrc={ProjectsAirBnb.src}
+                projectName="AirBnb Clone"
+              />
+              <ProjectsTimelineElement
+                icon={FaAirbnb}
+                aboutProject="Its an airbnb clone made with NextJS, Typescript and
             Tailwind for styling. I have used MongoDB a NoSql database
             to store listings and users. In addition, I have used
             power of NextAuth and implemented Google, Github and
             Credentials authentications."
-              imageSrc={ProjectsAirBnb.src}
-              projectName="AirBnb Clone"
-            />
-            <ProjectsTimelineElement
-              icon={FaAirbnb}
-              aboutProject="Its an airbnb clone made with NextJS, Typescript and
+                imageSrc={ProjectsAirBnb.src}
+                projectName="AirBnb Clone"
+              />
+              <ProjectsTimelineElement
+                icon={FaAirbnb}
+                aboutProject="Its an airbnb clone made with NextJS, Typescript and
             Tailwind for styling. I have used MongoDB a NoSql database
             to store listings and users. In addition, I have used
             power of NextAuth and implemented Google, Github and
             Credentials authentications."
-              imageSrc={ProjectsAirBnb.src}
-              projectName="AirBnb Clone"
-            />
-            <ProjectsTimelineElement
-              icon={FaAirbnb}
-              aboutProject="Its an airbnb clone made with NextJS, Typescript and
+                imageSrc={ProjectsAirBnb.src}
+                projectName="AirBnb Clone"
+              />
+              <ProjectsTimelineElement
+                icon={FaAirbnb}
+                aboutProject="Its an airbnb clone made with NextJS, Typescript and
             Tailwind for styling. I have used MongoDB a NoSql database
             to store listings and users. In addition, I have used
             power of NextAuth and implemented Google, Github and
             Credentials authentications."
-              imageSrc={ProjectsAirBnb.src}
-              projectName="AirBnb Clone"
-            />
-          </VerticalTimeline>
+                imageSrc={ProjectsAirBnb.src}
+                projectName="AirBnb Clone"
+              />
+            </VerticalTimeline>
+          </Reveal>
         </div>
       </div>
     </>

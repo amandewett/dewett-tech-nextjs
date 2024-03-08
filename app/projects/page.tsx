@@ -1,11 +1,15 @@
 import ProjectsHeader from "@/components/projects/ProjectsHeader";
 import ProjectsTimeline from "@/components/projects/ProjectsTimeline";
+import Footer from "@/components/shared/Footer";
 
 const ProductsPage = () => {
   return (
     <>
-      <ProjectsHeader />
-      <ProjectsTimeline />
+      <main>
+        <ProjectsHeader />
+        <ProjectsTimeline />
+      </main>
+      <Footer />
     </>
   );
 };

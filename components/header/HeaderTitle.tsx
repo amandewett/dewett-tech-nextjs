@@ -52,7 +52,7 @@ const HeaderTitle = () => {
       >
         &#123;
       </motion.span>
-      Aman Dewett
+      Full Stack Developer
       <motion.span
         className="text-appPrimaryColor"
         variants={blinkVariants}

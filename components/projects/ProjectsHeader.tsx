@@ -9,7 +9,7 @@ const ProjectsHeader = () => {
         <Reveal>
           <LottieAnimation
             animationData={ProjectDevelopmentLottie}
-            className="p-0 z-10 w-[97%]"
+            className="p-0 z-10 w-[100%]"
           />
         </Reveal>
       </div>
