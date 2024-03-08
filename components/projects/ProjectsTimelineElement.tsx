@@ -81,7 +81,7 @@ const ProjectsTimelineElement = ({
                 <h3 className="text-appColorWhiteSmoke group-hover:text-appPrimaryColor text-4xl font-extrabold transition-all duration-500 lgMonitor:text-2xl laptop:text-xl tablet:text-lg phone:text-base">
                   {projectName}
                 </h3>
-                <h6 className="mt-5 text-xl font-semibold text-pretty hidden group-hover:inline-block transition-all duration-500  lgMonitor:text-sm laptop:text-xs tablet:text-xs phone:text-xs phone:font-thin">
+                <h6 className="mt-5 text-xl font-semibold text-pretty hidden group-hover:inline-block transition-all duration-500  lgMonitor:text-sm laptop:text-xs tablet:text-xs phone:text-xs phone:font-normal">
                   {aboutProject}
                 </h6>
               </div>
