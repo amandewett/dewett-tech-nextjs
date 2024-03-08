@@ -1,15 +1,17 @@
 "use client";
 import Reveal from "../shared/Reveal";
-import { useScroll, motion, useSpring } from "framer-motion";
+import { useScroll, useSpring } from "framer-motion";
 import { useRef } from "react";
-import {
-  VerticalTimeline,
-  VerticalTimelineElement,
-} from "react-vertical-timeline-component";
+import { VerticalTimeline } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import { FaAirbnb } from "react-icons/fa";
-import { ProjectsAirBnb } from "@/public";
-import Image from "next/image";
+import { FaAirbnb, FaTwitter, FaYoutube } from "react-icons/fa";
+import { MdOutlineSecurity } from "react-icons/md";
+import {
+  ProjectsAirBnb,
+  ProjectsTwitter,
+  ProjectsVideoTube,
+  ProjectsAuth,
+} from "@/public";
 import ProjectsTimelineElement from "./ProjectsTimelineElement";
 
 const ProjectsTimeline = () => {
@@ -49,66 +51,31 @@ const ProjectsTimeline = () => {
             Credentials authentications."
                 imageSrc={ProjectsAirBnb.src}
                 projectName="AirBnb Clone"
+                url="https://waterbnb.dewett.tech"
               />
               <ProjectsTimelineElement
-                icon={FaAirbnb}
-                aboutProject="Its an airbnb clone made with NextJS, Typescript and
-            Tailwind for styling. I have used MongoDB a NoSql database
-            to store listings and users. In addition, I have used
-            power of NextAuth and implemented Google, Github and
-            Credentials authentications."
-                imageSrc={ProjectsAirBnb.src}
-                projectName="AirBnb Clone"
+                icon={FaTwitter}
+                aboutProject="Its a twitter clone made with ReactJS, Typescript and
+            vanilla CSS for styling. I have used Firebase database
+            to store posts."
+                imageSrc={ProjectsTwitter.src}
+                projectName="Twitter Clone"
+                url="https://xyz.dewett.tech"
               />
               <ProjectsTimelineElement
-                icon={FaAirbnb}
-                aboutProject="Its an airbnb clone made with NextJS, Typescript and
-            Tailwind for styling. I have used MongoDB a NoSql database
-            to store listings and users. In addition, I have used
-            power of NextAuth and implemented Google, Github and
-            Credentials authentications."
-                imageSrc={ProjectsAirBnb.src}
-                projectName="AirBnb Clone"
+                icon={FaYoutube}
+                aboutProject="Its a Youtube clone made with ReactJS, Typescript and
+            vanilla CSS for styling. I have used RapidAPI to fetch videos"
+                imageSrc={ProjectsVideoTube.src}
+                projectName="Youtube Clone"
+                url="https://videotube.dewett.tech"
               />
               <ProjectsTimelineElement
-                icon={FaAirbnb}
-                aboutProject="Its an airbnb clone made with NextJS, Typescript and
-            Tailwind for styling. I have used MongoDB a NoSql database
-            to store listings and users. In addition, I have used
-            power of NextAuth and implemented Google, Github and
-            Credentials authentications."
-                imageSrc={ProjectsAirBnb.src}
-                projectName="AirBnb Clone"
-              />
-              <ProjectsTimelineElement
-                icon={FaAirbnb}
-                aboutProject="Its an airbnb clone made with NextJS, Typescript and
-            Tailwind for styling. I have used MongoDB a NoSql database
-            to store listings and users. In addition, I have used
-            power of NextAuth and implemented Google, Github and
-            Credentials authentications."
-                imageSrc={ProjectsAirBnb.src}
-                projectName="AirBnb Clone"
-              />
-              <ProjectsTimelineElement
-                icon={FaAirbnb}
-                aboutProject="Its an airbnb clone made with NextJS, Typescript and
-            Tailwind for styling. I have used MongoDB a NoSql database
-            to store listings and users. In addition, I have used
-            power of NextAuth and implemented Google, Github and
-            Credentials authentications."
-                imageSrc={ProjectsAirBnb.src}
-                projectName="AirBnb Clone"
-              />
-              <ProjectsTimelineElement
-                icon={FaAirbnb}
-                aboutProject="Its an airbnb clone made with NextJS, Typescript and
-            Tailwind for styling. I have used MongoDB a NoSql database
-            to store listings and users. In addition, I have used
-            power of NextAuth and implemented Google, Github and
-            Credentials authentications."
-                imageSrc={ProjectsAirBnb.src}
-                projectName="AirBnb Clone"
+                icon={MdOutlineSecurity}
+                aboutProject="Its a simple application to display power of NextJS with NextAuth library. Moreover, it shows how form validations work in NextJS along with auth guard for private routes."
+                imageSrc={ProjectsAuth.src}
+                projectName="NextJS + NextAuth"
+                url="https://nauth.dewett.tech"
               />
             </VerticalTimeline>
           </Reveal>

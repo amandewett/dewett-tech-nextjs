@@ -52,3 +52,6 @@ export { default as ProjectDevelopmentLottie } from "@/public/animation/project_
 
 /* projects */
 export { default as ProjectsAirBnb } from "@/public/projects/airbnb.png";
+export { default as ProjectsTwitter } from "@/public/projects/twitter.png";
+export { default as ProjectsVideoTube } from "@/public/projects/videotube.png";
+export { default as ProjectsAuth } from "@/public/projects/auth.png";

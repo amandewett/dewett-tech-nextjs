@@ -88,4 +88,5 @@ export type ProjectsTimelineElementProps = {
   imageSrc: string;
   projectName: string;
   aboutProject: string;
+  url: string;
 };
