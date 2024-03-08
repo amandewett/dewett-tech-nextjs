@@ -57,8 +57,7 @@ const HomeHeader = () => {
           </h1>
           <div className="mt-3 text-base text-pretty xxlMonitor:text-xl">
             <p>
-              I like to craft solid and scalable products with great user
-              experience. A{" "}
+              A{" "}
               <span className="text-appPrimaryColor font-bold">
                 Full Stack Developer
               </span>{" "}
@@ -66,8 +65,9 @@ const HomeHeader = () => {
               <span className="text-appPrimaryColor font-bold">
                 React, NextJS, NodeJS, NestJS and Flutter
               </span>{" "}
-              development. I enjoy helping people make the world a better place
-              through quality softwares.
+              development. I like to craft solid and scalable products with
+              great user experience and enjoy helping people make the world a
+              better place through quality softwares.
             </p>
           </div>
           <div className="self-end pt-8 xxlMonitor:pt-12 z-10 flex flex-row mr-10">
