@@ -30,9 +30,10 @@ const ExperienceCard = ({
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
                 transition={{
+                  duration: 0.5,
+                  type: "smooth",
+                  repeatType: "mirror",
                   repeat: Infinity,
-                  duration: 1,
-                  type: "spring",
                 }}
               >
                 <PiCircleNotchFill size={28} className="text-appPrimaryColor" />
@@ -90,9 +91,10 @@ const ExperienceCard = ({
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
                 transition={{
+                  duration: 0.5,
+                  type: "smooth",
+                  repeatType: "mirror",
                   repeat: Infinity,
-                  duration: 1,
-                  type: "spring",
                 }}
               >
                 <PiCircleNotchFill size={28} className="text-appPrimaryColor" />

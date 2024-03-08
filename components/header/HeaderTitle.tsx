@@ -22,7 +22,9 @@ const HeaderTitle = () => {
 
   const blinkTransition = {
     duration: 0.5,
-    repeat: Infinity, // This makes the animation repeat indefinitely
+    type: "smooth",
+    repeatType: "mirror",
+    repeat: Infinity,
   };
 
   return (
@@ -33,7 +35,7 @@ const HeaderTitle = () => {
         opacity: titleOpacity,
         transition: "opacity 350ms",
       }}
-      transition={{ type: "tween", delay: 1, duration: 0.5 }}
+      transition={{ type: "smooth", delay: 1, duration: 0.5 }}
       className="ml-5 font-bold text-2xl"
     >
       <motion.span
@@ -41,7 +43,12 @@ const HeaderTitle = () => {
         variants={blinkVariants}
         initial="hidden"
         animate="visible"
-        transition={blinkTransition}
+        transition={{
+          duration: 0.5,
+          type: "smooth",
+          repeatType: "mirror",
+          repeat: Infinity,
+        }}
       >
         &#123;
       </motion.span>
@@ -51,7 +58,12 @@ const HeaderTitle = () => {
         variants={blinkVariants}
         initial="hidden"
         animate="visible"
-        transition={blinkTransition}
+        transition={{
+          duration: 0.5,
+          type: "smooth",
+          repeatType: "mirror",
+          repeat: Infinity,
+        }}
       >
         &#125;
       </motion.span>

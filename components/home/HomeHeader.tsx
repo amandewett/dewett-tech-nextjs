@@ -41,11 +41,11 @@ const HomeHeader = () => {
           <h3 className="uppercase text-slate-300/90 text-xl xxlMonitor:text-2xl">
             hi there
           </h3>
-          <h1 className="text-white text-4xl xxlMonitor:text-6xl pt-5">
+          <h1 className="text-white text-4xl xxlMonitor:text-6xl mt-2">
             I&#39;m <span className="font-extrabold">Aman Dewett</span>
           </h1>
 
-          <h1 className="text-3xl xxlMonitor:text-5xl pt-5 h-14 xxlMonitor:h-20 text-appPrimaryColor font-bold overflow-hidden">
+          <h1 className="text-3xl xxlMonitor:text-5xl mt-3 h-14 xxlMonitor:h-20 text-appPrimaryColor font-bold overflow-hidden">
             <span>&#60;&#47;</span>
             <TextScrambler
               arrString={["Web", "Backend", "Mobile"]}
@@ -55,10 +55,14 @@ const HomeHeader = () => {
               <span className="text-white">&#09;Developer</span>&#62;
             </span>
           </h1>
-          <div className="pt-10 text-base text-pretty xxlMonitor:text-xl">
+          <div className="mt-3 text-base text-pretty xxlMonitor:text-xl">
             <p>
-              Seasoned Full Stack Developer with over five years of hands-on
-              experience specializing in{" "}
+              I like to craft solid and scalable products with great user
+              experience. A{" "}
+              <span className="text-appPrimaryColor font-bold">
+                Full Stack Developer
+              </span>{" "}
+              with over five years of hands-on experience specializing in{" "}
               <span className="text-appPrimaryColor font-bold">
                 React, NextJS, NodeJS, NestJS and Flutter
               </span>{" "}

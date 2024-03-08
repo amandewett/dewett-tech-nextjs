@@ -1,6 +1,5 @@
 import { ScrambleTexts } from "@twistezo/react-text-scramble";
-import { IconType } from "react-icons";
-import { Options } from "react-lottie";
+import { IconTree, IconType } from "react-icons";
 
 export type Props = {
   children?: React.ReactNode;
@@ -82,4 +81,11 @@ export type LottieAnimationProps = {
   width?: string;
   height?: string;
   className?: string;
+};
+
+export type ProjectsTimelineElementProps = {
+  icon: IconType;
+  imageSrc: string;
+  projectName: string;
+  aboutProject: string;
 };

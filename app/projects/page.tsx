@@ -1,4 +1,12 @@
+import ProjectsHeader from "@/components/projects/ProjectsHeader";
+import ProjectsTimeline from "@/components/projects/ProjectsTimeline";
+
 const ProductsPage = () => {
-  return <div>ProductsPage</div>;
+  return (
+    <>
+      <ProjectsHeader />
+      <ProjectsTimeline />
+    </>
+  );
 };
 export default ProductsPage;

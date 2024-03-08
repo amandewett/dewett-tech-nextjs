@@ -48,3 +48,7 @@ export { default as VectorTen } from "@/public/images/vectors/10.svg";
 export { default as MeditationLottie } from "@/public/animation/meditation.json";
 export { default as CodingLottieOne } from "@/public/animation/coding_one.json";
 export { default as CodingLottieTwo } from "@/public/animation/coding_two.json";
+export { default as ProjectDevelopmentLottie } from "@/public/animation/project_development.json";
+
+/* projects */
+export { default as ProjectsAirBnb } from "@/public/projects/airbnb.png";
