@@ -96,10 +96,7 @@ const MobileNavBar: FC = () => {
             </a>
           </li>
           <div className="flex">
-            <NavLogoItem
-              radius={50}
-              href="https://github.com/amandewett?tab=repositories"
-            >
+            <NavLogoItem radius={50} href="https://github.com/amandewett">
               <ImageContainer
                 src={GithubWhite.src}
                 alt="github logo"
