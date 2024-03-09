@@ -26,9 +26,9 @@ const Experience = () => {
         <div ref={ref} className="w-full relative mt-10">
           <motion.div
             style={{ scaleY }}
-            className="absolute left-0 right-0 top-0 w-[5px] h-full mx-auto bg-white origin-top"
+            className="absolute left-0 xxlMonitor:right-0 xlMonitor:right-0 lgMonitor:right-0 laptop:right-0 tablet:ml-5 phone:ml-5 top-0 w-[5px] h-full mx-auto bg-white origin-top"
           />
-          <ul className="flex flex-col items-center w-full">
+          <ul className="flex flex-col tablet:items-start phone:items-start xxlMonitor:items-center xlMonitor:items-center lgMonitor:items-center laptop:items-center w-full">
             <ExperienceCard
               company="Codeferns Technologies"
               description={[

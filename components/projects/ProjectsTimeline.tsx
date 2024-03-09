@@ -1,7 +1,5 @@
 "use client";
 import Reveal from "../shared/Reveal";
-import { useScroll, useSpring } from "framer-motion";
-import { useRef } from "react";
 import { VerticalTimeline } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import { FaAirbnb, FaTwitter, FaYoutube } from "react-icons/fa";
@@ -15,22 +13,11 @@ import {
 import ProjectsTimelineElement from "./ProjectsTimelineElement";
 
 const ProjectsTimeline = () => {
-  const ref = useRef(null);
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ["start end", "center start"],
-  });
-  const scaleY = useSpring(scrollYProgress, {
-    stiffness: 100,
-    damping: 30,
-    restDelta: 0.001,
-  });
-
   return (
     <>
-      <div className="w-full flex flex-col items-center mt-10">
+      <div className="w-full flex flex-col items-center justify-center mt-10">
         <Reveal>
-          <h1 className="text-5xl font-bold underline decoration-appPrimaryColor decoration-4 underline-offset-2">
+          <h1 className="text-5xl tablet:text-3xl phone:text-2xl font-bold self-center underline decoration-appPrimaryColor decoration-4 underline-offset-2">
             Sample Projects
           </h1>
         </Reveal>

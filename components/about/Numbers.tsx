@@ -32,14 +32,14 @@ const Numbers = ({ count, text }: NumbersProps) => {
       <AnimatePresence mode="wait">
         <Reveal key="one" willSwipe willSwipeUp={false}>
           <div ref={viewRef} className="flex flex-col items-center">
-            <div className="text-6xl lgMonitor:text-5xl laptop:text-3xl tablet:text-2xl phone:text-xl font-extrabold flex">
+            <div className="text-6xl lgMonitor:text-5xl laptop:text-3xl tablet:text-2xl phone:text-base font-extrabold flex">
               <motion.div key="two" className="">
                 {rounded}
               </motion.div>
               <p>&#43;</p>
             </div>
 
-            <motion.div className="text-2xl lgMonitor:text-xl laptop:text-base tablet:text-sm phone:text-xs text-slate-300 font-bold">
+            <motion.div className="text-2xl lgMonitor:text-xl laptop:text-base tablet:text-sm phone:text-xs phone:font-thin phone:text-center text-slate-300 font-bold">
               {text}
             </motion.div>
           </div>

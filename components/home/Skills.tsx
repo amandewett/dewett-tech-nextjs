@@ -11,11 +11,11 @@ const SkillsTimeline = dynamic(() => import("./timeline/SkillsTimeline"), {
 const Skills = () => {
   return (
     <>
-      <div className="flex flex-row justify-between w-full mt-10 xxlMonitor:mt-20 tablet:mt-64 phone:mt-72">
+      <div className="flex flex-row justify-between w-full mt-10 xxlMonitor:mt-20 tablet:mt-64 phone:mt-[300px]">
         {/* left side */}
-        <div className="w-[50%]">
+        <div className="w-[50%] phone:w-full">
           <div className="pl-14">
-            <h1 className="text-6xl tablet:text-4xl phone:text-4xl xxlMonitor:text-7xl inline-block">
+            <h1 className="text-6xl tablet:text-3xl phone:text-2xl xxlMonitor:text-7xl inline-block">
               <Reveal willSwipe>Skills</Reveal>
             </h1>
             <motion.div
@@ -37,14 +37,14 @@ const Skills = () => {
           <SkillsTimeline />
         </div>
         {/* right side */}
-        <div className="w-[50%] z-10">
+        <div className="w-[50%] phone:hidden z-10">
           <Reveal>
             <ImageContainer
               src={VectorEight.src}
               alt="skills 1"
               width={500}
               height={500}
-              className="xxlMonitor:w-[650px] xxlMonitor:h-[650px] xlMonitor:w-[500px] xlMonitor:h-[500px] laptop:w-[400px] laptop:h-[400px] tablet:w-[300px] tablet:h-[300px]"
+              className="xxlMonitor:w-[650px] xxlMonitor:h-[650px] xlMonitor:w-[500px] xlMonitor:h-[500px] laptop:w-[400px] laptop:h-[400px] tablet:w-[300px] tablet:h-[300px] phone:hidden"
             />
           </Reveal>
           <Reveal>
@@ -53,7 +53,7 @@ const Skills = () => {
               alt="skills 1"
               width={500}
               height={500}
-              className="xxlMonitor:w-[650px] xxlMonitor:h-[650px] xlMonitor:w-[500px] xlMonitor:h-[500px] laptop:w-[400px] laptop:h-[400px] mt-20  tablet:w-[300px] tablet:h-[300px]"
+              className="xxlMonitor:w-[650px] xxlMonitor:h-[650px] xlMonitor:w-[500px] xlMonitor:h-[500px] laptop:w-[400px] laptop:h-[400px] mt-20  tablet:w-[300px] tablet:h-[300px] phone:hidden"
             />
           </Reveal>
           <Reveal>
@@ -62,7 +62,7 @@ const Skills = () => {
               alt="skills 1"
               width={500}
               height={500}
-              className="xxlMonitor:w-[650px] xxlMonitor:h-[650px] laptop:w-[400px] laptop:h-[400px] mt-20  tablet:w-[300px] tablet:h-[300px] xxlMonitor:hidden xlMonitor:hidden lgMonitor:hidden laptop:hidden"
+              className="xxlMonitor:w-[650px] xxlMonitor:h-[650px] laptop:w-[400px] laptop:h-[400px] mt-20  tablet:w-[300px] tablet:h-[300px] xxlMonitor:hidden xlMonitor:hidden lgMonitor:hidden laptop:hidden  phone:hidden"
             />
           </Reveal>
         </div>

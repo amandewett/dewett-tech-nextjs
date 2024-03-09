@@ -8,7 +8,7 @@ const Bio = () => {
     <>
       <div className="ml-10 tablet:mx-5 phone:mx-5 xxlMonitor:ml-5 lgMonitor:ml-20 laptop:ml-32">
         <Reveal>
-          <p className="font-semibold text-lg phone:text-sm tablet:text-lg lgMonitor:text-base laptop:text-sm inline-block text-pretty">
+          <p className="font-semibold text-lg phone:text-xs tablet:text-lg lgMonitor:text-base laptop:text-sm inline-block text-pretty">
             <span className="text-appPrimaryColor font-bold text-4xl lgMonitor:text-3xl laptop:text-2xl phone:text-xl inline-block">
               Bonjour
             </span>

@@ -26,9 +26,9 @@ const Education = () => {
         <div ref={ref} className="w-full relative mt-10">
           <motion.div
             style={{ scaleY }}
-            className="absolute left-0 right-0 top-0 w-[5px] h-full mx-auto bg-white origin-top"
+            className="absolute left-0 xxlMonitor:right-0 xlMonitor:right-0 lgMonitor:right-0 laptop:right-0 tablet:ml-5 phone:ml-5 top-0 w-[5px] h-full mx-auto bg-white origin-top"
           />
-          <ul className="flex flex-col items-center w-full">
+          <ul className="flex flex-col tablet:items-start phone:items-start xxlMonitor:items-center xlMonitor:items-center lgMonitor:items-center laptop:items-center w-full">
             <ExperienceCard
               company="Chandigarh University"
               description="During my Post Graduation journey, I gained proficiency in several programming languages such as Java, C++, Python and Javascript. I have also acquire knowledge about Data structures, algorithms, OOPS, Database management systems. I completed real-world projects, honed my problem-solving skills, and engaged in research on emerging technologies. Collaborative teamwork and a thesis project were integral parts of my academic journey. Additionally, I built valuable connections with professors and peers. My MCA experience provided a strong foundation for a successful career in technology and software development."

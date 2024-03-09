@@ -37,15 +37,16 @@ const HomeHeader = () => {
         className="w-full h-[80vh] xxlMonitor:h-[85vh] lgMonitor:h-[85vh] laptop:h-[85vh] flex flex-row pt-20 xxlMonitor:pt-40 tablet:flex-col phone:flex-col tablet:items-center phone:items-center"
       >
         {/* left side */}
-        <div className="flex w-[40%] flex-col pl-20 tablet:w-[100%] phone:w-[100%] tablet:pr-20 phone:pr-20">
-          <h3 className="uppercase text-slate-300/90 text-xl xxlMonitor:text-2xl">
+        <div className="flex w-[40%] flex-col pl-20 tablet:w-[100%] phone:w-[100%] tablet:p-10 laptop:p-12 phone:p-5">
+          <h3 className="uppercase text-slate-300/90 text-xl xxlMonitor:text-2xl tablet:text-xl phone:text-lg">
             hi there
           </h3>
-          <h1 className="text-white text-4xl xxlMonitor:text-6xl mt-2">
-            I&#39;m <span className="font-extrabold">Aman Dewett</span>
+          <h1 className="text-white text-4xl xxlMonitor:text-6xl laptop:text-2xl tablet:text-xl phone:text-lg mt-2">
+            I&#39;m{" "}
+            <span className="font-extrabold phone:font-bold">Aman Dewett</span>
           </h1>
 
-          <h1 className="text-3xl xxlMonitor:text-5xl mt-3 h-14 xxlMonitor:h-20 text-appPrimaryColor font-bold overflow-hidden">
+          <h1 className="text-3xl xxlMonitor:text-5xl laptop:text-2xl tablet:text-2xl phone:text-xl mt-3 h-14 xxlMonitor:h-20 text-appPrimaryColor font-bold overflow-hidden">
             <span>&#60;&#47;</span>
             <TextScrambler
               arrString={["Web", "Backend", "Mobile"]}
@@ -55,7 +56,7 @@ const HomeHeader = () => {
               <span className="text-white">&#09;Developer</span>&#62;
             </span>
           </h1>
-          <div className="mt-3 text-base text-pretty xxlMonitor:text-xl">
+          <div className="mt-3 text-base text-pretty xxlMonitor:text-xl tablet:text-lg phone:text-base">
             <p>
               A{" "}
               <span className="text-appPrimaryColor font-bold">
@@ -70,14 +71,15 @@ const HomeHeader = () => {
               better place through quality softwares.
             </p>
           </div>
-          <div className="self-end pt-8 xxlMonitor:pt-12 z-10 flex flex-row mr-10">
+          {/* buttons */}
+          <div className="self-end phone:self-center laptop:self-center tablet:self-center pt-8 xxlMonitor:pt-12 z-10 flex flex-row mr-10 laptop:m-0">
             <Link
               href="/resume/aman_dewett_full_stack_resume.pdf"
               target="_blank"
               download
             >
               <AppButton revert>
-                <div className="flex items-center">
+                <div className="flex items-center phone:text-base">
                   Resume <FaExternalLinkAlt className="ml-1" size={12} />
                 </div>
               </AppButton>
@@ -91,7 +93,7 @@ const HomeHeader = () => {
           </div>
         </div>
         {/* right side */}
-        <div className="w-[60%] z-10 tablet:mt-28 phone:mt-28">
+        <div className="w-[60%] tablet:w-full phone:w-full z-10 tablet:mt-28 phone:mt-28">
           {/* <ImageCarousel
             items={arrCarouselImages.map((image: any) => {
               return (

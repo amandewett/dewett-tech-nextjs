@@ -74,6 +74,7 @@ export type ExperienceCardProps = {
   location: string;
   description: string[] | string;
   isLeft?: boolean;
+  isTablet?: boolean;
 };
 
 export type LottieAnimationProps = {
