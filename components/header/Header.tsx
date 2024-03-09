@@ -25,9 +25,12 @@ const Header: FC = () => {
             <NavItem href="/">Home</NavItem>
             <NavItem href="/projects">Projects</NavItem>
             <NavItem href="/about">About</NavItem>
-            <NavItem href="mailto:amandewett@gmail.com?subject=Requirement">
+            <a
+              href="mailto:amandewett@gmail.com?subject=Requirement"
+              target="_blank"
+            >
               Contact
-            </NavItem>
+            </a>
             <NavLogoItem
               radius={50}
               href="https://github.com/amandewett?tab=repositories"
