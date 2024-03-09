@@ -13,10 +13,11 @@ const ExperienceCard = ({
   position,
   stack,
   isLeft = false,
-  isTablet = true,
+  isTablet = false,
 }: ExperienceCardProps) => {
   const screenSize = useScreenSize();
-  isTablet = screenSize.width <= 767 ? true : false;
+  isTablet =
+    screenSize.width === 0 ? false : screenSize.width <= 767 ? true : false;
 
   return (
     <>

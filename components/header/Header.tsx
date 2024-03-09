@@ -11,7 +11,7 @@ const Header: FC = () => {
       <div className="flex items-center">
         <Link href="/">
           <div className="rounded-[50%] w-10 h-10 overflow-hidden ml-5">
-            <ImageContainer src="/images/aman_header.jpg" alt="logo" priority />
+            <ImageContainer src="/images/aman_header.png" alt="logo" priority />
           </div>
         </Link>
 

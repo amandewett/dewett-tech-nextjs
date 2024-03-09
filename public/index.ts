@@ -14,7 +14,7 @@ export { default as SkillsVector } from "@/public/images/skills.png";
 export { default as SkillsVector1 } from "@/public/images/skills1.png";
 
 /* my images */
-export { default as Aman1 } from "@/public/images/aman1.jpg";
+export { default as Aman1 } from "@/public/images/aman1.png";
 
 /* skills */
 export { default as NextJSLogo } from "@/public/images/skills/nextjs.png";

@@ -1,7 +1,11 @@
 "use client";
 import { useScroll, motion, useSpring } from "framer-motion";
 import { useRef } from "react";
-import ExperienceCard from "./ExperienceCard";
+// import ExperienceCard from "./ExperienceCard";\
+import dynamic from "next/dynamic";
+const ExperienceCard = dynamic(() => import("./ExperienceCard"), {
+  ssr: false,
+});
 import Reveal from "../shared/Reveal";
 
 const Education = () => {
