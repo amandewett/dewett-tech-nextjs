@@ -73,7 +73,7 @@ const HomeHeader = () => {
           </div>
           {/* buttons */}
           <div className="self-end phone:self-center laptop:self-center tablet:self-center pt-8 xxlMonitor:pt-12 z-10 flex flex-row mr-10 laptop:m-0">
-            <Link
+            <a
               href="/resume/aman_dewett_full_stack_resume.pdf"
               target="_blank"
               download
@@ -83,13 +83,13 @@ const HomeHeader = () => {
                   Resume <FaExternalLinkAlt className="ml-1" size={12} />
                 </div>
               </AppButton>
-            </Link>
-            <Link
+            </a>
+            <a
               href="mailto:amandewett@gmail.com?subject=Requirement"
               className="ml-5"
             >
               <AppButton>Reach Out</AppButton>
-            </Link>
+            </a>
           </div>
         </div>
         {/* right side */}
