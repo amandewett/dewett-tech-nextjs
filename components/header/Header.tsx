@@ -28,11 +28,7 @@ const Header: FC = () => {
             <li className="ml-5">
               <a
                 href="mailto:amandewett@gmail.com?subject=Requirement"
-                className={
-                  "/contact" === "/contact"
-                    ? "underline decoration-[4px] text-appPrimaryColor underline-offset-4 font-extrabold"
-                    : "un underline-offset-4 decoration-[4px]"
-                }
+                className="un underline-offset-3 decoration-[4px]"
               >
                 Contact
               </a>

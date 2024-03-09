@@ -82,8 +82,9 @@ const MobileNavBar: FC = () => {
             </Link>
           </li>
           <li className="mb-5">
-            <Link
+            <a
               href="mailto:amandewett@gmail.com?subject=Requirement"
+              target="_blank"
               onClick={handleMenuOnClick}
               className={
                 path === "/contact"
@@ -92,7 +93,7 @@ const MobileNavBar: FC = () => {
               }
             >
               Contact
-            </Link>
+            </a>
           </li>
           <div className="flex">
             <NavLogoItem
