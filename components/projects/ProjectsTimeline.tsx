@@ -2,7 +2,13 @@
 import Reveal from "../shared/Reveal";
 import { VerticalTimeline } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import { FaAirbnb, FaTwitter, FaYoutube, FaShoppingBag } from "react-icons/fa";
+import {
+  FaAirbnb,
+  FaTwitter,
+  FaYoutube,
+  FaShoppingBag,
+  FaServer,
+} from "react-icons/fa";
 import { MdOutlineSecurity } from "react-icons/md";
 import {
   ProjectsAirBnb,
@@ -10,6 +16,7 @@ import {
   ProjectsVideoTube,
   ProjectsAuth,
   ProjectsShoppingStore,
+  NestJSLogo,
 } from "@/public";
 import ProjectsTimelineElement from "./ProjectsTimelineElement";
 
@@ -64,6 +71,20 @@ const ProjectsTimeline = () => {
                 imageSrc={ProjectsShoppingStore.src}
                 projectName="Shopping App (Flutter)"
                 url="https://github.com/amandewett/shopping-store-flutter-app"
+              />
+              <ProjectsTimelineElement
+                icon={FaShoppingBag}
+                aboutProject="It is a e-commerce mobile app made with Flutter. To register user it uses credentials, google and facebook login. Moreover, it supports multiple countries to shop products."
+                imageSrc={ProjectsShoppingStore.src}
+                projectName="Shopping App (Flutter)"
+                url="https://github.com/amandewett/shopping-store-flutter-app"
+              />
+              <ProjectsTimelineElement
+                icon={FaServer}
+                aboutProject="A backend application made with NestJS, TypeORM, Mysql and Typescript. It was made to act as server for a flutter mobile application and admin dashboard."
+                imageSrc={NestJSLogo.src}
+                projectName="Shopping Store (NestJS)"
+                url="https://github.com/amandewett/shopping-store-backend"
               />
               <ProjectsTimelineElement
                 icon={MdOutlineSecurity}
