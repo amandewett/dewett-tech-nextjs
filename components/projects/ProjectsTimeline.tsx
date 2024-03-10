@@ -2,13 +2,14 @@
 import Reveal from "../shared/Reveal";
 import { VerticalTimeline } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import { FaAirbnb, FaTwitter, FaYoutube } from "react-icons/fa";
+import { FaAirbnb, FaTwitter, FaYoutube, FaShoppingBag } from "react-icons/fa";
 import { MdOutlineSecurity } from "react-icons/md";
 import {
   ProjectsAirBnb,
   ProjectsTwitter,
   ProjectsVideoTube,
   ProjectsAuth,
+  ProjectsShoppingStore,
 } from "@/public";
 import ProjectsTimelineElement from "./ProjectsTimelineElement";
 
@@ -56,6 +57,13 @@ const ProjectsTimeline = () => {
                 imageSrc={ProjectsVideoTube.src}
                 projectName="Youtube Clone"
                 url="https://videotube.dewett.tech"
+              />
+              <ProjectsTimelineElement
+                icon={FaShoppingBag}
+                aboutProject="It is a e-commerce mobile app made with Flutter. To register user it uses credentials, google and facebook login. Moreover, it supports multiple countries to shop products."
+                imageSrc={ProjectsShoppingStore.src}
+                projectName="Shopping App (Flutter)"
+                url="https://github.com/amandewett/shopping-store-flutter-app"
               />
               <ProjectsTimelineElement
                 icon={MdOutlineSecurity}

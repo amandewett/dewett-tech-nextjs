@@ -55,3 +55,4 @@ export { default as ProjectsAirBnb } from "@/public/projects/airbnb.png";
 export { default as ProjectsTwitter } from "@/public/projects/twitter.png";
 export { default as ProjectsVideoTube } from "@/public/projects/videotube.png";
 export { default as ProjectsAuth } from "@/public/projects/auth.png";
+export { default as ProjectsShoppingStore } from "@/public/projects/shopping_store.jpg";

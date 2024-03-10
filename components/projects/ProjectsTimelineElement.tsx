@@ -77,7 +77,7 @@ const ProjectsTimelineElement = ({
                 alt="project_image"
                 className="mx-auto rounded-xl object-cover brightness-50 group-hover:blur-sm group-hover:brightness-[0.3] z-10 transition-all duration-500"
               />
-              <div className="w-full h-full bg-transparent rounded-xl z-30 absolute p-5 transition-all duration-500">
+              <div className="w-full h-full bg-transparent rounded-xl z-30 absolute p-5 transition-all duration-500 cursor-pointer">
                 <h3 className="text-appColorWhiteSmoke group-hover:text-appPrimaryColor text-4xl font-extrabold transition-all duration-500 lgMonitor:text-2xl laptop:text-xl tablet:text-lg phone:text-base">
                   {projectName}
                 </h3>
