@@ -17,6 +17,7 @@ import AppButton from "../shared/AppButton";
 import Link from "next/link";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import LottieAnimation from "../about/LottieAnimation";
+import Reveal from "../shared/Reveal";
 
 const HomeHeader = () => {
   const arrCarouselImages = [
@@ -49,7 +50,7 @@ const HomeHeader = () => {
           <h1 className="text-3xl xxlMonitor:text-5xl laptop:text-2xl tablet:text-2xl phone:text-xl mt-3 h-14 xxlMonitor:h-20 text-appPrimaryColor font-bold overflow-hidden">
             <span>&#60;&#47;</span>
             <TextScrambler
-              arrString={["Web", "Backend", "Mobile"]}
+              arrString={["Frontend", "Backend", "Mobile"]}
               className="inline-block text-white"
             />
             <span>
@@ -58,37 +59,35 @@ const HomeHeader = () => {
           </h1>
           <div className="mt-3 text-base text-pretty xxlMonitor:text-xl tablet:text-lg phone:text-base">
             <p>
-              A{" "}
-              <span className="text-appPrimaryColor font-bold">
-                Full Stack Developer
-              </span>{" "}
-              with over five years of hands-on experience specializing in{" "}
-              <span className="text-appPrimaryColor font-bold">
-                React, NextJS, NodeJS, NestJS and Flutter
-              </span>{" "}
-              development. I like to craft solid and scalable products with
-              great user experience and enjoy helping people make the world a
-              better place through quality softwares.
+              I&#39;m a Full stack developer based in{" "}
+              <span className="text-appRedColor font-bold">Canada</span>. I
+              enjoy helping people make the world a better place through quality
+              softwares.
             </p>
           </div>
           {/* buttons */}
+
           <div className="self-end phone:self-center laptop:self-center tablet:self-center pt-8 xxlMonitor:pt-12 z-10 flex flex-row mr-10 laptop:m-0">
             <a
               href="/resume/aman_dewett_full_stack_resume.pdf"
               target="_blank"
               download
             >
-              <AppButton revert>
-                <div className="flex items-center phone:text-base">
-                  Resume <FaExternalLinkAlt className="ml-1" size={12} />
-                </div>
-              </AppButton>
+              <Reveal>
+                <AppButton revert>
+                  <div className="flex items-center phone:text-base">
+                    Resume <FaExternalLinkAlt className="ml-1" size={12} />
+                  </div>
+                </AppButton>
+              </Reveal>
             </a>
             <a
               href="mailto:amandewett@gmail.com?subject=Requirement"
               className="ml-5"
             >
-              <AppButton>Reach Out</AppButton>
+              <Reveal>
+                <AppButton>Reach Out</AppButton>
+              </Reveal>
             </a>
           </div>
         </div>

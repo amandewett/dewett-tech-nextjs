@@ -13,8 +13,11 @@ const Bio = () => {
               Bonjour
             </span>
             , I am Aman Dewett a seasoned Full Stack Developer with over five
-            years of hands-on experience specializing in React, NextJS, NodeJS,
-            NestJS and Flutter development.
+            years of hands-on experience specializing in{" "}
+            <span className="text-appPrimaryColor font-bold">
+              NextJS, React, NodeJS, NestJS and Flutter
+            </span>{" "}
+            development.
             <br />
             <br />
             Demonstrated my expertise in building sophisticated and scalable

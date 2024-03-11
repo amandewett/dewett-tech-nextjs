@@ -11,11 +11,9 @@ const AppButton = ({ children, onClick, revert }: AppButtonProps) => {
             ? "bg-appColorWhiteSmoke text-appPrimaryColor"
             : "bg-appPrimaryColor text-appColorWhiteSmoke"
         }`}
-        initial={{ y: -20, opacity: 0 }}
-        animate={{ y: 0, opacity: 1, transition: { delay: 1 } }}
         whileHover={{
           y: -2,
-          transition: { delay: 0, duration: 0.2 },
+          transition: { duration: 0.2 },
         }}
         onClick={onClick}
       >

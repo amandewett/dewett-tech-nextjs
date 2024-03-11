@@ -547,3 +547,17 @@ body {
 }
 
 /* photo frame */
+
+/* image as text bg */
+.img-text-bg {
+  /* background-image: url('https://img.cdn-pictorem.com/uploads/collection/I/IB5PKT6FIG/900_Damian-Crown_280508.jpg'); */
+  background-image: url('/images/canada.jpg');
+  background-repeat: repeat;
+  background-size: contain;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* image as text bg */
