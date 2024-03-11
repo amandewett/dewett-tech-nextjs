@@ -36,12 +36,12 @@ const Experience = () => {
             <ExperienceCard
               company="Codeferns Technologies"
               description={[
-                "Led the team of three developers towards deploying several React, NodeJS and Flutter applications ahead of their schedule.",
+                "Led a team of three developers towards deploying several Frontend, Backend and Flutter mobile applications ahead of their schedule.",
                 "Implemented secure authentication and authorization solutions, ensuring the protection of sensitive customer data, and reducing the risk of security breaches by 40%.",
                 "Migrated a PHP application to NodeJS and increased its performance by 30%.",
                 "Developed an event-driven service to run and manage background scheduled jobs.",
                 "Created several re-usable components for React and backend applications to accelerate development process by 30%.",
-                "Developed a mortgage information application according to Australian market and increased client’s business by 60%.",
+                "Developed a mortgage information application according to Australian market and increased client’s business by 40%.",
                 "Worked closely with business team to collect new requirements.",
                 "Designed a system to process more than 10,000 orders every day without any major hiccups.",
                 "Engineered an adaptable microservices-based system, resulting in a 30% increase in system resilience and scalability.",
@@ -49,7 +49,7 @@ const Experience = () => {
               duration="Dec 2019 – Aug 2023"
               location="Chandigarh, India"
               position="Software Developer (Full Stack)"
-              stack="React, Redux, NextJS, HTML5, CSS3, NodeJS, NestJS, JavaScript, Typescript, Flutter, Dart, MySQL, MongoDB, PostgreSQL, GraphQL, CI/CD, Docker etc."
+              stack="NextJS, React, Redux, HTML5, CSS3, NodeJS, NestJS, JavaScript, Typescript, Flutter, Dart, MySQL, MongoDB, PostgreSQL, GraphQL, CI/CD, Docker etc."
             />
             <ExperienceCard
               company="Thirtyfour soft systems"
