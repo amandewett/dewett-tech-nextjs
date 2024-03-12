@@ -72,7 +72,7 @@ const Experience = () => {
               ]}
               duration="Oct 2018 – June 2019"
               location="Mohali, India"
-              position="Android Developer"
+              position="Software Developer"
               stack="Java, JavaScript, Puppeteer."
             />
           </ul>
