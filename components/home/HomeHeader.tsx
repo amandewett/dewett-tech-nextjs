@@ -68,11 +68,7 @@ const HomeHeader = () => {
           {/* buttons */}
 
           <div className="self-end phone:self-center laptop:self-center tablet:self-center pt-8 xxlMonitor:pt-12 z-10 flex flex-row mr-10 laptop:m-0">
-            <a
-              href="/resume/aman_dewett_full_stack_resume.pdf"
-              target="_blank"
-              download
-            >
+            <a href="/resume/Resume.pdf" target="_blank" download>
               <Reveal>
                 <AppButton revert>
                   <div className="flex items-center phone:text-base">

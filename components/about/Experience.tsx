@@ -34,6 +34,22 @@ const Experience = () => {
           />
           <ul className="flex flex-col tablet:items-start phone:items-start xxlMonitor:items-center xlMonitor:items-center lgMonitor:items-center laptop:items-center w-full">
             <ExperienceCard
+              company="Freelance"
+              description={[
+                "Developed responsive and visually stunning website, boosting client satisfaction ratings 9/10.",
+                "Scrapped a specific website for client from Upwork and delivered it in .csv file.",
+                "Created a Firebase cloud function for client that will generate QR code from taxi driver’s data and store it as .pdf file in an identity card size.",
+                "Developed an SEO friendly website using power of NextJS framework, it will help client to get 40% more clients through search engines.",
+                "Developed a new administration panel for a purchasing agent business, which improved the efficiency of operating by over 35%.",
+                "Maintained and enhanced existing web application and all integrated systems by utilizing ReactJS, Redux and Typescript.",
+                "Collaborated with 4 senior developers to design software by utilizing multiple AWS components like EC2 for virtual servers, S3 for storing objects and DynamoDB.",
+              ]}
+              duration="Sep 2023 – Present"
+              location="Brampton, Canada"
+              position="Full Stack Developer"
+              stack="NextJS, React, Redux, HTML5, CSS3, NodeJS, NestJS, JavaScript, Typescript, Flutter, Dart, MySQL, MongoDB, PostgreSQL, GraphQL, CI/CD, Docker etc."
+            />
+            <ExperienceCard
               company="Codeferns Technologies"
               description={[
                 "Led a team of three developers towards deploying several Frontend, Backend and Flutter mobile applications ahead of their schedule.",
