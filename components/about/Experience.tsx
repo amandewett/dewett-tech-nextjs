@@ -66,6 +66,7 @@ const Experience = () => {
               location="Chandigarh, India"
               position="Software Developer (Full Stack)"
               stack="NextJS, React, Redux, HTML5, CSS3, NodeJS, NestJS, JavaScript, Typescript, Flutter, Dart, MySQL, MongoDB, PostgreSQL, GraphQL, CI/CD, Docker etc."
+              isLeft
             />
             <ExperienceCard
               company="Thirtyfour soft systems"
@@ -77,7 +78,6 @@ const Experience = () => {
               location="Mohali, India"
               position="Android Developer"
               stack="Java, Kotlin, XML, Flutter, Firebase and Google cloud functions etc."
-              isLeft
             />
             <ExperienceCard
               company="Freelance"
@@ -90,6 +90,7 @@ const Experience = () => {
               location="Mohali, India"
               position="Software Developer"
               stack="Java, JavaScript, Puppeteer."
+              isLeft
             />
           </ul>
         </div>
