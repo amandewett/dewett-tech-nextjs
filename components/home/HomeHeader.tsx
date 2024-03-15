@@ -62,7 +62,7 @@ const HomeHeader = () => {
               I&#39;m a Full stack developer based in{" "}
               <span className="text-appRedColor font-bold">Canada</span>. I
               enjoy helping people make the world a better place through quality
-              softwares.
+              software.
             </p>
           </div>
           {/* buttons */}
