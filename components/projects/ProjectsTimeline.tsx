@@ -46,7 +46,7 @@ const ProjectsTimeline = () => {
             Credentials authentications."
                 imageSrc={ProjectsAirBnb.src}
                 projectName="AirBnb Clone"
-                url="https://waterbnb.dewett.tech"
+                url="https://rent.dewett.tech"
               />
               <ProjectsTimelineElement
                 icon={FaTwitter}
