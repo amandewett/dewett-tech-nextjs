@@ -24,7 +24,7 @@ const RootLayout: React.FC<React.PropsWithChildren> = ({ children }) => {
       <body className={`${appFont.className}`}>
         <Header />
         <PageTransitionLayout>{children}</PageTransitionLayout>
-        {/* <ParticlesLayout /> */}
+        <ParticlesLayout />
       </body>
     </html>
   );
