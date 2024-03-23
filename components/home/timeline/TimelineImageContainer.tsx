@@ -6,13 +6,13 @@ const TimelineImageContainer = ({
   width = 60,
   alt = "skill",
   src,
-  className = "group-hover:scale-105 transition-all z-10",
+  className = "group-hover:scale-105 transition-all z-10 object-cover",
 }: TimelineImageContainerProps) => {
   return (
     <ImageContainer
       alt={alt}
-      height={height}
       width={width}
+      height={height}
       src={src}
       className={className}
       priority

@@ -60,9 +60,9 @@ const HomeHeader = () => {
           <div className="mt-3 text-base text-pretty xxlMonitor:text-xl tablet:text-lg phone:text-base">
             <p>
               I&#39;m a Full stack developer based in{" "}
-              <span className="text-appRedColor font-bold">Canada</span>. I
-              enjoy helping people make the world a better place through quality
-              software.
+              <span className="text-appRedColor font-extrabold">Canada</span>. I
+              enjoy helping people to make the world a better place through
+              quality software.
             </p>
           </div>
           {/* buttons */}

@@ -73,13 +73,13 @@ const SkillsTimeline = () => {
           icon={TbBrandTypescript}
           className="bg-appColorWhiteSmoke cursor-pointer rounded-full w-36 h-14 flex justify-center items-center overflow-hidden group transition"
         >
-          <TimelineImageContainer src={TypescriptLogo.src} width={110} />
+          <TimelineImageContainer src={TypescriptLogo.src} width={90} />
         </TimelineElement>
         <TimelineElement
           icon={TbBrandDocker}
           className="bg-appColorDimBlack cursor-pointer rounded-full w-36 h-14 flex justify-center items-center overflow-hidden group transition"
         >
-          <TimelineImageContainer src={DockerLogo.src} width={55} />
+          <TimelineImageContainer src={DockerLogo.src} width={45} />
         </TimelineElement>
         <TimelineElement
           icon={TbApi}
@@ -127,7 +127,7 @@ const SkillsTimeline = () => {
           icon={TbServer}
           className="bg-appColorWhiteSmoke cursor-pointer rounded-full w-36 h-14 flex justify-center items-center overflow-hidden group transition"
         >
-          <TimelineImageContainer src={NginxLogo.src} width={55} />
+          <TimelineImageContainer src={NginxLogo.src} width={50} />
         </TimelineElement>
       </VerticalTimeline>
     </div>
