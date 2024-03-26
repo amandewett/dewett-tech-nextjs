@@ -25,14 +25,14 @@ const Bio = () => {
             React and NodeJS ecosystem combined with NextJS and NestJS framework
             for streamlined development. Successfully designed and implemented
             robust Web Applications, RESTful APIs, microservices, and database
-            architectures, consistently ensuring optimal performance and
-            reliability.
+            architectures.
             <br />
             <br /> Competent in Dart programming language and adept at utilizing
             Flutter&#39;s framework to deliver visually stunning and
-            high-performing hybrid mobile applications. Skilled in UI/UX design
-            principles, integrating complex functionalities and optimizing app
-            effectiveness for various devices.
+            high-performing hybrid mobile applications in Android and iOS.
+            Skilled in UI/UX design principles, integrating complex
+            functionalities and optimizing app effectiveness for various
+            devices.
           </p>
         </Reveal>
         <Reveal>
