@@ -49,7 +49,7 @@ const Experience = () => {
             <ExperienceCard
               company="Codeferns Technologies"
               description={[
-                "Led a team of three developers towards deploying several Frontend, Backend and Flutter mobile applications ahead of their schedule.",
+                "Led a team of 3 developers towards deploying several Frontend, Backend and Flutter mobile applications ahead of their schedule.",
                 "Implemented secure authentication and authorization solutions, ensuring the protection of sensitive customer data, and reducing the risk of security breaches by 40%.",
                 "Migrated a PHP application to NodeJS and increased its performance by 30%.",
                 "Developed an event-driven service to run and manage background scheduled jobs.",

@@ -12,7 +12,7 @@ const Bio = () => {
             <span className="text-appPrimaryColor font-bold text-4xl lgMonitor:text-3xl laptop:text-2xl phone:text-xl inline-block">
               Bonjour
             </span>
-            , I am Aman Dewett a seasoned Full Stack Developer with over five
+            , I am Aman Dewett a seasoned Full Stack Developer with over 5
             years of hands-on experience specializing in{" "}
             <span className="text-appPrimaryColor font-bold">
               NextJS, React, NodeJS, NestJS and Flutter
