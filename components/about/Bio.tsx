@@ -16,8 +16,8 @@ const Bio = () => {
             software that makes a difference, I am eager to bring my talents as
             a Full Stack Developer to your team and collaborate with creative
             thinker professionals on exciting projects. Myself Aman Dewett, a
-            seasoned Software Developer with over 5 years of hands-on
-            experience in{" "}
+            seasoned Software Developer with over 5 years of hands-on experience
+            in{" "}
             <span className="text-appPrimaryColor font-bold">
               NextJS, React, React Native, NodeJS, NestJS and Flutter
             </span>{" "}

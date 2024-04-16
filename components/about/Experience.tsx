@@ -36,54 +36,49 @@ const Experience = () => {
             <ExperienceCard
               company="Freelance"
               description={[
-                "Developed responsive and visually stunning websites, boosting client’s satisfaction ratings 9/10.",
-                "Scrapped a specific website for a client from Upwork and delivered data in .csv file.",
-                "Improved business process by created a Firebase cloud function for client Flutterflow mobile application that generates QR code from taxi driver’s profile data and store it as .pdf file in an identity card size.",
-                "Developed an SEO friendly website using power of NextJS framework, it will help client to get 40% more clients through search engines.",
+                "Crafted an e-commerce mobile application using Flutter, resulting in 10,000+ downloads and a revenue increase of 40% within the first three months of launch.",
+                "Optimized server-side rendering of a pre-developed NextJS application by leveraging dynamic imports, lazy loading for images and caching frequently used content for a textile business, leading to a 25% decrease in page load times and a $30,000 increase in annual online sales revenue.",
               ]}
-              duration="Sep 2023 – Present"
-              location="Brampton, Canada"
+              duration="September 2023 – Present"
+              location=""
               position="Full Stack Developer"
               stack="NextJS, React, Redux, HTML5, CSS3, NodeJS, NestJS, JavaScript, Typescript, Flutter, Dart, MySQL, MongoDB, PostgreSQL, GraphQL, CI/CD, Docker etc."
             />
             <ExperienceCard
               company="Codeferns Technologies"
               description={[
-                "Led a team of 3 developers towards deploying several Frontend, Backend and Flutter mobile applications ahead of their schedule.",
-                "Implemented secure authentication and authorization solutions, ensuring the protection of sensitive customer data, and reducing the risk of security breaches by 40%.",
-                "Migrated a PHP application to NodeJS and increased its performance by 30%.",
-                "Developed an event-driven service to run and manage background scheduled jobs.",
-                "Created several re-usable components for React applications to accelerate development process by 30% and to lazy load web pages.",
-                "Developed a mortgage information application according to Australian market and increased client’s business by 40%.",
+                "Designed and developed a React interface for practicing IELTS and PTE tests, providing real-time mock exams to enhance English language skills.",
+                "Built a hybrid mobile app with Flutter for Android and iOS, connecting mentors and mentees, resulting in 20,000+ active users and over 100,000 chat messages exchanged monthly powered by Firebase. Helped thousands to graciously exchange and acquire knowledge.",
+                "Hired, trained, and lead Agile team of 3 software engineers.",
+                "Collaborated on a partially developed React, AWS and Node.js application focused on bus service tracking, successfully troubleshooted, and restored its tracking system while ensuring accurate timing for bus stops. Increased reliability by 60% through improved user experience delivery.",
                 "Worked closely with business team and non-technical client to collect new requirements.",
-                "Created a system to process more than 10,000 orders every day without any major hiccups.",
+                "Developed a mobile app, connecting farmers directly with buyers, helping thousands of farmers sell their crops at fair prices. Ensured traceable, authentic products meeting consumer and regulatory demands.",
               ]}
-              duration="Dec 2019 – Aug 2023"
-              location="Chandigarh, India"
-              position="Software Developer (Full Stack)"
+              duration="December 2019 – August 2023"
+              location=""
+              position="Software Developer"
               stack="NextJS, React, Redux, HTML5, CSS3, NodeJS, NestJS, JavaScript, Typescript, Flutter, Dart, MySQL, MongoDB, PostgreSQL, GraphQL, CI/CD, Docker etc."
               isLeft
             />
             <ExperienceCard
               company="Thirtyfour soft systems"
               description={[
-                "Worked as part of team to define and implement solutions for a Taxi hiring mobile application and helped to increase their customers by 30%.",
-                "Identified and resolved bottlenecks, rectified bugs and enhanced application’s performance.",
+                "Worked as part of a team to define and implement solutions for a taxi-hiring mobile application, resulting in 50% increase in the client’s customer base and doubling of their profits.",
+                "Enhanced the performance of the hostel room booking mobile application by 40% through the utilization of diagnostic tools such as profiler and debugger.",
               ]}
-              duration="Aug 2019 – Nov 2019"
-              location="Mohali, India"
+              duration="August 2019 – November 2019"
+              location=""
               position="Android Developer"
-              stack="Java, Kotlin, XML, Flutter, Firebase and Google cloud functions etc."
+              stack="Java, Kotlin, XML, Flutter, Firebase and serverless functions etc."
             />
             <ExperienceCard
               company="Freelance"
               description={[
-                "Developed scripts using JavaScript and Puppeteer to extract data from popular websites to increase business for a new startup.",
-                "Designed a service for a book writer to keep track of his books sales on Amazon.",
-                "Worked as part of a freelance team and developed a mobile application to search roommates and completed it in advance.",
+                "Crafted a script using JavaScript and Puppeteer, extracted feedback and rating data from a popular shopping website. Helped client to analyse and improve their product.",
+                "Contributed as a member of a team of 3 and helped to develop a small Android mobile application to calculate body mass index (BMI) for an Upwork client.",
               ]}
-              duration="Oct 2018 – June 2019"
-              location="Mohali, India"
+              duration="October 2018 – June 2019"
+              location=""
               position="Software Developer"
               stack="Java, JavaScript, Puppeteer."
               isLeft

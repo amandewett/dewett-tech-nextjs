@@ -36,15 +36,15 @@ const Education = () => {
             <ExperienceCard
               company="Chandigarh University"
               description="During my Post Graduation journey, I gained proficiency in several programming languages such as Java, C++, Python and Javascript. I have also acquire knowledge about Data structures, algorithms, OOPS, Database management systems. I completed real-world projects, honed my problem-solving skills, and engaged in research on emerging technologies. Collaborative teamwork and a thesis project were integral parts of my academic journey. Additionally, I built valuable connections with professors and peers. My MCA experience provided a strong foundation for a successful career in technology and software development."
-              duration="Jun 2017 - May 2019"
-              location="Chandigarh, India"
+              duration="June 2017 - May 2019"
+              location=""
               position="Masters Of Computer Applications"
             />
             <ExperienceCard
-              company="Lyallpur Khalsa College"
+              company="Guru Nanak Dev University"
               description="Embarking on the journey of my Bachelor of Computer Applications (BCA) was a thrilling. The initial year was marked by an enthusiastic embrace of core courses, delving into the foundations of programming languages and data structures. Overcoming challenges became a catalyst for personal growth, and I discovered newfound interests. Moving into the second year, the freedom to choose specializations allowed me to tailor my academic path. The third year introduced advanced topics such as database management and Android development, propelling my understanding to real-world applications. In the end I can say, my BCA journey culminated with a sense of achievement."
-              duration="Jun 2012 - May 2015"
-              location="Jalandhar, India"
+              duration="June 2012 - May 2015"
+              location=""
               position="Bachelor Of Computer Applications"
               isLeft
             />
