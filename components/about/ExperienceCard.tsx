@@ -77,9 +77,9 @@ const ExperienceCard = ({
                 <h5 className="text-appPrimaryColor font-bold text-lg lgMonitor:text-base laptop:text-sm tablet:text-lg phone:text-base phone:mt-1">
                   {`@${company}`}
                 </h5>
-                <span className="hidden xxlMonitor:inline xlMonitor:inline lgMonitor:inline">
+                {/* <span className="hidden xxlMonitor:inline xlMonitor:inline lgMonitor:inline">
                   &#44; &#00;
-                </span>
+                </span> */}
                 <h5 className="text-appColorWhiteSmoke laptop:mt-1 tablet:mt-1 phone:mt-1 font-medium text-opacity-60 text-base lgMonitor:text-sm laptop:text-xs tablet:text-base phone:text-xs">
                   {`${location}`}
                 </h5>
