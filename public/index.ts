@@ -56,3 +56,4 @@ export { default as ProjectsTwitter } from "@/public/projects/twitter.png";
 export { default as ProjectsVideoTube } from "@/public/projects/videotube.png";
 export { default as ProjectsAuth } from "@/public/projects/auth.png";
 export { default as ProjectsShoppingStore } from "@/public/projects/shopping_store.jpg";
+export { default as ProjectsChitChat } from "@/public/projects/chitChat.png";

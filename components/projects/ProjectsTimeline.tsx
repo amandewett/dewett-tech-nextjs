@@ -2,22 +2,9 @@
 import Reveal from "../shared/Reveal";
 import { VerticalTimeline } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import {
-  FaAirbnb,
-  FaTwitter,
-  FaYoutube,
-  FaShoppingBag,
-  FaServer,
-} from "react-icons/fa";
+import { FaAirbnb, FaTwitter, FaYoutube, FaShoppingBag, FaServer, FaRocketchat } from "react-icons/fa";
 import { MdOutlineSecurity } from "react-icons/md";
-import {
-  ProjectsAirBnb,
-  ProjectsTwitter,
-  ProjectsVideoTube,
-  ProjectsAuth,
-  ProjectsShoppingStore,
-  NestJSLogo,
-} from "@/public";
+import { ProjectsAirBnb, ProjectsTwitter, ProjectsVideoTube, ProjectsAuth, ProjectsShoppingStore, NestJSLogo, ProjectsChitChat } from "@/public";
 import ProjectsTimelineElement from "./ProjectsTimelineElement";
 
 const ProjectsTimeline = () => {
@@ -25,18 +12,19 @@ const ProjectsTimeline = () => {
     <>
       <div className="w-full flex flex-col items-center justify-center mt-10">
         <Reveal>
-          <h1 className="text-5xl tablet:text-3xl phone:text-2xl font-bold self-center underline decoration-appPrimaryColor decoration-4 underline-offset-2">
-            Sample Projects
-          </h1>
+          <h1 className="text-5xl tablet:text-3xl phone:text-2xl font-bold self-center underline decoration-appPrimaryColor decoration-4 underline-offset-2">Sample Projects</h1>
         </Reveal>
 
         <div className="w-full mt-10 transition-all duration-500">
           <Reveal>
-            <VerticalTimeline
-              lineColor="#0A66C2"
-              layout="2-columns"
-              className="z-10 transition-all duration-500"
-            >
+            <VerticalTimeline lineColor="#0A66C2" layout="2-columns" className="z-10 transition-all duration-500">
+              <ProjectsTimelineElement
+                icon={FaRocketchat}
+                aboutProject="This real-time chat application utilizes React for a dynamic user interface and Node.js + Prisma + MongoDB for a robust backend. It enables seamless communication with features like message history and user list. Built with scalability in mind, this project showcases my ability to handle complex web applications."
+                imageSrc={ProjectsChitChat.src}
+                projectName="Chat App"
+                url="https://chitchat.dewett.tech"
+              />
               <ProjectsTimelineElement
                 icon={FaAirbnb}
                 aboutProject="Its an airbnb clone made with NextJS, Typescript and
