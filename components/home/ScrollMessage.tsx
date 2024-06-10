@@ -1,19 +1,10 @@
 "use client";
-import {
-  AnimatePresence,
-  motion,
-  useScroll,
-  useTransform,
-} from "framer-motion";
+import { AnimatePresence, motion, useScroll, useTransform } from "framer-motion";
 import { CiDesktopMouse2 } from "react-icons/ci";
 
 const ScrollMessage = () => {
   const { scrollY } = useScroll();
-  const opacityValue = useTransform(
-    scrollY,
-    [0, 30, 60, 90, 100],
-    [1, 0.8, 0.5, 0.2, 0]
-  );
+  const opacityValue = useTransform(scrollY, [0, 30, 60, 90, 100], [1, 0.8, 0.5, 0.2, 0]);
   return (
     <AnimatePresence initial>
       <motion.div
@@ -26,7 +17,7 @@ const ScrollMessage = () => {
         <span className="pb-2 2xl:pb-0">
           <CiDesktopMouse2 size={32} className="text-appPrimaryColor" />
         </span>
-        <span className="">Scroll for wonderz</span>
+        <span className="">Scroll for wonders</span>
       </motion.div>
     </AnimatePresence>
   );
