@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  app:
+    container_name: dewett-tech-nextjs-dev
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    restart: unless-stopped
+    ports:
+      - 3001:3005
