@@ -1,12 +1,12 @@
-name: Production CI/CD
+name: Development CI/CD
 
 on:
   push:
-    branches: [master]
+    branches: [dev]
 
 jobs:
   Checkout:
-    runs-on: [self-hosted, production]    
+    runs-on: [self-hosted, development]    
     strategy:
       matrix:
         node-version: [20.x]
@@ -15,14 +15,14 @@ jobs:
         uses: actions/checkout@v4
 
   StopDockerContainer:
-    runs-on: [self-hosted, production]
+    runs-on: [self-hosted, development]
     needs: Checkout
     steps:
       - name: Stop previous container
-        run: docker-compose -f compose.prod.yaml down
+        run: docker-compose -f compose.dev.yaml down
         
   Build:
-    runs-on: [self-hosted, production]
+    runs-on: [self-hosted, development]
     needs: [Checkout, StopDockerContainer]
     strategy:
       matrix:
@@ -36,10 +36,10 @@ jobs:
       - name: Check if docker is installed
         run: docker --version
       - name: Build docker image
-        run: docker-compose -f compose.prod.yaml up -d --build
+        run: docker-compose -f compose.dev.yaml up -d --build
 
   Clean:
-    runs-on: [self-hosted, production]
+    runs-on: [self-hosted, development]
     needs: Build
     steps:
       - name: Remove pulled project files
