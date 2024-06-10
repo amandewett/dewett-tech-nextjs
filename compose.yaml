@@ -1,7 +1,7 @@
 version: "3.9"
 services:
   app:
-    container_name: dewett-tech-nextjs-dev
+    container_name: dewett-tech-nextjs-watch
     build:
       context: .
       dockerfile: Dockerfile
