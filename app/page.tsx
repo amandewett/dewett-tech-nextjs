@@ -15,7 +15,6 @@ const HomePage: React.FC = () => {
         <ScrollMessage />
         <Skills />
       </main>
-
       <Footer />
     </>
   );
