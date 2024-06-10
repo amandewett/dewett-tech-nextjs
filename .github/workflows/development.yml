@@ -43,4 +43,4 @@ jobs:
     needs: Build
     steps:
       - name: Remove pulled project files
-        run: rm -r /root/actions_runners/dewett-tech-nextjs-action-runner/_work/dewett-tech-nextjs/dewett-tech-nextjs/*
+        run: rm -r /root/actions_runners/dewett-tech-nextjs-dev-action-runner/_work/dewett-tech-nextjs/dewett-tech-nextjs/*
