@@ -26,7 +26,7 @@ const ScrollMessage = () => {
         <span className="pb-2 2xl:pb-0">
           <CiDesktopMouse2 size={32} className="text-appPrimaryColor" />
         </span>
-        <span className="">Scroll for wonders</span>
+        <span className="">Scroll for wonderz</span>
       </motion.div>
     </AnimatePresence>
   );
