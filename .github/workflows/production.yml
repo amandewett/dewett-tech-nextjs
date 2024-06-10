@@ -7,7 +7,6 @@ on:
 jobs:
   Checkout:
     runs-on: [self-hosted, production]    
-    needs: StopDockerContainer
     strategy:
       matrix:
         node-version: [20.x]
@@ -17,13 +16,14 @@ jobs:
 
   StopDockerContainer:
     runs-on: [self-hosted, production]
+    needs: Checkout
     steps:
       - name: Stop previous container
         run: docker-compose -f compose.prod.yaml down
         
   Build:
     runs-on: [self-hosted, production]
-    needs: [StopDockerContainer, Checkout]
+    needs: [Checkout, StopDockerContainer]
     strategy:
       matrix:
         node-version: [20.x]
