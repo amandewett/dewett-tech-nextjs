@@ -3,11 +3,7 @@ import { useScroll, motion, useTransform } from "framer-motion";
 
 const HeaderTitle = () => {
   const { scrollY } = useScroll();
-  const titleOpacity = useTransform(
-    scrollY,
-    [0, 30, 60, 90, 100],
-    [1, 0.7, 0.4, 0.1, 0]
-  );
+  const titleOpacity = useTransform(scrollY, [0, 30, 60, 90, 100], [1, 0.7, 0.4, 0.1, 0]);
 
   const blinkVariants = {
     visible: { opacity: 1 },
@@ -40,7 +36,7 @@ const HeaderTitle = () => {
         >
           &#123;
         </motion.span>
-        Full Stack Developer
+        Full Sta ck Developer (NEW)
         <motion.span
           className="text-appPrimaryColor"
           variants={blinkVariants}
