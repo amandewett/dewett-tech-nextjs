@@ -25,11 +25,11 @@
 
 body {
   color: var(--color-white-smoke);
-  background: #141E30;
+  background: #27272a;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #131418, #212229);
+  /* background: -webkit-linear-gradient(to right, #131418, #212229); */
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #131418, #212229);
+  /* background: linear-gradient(to right, #131418, #212229); */
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
