@@ -13,16 +13,25 @@ const ThemeSwitchButton = () => {
         {theme === Theme.dark ? (
           <motion.div
             key="moon"
-            initial={{ opacity: 0, rotate: 180 }}
-            animate={{ opacity: 1, rotate: 0 }}
-            exit={{ opacity: 0, rotate: 90 }}
-            transition={{ duration: 0.5 }}
+            initial={{ opacity: 0, y: -50 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 50 }}
+            transition={{ duration: 0.3 }}
             style={{ fontSize: "2rem" }}
+            className="text-appLightBgColor"
           >
-            <MdDarkMode color="white" />
+            <MdDarkMode />
           </motion.div>
         ) : (
-          <motion.div key="sun" initial={{ opacity: 0, rotate: 90 }} animate={{ opacity: 1, rotate: 0 }} exit={{ opacity: 0, rotate: 180 }} transition={{ duration: 0.5 }} style={{ fontSize: "2rem" }}>
+          <motion.div
+            key="sun"
+            initial={{ opacity: 0, y: -50 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 50 }}
+            transition={{ duration: 0.3 }}
+            style={{ fontSize: "2rem" }}
+            className="text-appDarkBgColor"
+          >
             <MdLightMode />
           </motion.div>
         )}

@@ -3,9 +3,6 @@ import { useScroll, motion, useTransform } from "framer-motion";
 import { useEffect } from "react";
 
 const HeaderTitle = () => {
-  const { scrollY } = useScroll();
-  const titleXMovement = useTransform(scrollY, [0, 30, 60, 90, 100], [40, 30, 20, 10, 0]);
-
   const blinkVariants = {
     visible: { opacity: 1 },
     hidden: { opacity: 0 },
@@ -14,14 +11,10 @@ const HeaderTitle = () => {
   return (
     <>
       <motion.h1
-        initial={{ y: -10, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        style={{
-          x: titleXMovement,
-          transition: "all 350ms",
-        }}
+        initial={{ x: -400, opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
         transition={{ type: "smooth", delay: 1, duration: 0.5 }}
-        className="ml-5 font-bold text-2xl tablet:text-lg phone:text-base"
+        className="ml-5 font-bold text-4xl tablet:text-lg phone:text-base"
       >
         <motion.span
           className="text-appPrimaryColor"

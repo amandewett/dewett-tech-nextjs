@@ -9,11 +9,11 @@
 }
 
 .themeTransition {
-  transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
 .gradientAnimation {
-  background: linear-gradient(to left, #ffbe0b, #fb5607, #8338ec, #ff006e, #3a86ff);
+  background: linear-gradient(to left, #2ECC71, #F1C40F, #3498DB, #9B59B6, #F39C12);
   background-size: 500% 100%;
   animation: move 10s infinite;
 }
