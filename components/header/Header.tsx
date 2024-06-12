@@ -24,7 +24,7 @@ const Header: FC = () => {
         className="w-full justify-center items-center gradientAnimation text-appDarkBgColor cursor-pointer"
       >
         <p className="p-1">
-          Need a beautiful web or mobile application? <b>Let's connect!</b>
+          Need a beautiful web or mobile application? <b>Let&apos;s connect!</b>
         </p>
         <LottieAnimation width="2rem" height="2rem" animationData={HireMeLottie} />
       </motion.a>
