@@ -1,9 +1,10 @@
 "use client";
 import { useScroll, motion, useTransform } from "framer-motion";
+import { useEffect } from "react";
 
 const HeaderTitle = () => {
   const { scrollY } = useScroll();
-  const titleOpacity = useTransform(scrollY, [0, 30, 60, 90, 100], [1, 0.7, 0.4, 0.1, 0]);
+  const titleXMovement = useTransform(scrollY, [0, 30, 60, 90, 100], [40, 30, 20, 10, 0]);
 
   const blinkVariants = {
     visible: { opacity: 1 },
@@ -16,8 +17,8 @@ const HeaderTitle = () => {
         initial={{ y: -10, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         style={{
-          opacity: titleOpacity,
-          transition: "opacity 350ms",
+          x: titleXMovement,
+          transition: "all 350ms",
         }}
         transition={{ type: "smooth", delay: 1, duration: 0.5 }}
         className="ml-5 font-bold text-2xl tablet:text-lg phone:text-base"
@@ -36,7 +37,7 @@ const HeaderTitle = () => {
         >
           &#123;
         </motion.span>
-        Full Sta ck Developer (NEW)
+        Aman Dewett
         <motion.span
           className="text-appPrimaryColor"
           variants={blinkVariants}

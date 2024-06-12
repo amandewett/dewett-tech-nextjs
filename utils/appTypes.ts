@@ -1,7 +1,7 @@
 import { ScrambleTexts } from "@twistezo/react-text-scramble";
 import { IconTree, IconType } from "react-icons";
 
-export type Props = {
+export type DefaultProps = {
   children?: React.ReactNode;
 };
 
@@ -24,7 +24,7 @@ export type ImageCarouselProps = {
   className?: string;
 };
 
-export type RevealProps = Props & {
+export type RevealProps = DefaultProps & {
   willSwipe?: boolean;
   willSwipeUp?: boolean;
   once?: boolean;
@@ -34,7 +34,7 @@ export type TimelineIconProps = {
   icon: IconType;
 };
 
-export type TimelineElementProps = Props & {
+export type TimelineElementProps = DefaultProps & {
   icon: IconType;
   className: string;
 };
@@ -47,7 +47,7 @@ export type TimelineImageContainerProps = {
   className?: string;
 };
 
-export type AppButtonProps = Props & {
+export type AppButtonProps = DefaultProps & {
   onClick?: () => void;
   revert?: boolean;
 };
@@ -90,4 +90,9 @@ export type ProjectsTimelineElementProps = {
   projectName: string;
   aboutProject: string;
   url: string;
+};
+
+export type ThemeContextType = {
+  theme: string;
+  toggleTheme: () => void;
 };

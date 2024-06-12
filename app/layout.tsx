@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import { Nunito } from "next/font/google";
 import "./globals.css";
+// import HomePage from "@/components/home/HomePage";
+import ThemeProvider from "@/store/themeContext/ThemeProvider";
 import { Header } from "@/components/header";
 import PageTransitionLayout from "@/layouts/PageTransitionLayout";
-import dynamic from "next/dynamic";
 
 const appFont = Nunito({
   subsets: ["latin"],
@@ -18,10 +19,12 @@ export const metadata: Metadata = {
 const RootLayout: React.FC<React.PropsWithChildren> = ({ children }) => {
   return (
     <html lang="en">
-      <body className={`${appFont.className}`}>
-        <Header />
-        <PageTransitionLayout>{children}</PageTransitionLayout>
-      </body>
+      <ThemeProvider>
+        <body className={`themeTransition ${appFont.className} bg-appLightBgColor dark:bg-appDarkBgColor text-appDarkBgColor dark:text-appLightBgColor`}>
+          <Header />
+          <PageTransitionLayout>{children}</PageTransitionLayout>
+        </body>
+      </ThemeProvider>
     </html>
   );
 };
