@@ -20,7 +20,7 @@ const Header: FC = () => {
         href="mailto:amandewett@gmail.com?subject=Requirement"
         initial={{ display: "none", height: "0px", opacity: 0 }}
         animate={{ display: "flex", height: "auto", opacity: 1 }}
-        transition={{ duration: 1, delay: 2 }}
+        transition={{ duration: 0.5, delay: 2 }}
         className="w-full justify-center items-center gradientAnimation text-appDarkBgColor cursor-pointer"
       >
         <p className="p-1">
@@ -31,14 +31,9 @@ const Header: FC = () => {
       <div className="sticky top-0 left-0 right-0 h-20 flex justify-between items-center z-[70]">
         <div className="flex items-center">
           <Link href="/">
-            <div className="rounded-[50%] w-10 h-10 overflow-hidden ml-5">
-              <ImageContainer src="/images/aman_header.png" alt="logo" priority />
-            </div>
+            <HeaderTitle />
           </Link>
-
-          <HeaderTitle />
         </div>
-
         <nav>
           {/* large screen nav bar */}
           <div id="lg-nav" className="block">

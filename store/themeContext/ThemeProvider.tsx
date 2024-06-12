@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 import { ThemeContext } from "./context";
 
 const ThemeProvider = ({ children }: DefaultProps) => {
-  const [theme, setTheme] = useState<Theme>(Theme.light);
+  const [theme, setTheme] = useState<Theme>(Theme.dark);
 
   useEffect(() => {
     //get theme value fro local storage
