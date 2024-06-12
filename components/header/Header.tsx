@@ -41,7 +41,7 @@ const Header: FC = () => {
 
         <nav>
           {/* large screen nav bar */}
-          <div id="lg-nav" className="hidden md:block">
+          <div id="lg-nav" className="block">
             <ul className="flex justify-end rounded-2xl overflow-hidden mr-5 pt-1 pb-1 pl-5 pr-5 backdrop-blur-lg items-center">
               <li className="ml-5">
                 <ThemeSwitchButton />
