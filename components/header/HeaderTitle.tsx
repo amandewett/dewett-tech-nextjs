@@ -14,7 +14,7 @@ const HeaderTitle = () => {
         initial={{ x: -400, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ type: "smooth", delay: 1, duration: 0.5 }}
-        className="ml-5 font-bold text-4xl tablet:text-lg phone:text-base"
+        className="ml-5 font-bold text-4xl tablet:text-2xl phone:text-2xl"
       >
         <motion.span
           className="text-appPrimaryColor"
