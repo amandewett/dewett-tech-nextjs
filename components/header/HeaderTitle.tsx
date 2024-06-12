@@ -13,7 +13,7 @@ const HeaderTitle = () => {
       <motion.h1
         initial={{ x: -400, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
-        transition={{ type: "smooth", delay: 1, duration: 0.5 }}
+        transition={{ type: "tween", delay: 1, duration: 1 }}
         className="ml-5 font-bold text-4xl tablet:text-2xl phone:text-2xl"
       >
         <motion.span
