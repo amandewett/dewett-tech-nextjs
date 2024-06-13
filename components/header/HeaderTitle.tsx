@@ -1,6 +1,5 @@
 "use client";
 import { useScroll, motion, useTransform } from "framer-motion";
-import { useEffect } from "react";
 
 const HeaderTitle = () => {
   const blinkVariants = {
