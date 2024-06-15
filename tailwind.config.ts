@@ -25,6 +25,9 @@ const config: Config = {
       fontFamily: {
         appFont: [`var(--app-font)`],
       },
+      gridTemplateColumns: {
+        "auto-fit": "repeat(auto-fit, minmax(500px, 1fr))",
+      },
     },
     screens: {
       phone: { min: "350px", max: "639px" },

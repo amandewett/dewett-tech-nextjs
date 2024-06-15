@@ -14,8 +14,8 @@ const SocialMediaComponent = () => {
       opacity: 1,
       y: 0,
       transition: {
-        delayChildren: 3,
-        staggerChildren: 0.5,
+        delayChildren: 2,
+        staggerChildren: 0.3,
       },
     },
   };
@@ -26,8 +26,8 @@ const SocialMediaComponent = () => {
       opacity: 1,
       y: 0,
       transition: {
-        type: "tween",
-        duration: 0.6,
+        type: "spring",
+        duration: 1.4,
       },
     },
   };
@@ -35,18 +35,18 @@ const SocialMediaComponent = () => {
   return (
     <motion.div className="inline-block right-0 absolute mr-[3.5rem] z-[100]" ref={ref}>
       {isInView && (
-        <motion.ul variants={container} initial="hidden" animate="show" transition={{}} className="flex flex-col justify-center items-center space-y-5 text-3xl">
+        <motion.ul variants={container} initial="hidden" animate="show" className="flex flex-col justify-center items-center space-y-5 text-3xl">
           <motion.li variants={item} className="w-[0.3rem] h-[6rem] bg-appDarkBgColor dark:bg-appLightBgColor"></motion.li>
-          <motion.a href="https://github.com/amandewett" target="_blank" variants={item} whileHover={{ scale: 1.2, type: "spring" }}>
+          <motion.a href="https://github.com/amandewett" target="_blank" variants={item} whileHover={{ scale: 0.9, type: "spring" }}>
             <FaGithub />
           </motion.a>
-          <motion.a href="https://www.linkedin.com/in/amandewett" target="_blank" variants={item} whileHover={{ scale: 1.2, type: "spring" }}>
+          <motion.a href="https://www.linkedin.com/in/amandewett" target="_blank" variants={item} whileHover={{ scale: 0.9, type: "spring" }}>
             <FaLinkedin />
           </motion.a>
-          <motion.a href="https://www.facebook.com/dewettaman" target="_blank" variants={item} whileHover={{ scale: 1.2, type: "spring" }}>
+          <motion.a href="https://www.facebook.com/dewettaman" target="_blank" variants={item} whileHover={{ scale: 0.9, type: "spring" }}>
             <FaFacebook />
           </motion.a>
-          <motion.a href="https://twitter.com/amandewett" target="_blank" variants={item} whileHover={{ scale: 1.2, type: "spring" }}>
+          <motion.a href="https://twitter.com/amandewett" target="_blank" variants={item} whileHover={{ scale: 0.9, type: "spring" }}>
             <FaXTwitter />
           </motion.a>
         </motion.ul>
