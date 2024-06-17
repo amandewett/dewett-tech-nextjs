@@ -17,7 +17,7 @@ const config: Config = {
         appColorWhiteSmoke: "#F5F5F5",
         appColorDimBlack: "#252525",
         appRedColor: "#D80621",
-        appPrimaryColor: "#0A66C2",
+        appPrimaryColor: "#2EC4B6",
         //dark
         appDarkBgColor: "#242124",
         appDarkTextColor: "#F5F5F5",

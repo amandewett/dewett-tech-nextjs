@@ -33,12 +33,12 @@ const Header = () => {
           </Link>
         </div>
         <div id="lg-nav" className="block">
-          <ul className="flex justify-end rounded-2xl overflow-hidden mr-5 pt-1 pb-1 pl-5 pr-5 backdrop-blur-lg items-center">
+          <ul className="flex justify-end rounded-2xl overflow-hidden mr-5 pt-1 pb-1 pl-5 pr-5 backdrop-blur-lg items-center z-0">
             <li className="mx-5">
-              <button className="flex justify-start items-center p-2 min-w-[8rem] rounded-md gradientButton text-appLightTextColor group">
+              <motion.button initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="flex justify-start items-center p-2 min-w-[8rem] rounded-md gradientButton text-appLightTextColor group">
                 <h3 className="transitionBtn">Resume</h3>
                 <FaExternalLinkAlt size={12} className="mx-1 transitionBtn group-hover:ml-[2rem]" />
-              </button>
+              </motion.button>
             </li>
             <li className="ml-5">
               <ThemeSwitchButton />

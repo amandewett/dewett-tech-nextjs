@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --appPrimaryColor: #2EC4B6;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -34,7 +38,7 @@
 
 /* gradient button on hover */
 .gradientButton {
-  background-image: linear-gradient(to right, #D0F4DE 10%, #E4C1F9 50%, #D0F4DE 50%);
+  background-image: linear-gradient(to right, var(--appPrimaryColor) 10%, #FFBF69 50%, var(--appPrimaryColor) 50%);
   background-size: 200% 100%;
   background-position: right bottom;
   transition: all 1s ease;
