@@ -22,18 +22,6 @@ const HomeHeaderLeft = () => {
           software.
         </p>
       </div>
-      {/* buttons */}
-      <div className="self-end mt-[3rem]">
-        <a href="/resume/Resume.pdf" target="_blank" download>
-          <Reveal>
-            <AppButton revert>
-              <div className="flex items-center">
-                Resume <FaExternalLinkAlt className="ml-1" size={12} />
-              </div>
-            </AppButton>
-          </Reveal>
-        </a>
-      </div>
     </div>
   );
 };

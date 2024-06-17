@@ -31,3 +31,21 @@
     background-position: 0% 50%;
   }
 }
+
+/* gradient button on hover */
+.gradientButton {
+  background-image: linear-gradient(to right, #D0F4DE 10%, #E4C1F9 50%, #D0F4DE 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 1s ease;
+}
+
+.gradientButton:hover {
+  background-position: left bottom;
+}
+
+.transitionBtn {
+  transition: all 1s ease;
+}
+
+/* gradient button on hover */
