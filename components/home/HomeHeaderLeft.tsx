@@ -6,9 +6,8 @@ import AppButton from "../shared/AppButton";
 const HomeHeaderLeft = () => {
   return (
     <div className="flex w-[90%] flex-col justify-center px-10 ml-auto mr-auto">
-      <h3 className="uppercase xxlMonitor:text-3xl">hi there</h3>
-      <h1 className="text-5xl mt-2 xxlMonitor:text-6xl">I&#39;m</h1>
-
+      <h3 className="uppercase xxlMonitor:text-2xl">hi there</h3>
+      <h1 className="xxlMonitor:text-6xl font-bold mt-2 text-appLightTextColor dark:text-appDarkTextColor">I&#39;m a</h1>
       <h1 className="xxlMonitor:text-6xl mt-3 text-appPrimaryColor font-bold overflow-hidden">
         <span>&#60;&#47;</span>
         <TextScrambler arrString={["Frontend", "Backend", "Mobile"]} className="inline-block text-appLightTextColor dark:text-appDarkTextColor" />

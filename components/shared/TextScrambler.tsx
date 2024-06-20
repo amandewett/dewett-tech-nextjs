@@ -1,7 +1,6 @@
 "use client";
 import { HomeHeaderProps } from "@/utils/appTypes";
 import dynamic from "next/dynamic";
-import { useEffect, useState } from "react";
 const Scramble = dynamic(() => import("@twistezo/react-text-scramble"), {
   ssr: false,
 });
