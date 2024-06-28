@@ -42,20 +42,20 @@ const SocialMediaComponent = () => {
             href="mailto:amandewett@gmail.com?subject=Requirement"
             target="_blank"
             variants={item}
-            className="bg-[#A2D2FFCC] hover:bg-[#A2D2FF] transition-colors duration-500 rounded-[50%] p-2"
+            className="bg-[#A2D2FFCC] hover:bg-[#A2D2FF] transition-colors duration-300 rounded-[50%] p-2"
           >
             <MdEmail size={"1.5rem"} />
           </motion.a>
-          <motion.a href="https://github.com/amandewett" target="_blank" variants={item} className="bg-[#BDB2FFCC] hover:bg-[#BDB2FF] transition-colors duration-500 rounded-[50%] p-2">
+          <motion.a href="https://github.com/amandewett" target="_blank" variants={item} className="bg-[#BDB2FFCC] hover:bg-[#BDB2FF] transition-colors duration-300 rounded-[50%] p-2">
             <FaGithub size={"1.5rem"} />
           </motion.a>
-          <motion.a href="https://www.linkedin.com/in/amandewett" target="_blank" variants={item} className="bg-[#9BF6FFCC] hover:bg-[#9BF6FF] transition-colors duration-500 rounded-[50%] p-2">
+          <motion.a href="https://www.linkedin.com/in/amandewett" target="_blank" variants={item} className="bg-[#9BF6FFCC] hover:bg-[#9BF6FF] transition-colors duration-300 rounded-[50%] p-2">
             <FaLinkedin size={"1.5rem"} />
           </motion.a>
-          <motion.a href="https://twitter.com/amandewett" target="_blank" variants={item} className="bg-[#CAFFBFCC] hover:bg-[#CAFFBF] transition-colors duration-500 rounded-[50%] p-2">
+          <motion.a href="https://twitter.com/amandewett" target="_blank" variants={item} className="bg-[#CAFFBFCC] hover:bg-[#CAFFBF] transition-colors duration-300 rounded-[50%] p-2">
             <FaXTwitter size={"1.5rem"} />
           </motion.a>
-          <motion.a href="https://www.facebook.com/dewettaman" target="_blank" variants={item} className="bg-[#FFC6FFCC] hover:bg-[#FFC6FF] transition-colors duration-500 rounded-[50%] p-2">
+          <motion.a href="https://www.facebook.com/dewettaman" target="_blank" variants={item} className="bg-[#FFC6FFCC] hover:bg-[#FFC6FF] transition-colors duration-300 rounded-[50%] p-2">
             <FaFacebook size={"1.5rem"} />
           </motion.a>
         </motion.ul>
