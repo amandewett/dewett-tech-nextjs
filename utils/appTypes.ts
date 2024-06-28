@@ -1,4 +1,3 @@
-import { ScrambleTexts } from "@twistezo/react-text-scramble";
 import { IconTree, IconType } from "react-icons";
 
 export type DefaultProps = {
@@ -6,7 +5,7 @@ export type DefaultProps = {
 };
 
 export type HomeHeaderProps = {
-  arrString: ScrambleTexts;
+  arrString?: string[];
   className: string;
 };
 
