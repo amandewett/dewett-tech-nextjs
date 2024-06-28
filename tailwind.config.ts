@@ -11,7 +11,7 @@ const config: Config = {
         "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       colors: {
-        appLightBgColor: "#F0FFF0",
+        appLightBgColor: "#F0F8FF",
         appLightTextColor: "#242124",
 
         appColorWhiteSmoke: "#F5F5F5",
@@ -21,7 +21,7 @@ const config: Config = {
         appSecondaryColor: "#FB8F67",
         //dark
         appDarkBgColor: "#242124",
-        appDarkTextColor: "#F5F5F5",
+        appDarkTextColor: "#F0F8FF",
       },
       fontFamily: {
         appFont: [`var(--app-font)`],

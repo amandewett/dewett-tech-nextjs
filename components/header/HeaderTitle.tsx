@@ -27,9 +27,9 @@ const HeaderTitle = () => {
             repeat: Infinity,
           }}
         >
-          &#123;
+          &#60;
         </motion.span>
-        Aman Dewett
+
         <motion.span
           className="text-appPrimaryColor"
           variants={blinkVariants}
@@ -42,7 +42,7 @@ const HeaderTitle = () => {
             repeat: Infinity,
           }}
         >
-          &#125;
+          &#47;&#62;
         </motion.span>
       </motion.h1>
     </>

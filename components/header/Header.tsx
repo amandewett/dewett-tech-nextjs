@@ -36,7 +36,7 @@ const Header = () => {
           <ul className="flex justify-end rounded-2xl overflow-hidden mr-5 pt-1 pb-1 pl-5 pr-5 backdrop-blur-lg items-center z-0">
             <li className="mx-5">
               <motion.button initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="flex justify-start items-center p-2 min-w-[8rem] rounded-md gradientButton text-appLightTextColor group">
-                <h3 className="transitionBtn">Resume</h3>
+                <h3 className="transitionBtn font-semibold">Resume</h3>
                 <FaExternalLinkAlt size={12} className="mx-1 transitionBtn group-hover:ml-[2rem]" />
               </motion.button>
             </li>

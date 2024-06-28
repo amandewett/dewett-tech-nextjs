@@ -18,7 +18,7 @@
 }
 
 .gradientAnimation {
-  background: linear-gradient(to left, #2ECC71, #F1C40F, #3498DB, #9B59B6, #F39C12);
+  background: linear-gradient(to left, var(--appPrimaryColor), var(--appSecondaryColor), #3498DB, #9B59B6, #F39C12);
   background-size: 500% 100%;
   animation: move 10s infinite;
 }
@@ -39,7 +39,7 @@
 
 /* gradient button on hover */
 .gradientButton {
-  background-image: linear-gradient(to right, var(--appPrimaryColor) 10%, var(--appSecondaryColor) 50%, var(--appPrimaryColor) 50%);
+  background-image: linear-gradient(to right, var(--appSecondaryColor) 50%, var(--appPrimaryColor) 50%);
   background-size: 200% 100%;
   background-position: right bottom;
   transition: all 1s ease;
