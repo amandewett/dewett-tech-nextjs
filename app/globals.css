@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --appPrimaryColor: #2EC4B6;
+  --appPrimaryColor: #00C49A;
+  --appSecondaryColor: #FB8F67;
 }
 
 * {
@@ -38,7 +39,7 @@
 
 /* gradient button on hover */
 .gradientButton {
-  background-image: linear-gradient(to right, var(--appPrimaryColor) 10%, #FFBF69 50%, var(--appPrimaryColor) 50%);
+  background-image: linear-gradient(to right, var(--appPrimaryColor) 10%, var(--appSecondaryColor) 50%, var(--appPrimaryColor) 50%);
   background-size: 200% 100%;
   background-position: right bottom;
   transition: all 1s ease;

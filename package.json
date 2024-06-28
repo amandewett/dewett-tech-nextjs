@@ -13,7 +13,6 @@
     "docker:stop": "docker-compose -f compose.prod.yaml down"
   },
   "dependencies": {
-    "@twistezo/react-text-scramble": "^1.0.6",
     "framer-motion": "^11.0.3",
     "next": "14.1.0",
     "react": "^18",
@@ -22,6 +21,7 @@
     "react-icons": "^5.0.1",
     "react-lottie": "^1.2.4",
     "react-parallax-tilt": "^1.7.228",
+    "react-type-animation": "^3.2.0",
     "react-vertical-timeline-component": "^3.6.0",
     "sharp": "^0.33.2"
   },
