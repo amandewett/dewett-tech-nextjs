@@ -13,7 +13,7 @@ const HeaderTitle = () => {
         initial={{ x: -400, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ type: "tween", delay: 1, duration: 1 }}
-        className="ml-5 font-bold text-4xl tablet:text-2xl phone:text-2xl"
+        className="ml-5 font-bold text-5xl tablet:text-2xl phone:text-2xl text-appPrimaryColor"
       >
         <motion.span
           className="text-appPrimaryColor"
@@ -26,10 +26,8 @@ const HeaderTitle = () => {
             repeatType: "mirror",
             repeat: Infinity,
           }}
-        >
-          &#60;
-        </motion.span>
-
+        ></motion.span>
+        Aman Dewett
         <motion.span
           className="text-appPrimaryColor"
           variants={blinkVariants}
@@ -41,9 +39,7 @@ const HeaderTitle = () => {
             repeatType: "mirror",
             repeat: Infinity,
           }}
-        >
-          &#47;&#62;
-        </motion.span>
+        ></motion.span>
       </motion.h1>
     </>
   );
