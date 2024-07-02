@@ -1,19 +1,9 @@
 "use client";
-import { Props, RevealProps } from "@/utils/appTypes";
-import {
-  AnimatePresence,
-  motion,
-  useAnimation,
-  useInView,
-} from "framer-motion";
+import { RevealProps } from "@/utils/appTypes";
+import { AnimatePresence, motion, useAnimation, useInView } from "framer-motion";
 import { useEffect, useRef } from "react";
 
-const Reveal = ({
-  children,
-  willSwipe,
-  willSwipeUp = true,
-  once = true,
-}: RevealProps) => {
+const Reveal = ({ children, willSwipe, willSwipeUp = true, once = true }: RevealProps) => {
   const viewRef = useRef<any>();
   const isInView = useInView(viewRef, { once: once });
   const animationControl = useAnimation();

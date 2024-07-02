@@ -6,6 +6,7 @@ import { FaAirbnb, FaTwitter, FaYoutube, FaShoppingBag, FaServer, FaRocketchat }
 import { MdOutlineSecurity } from "react-icons/md";
 import { ProjectsAirBnb, ProjectsTwitter, ProjectsVideoTube, ProjectsAuth, ProjectsShoppingStore, NestJSLogo, ProjectsChitChat } from "@/public";
 import ProjectsTimelineElement from "./ProjectsTimelineElement";
+import { useTheme } from "@/store/themeContext/context";
 
 const ProjectsTimeline = () => {
   return (

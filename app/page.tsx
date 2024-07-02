@@ -4,18 +4,28 @@ import ScrollMessage from "@/components/home/ScrollMessage";
 import Skills from "@/components/home/Skills";
 import Reveal from "@/components/shared/Reveal";
 import Footer from "@/components/shared/Footer";
+import SocialMediaComponent from "@/components/home/SocialMediaComponent";
+import HomeHeaderLeft from "@/components/home/HomeHeaderLeft";
+import HomeHeaderRight from "@/components/home/HomeHeaderRight";
 
 const HomePage: React.FC = () => {
   return (
     <>
-      <main>
+      <main className="relative">
+        <SocialMediaComponent />
         <Reveal>
-          <HomeHeader />
+          <div className="absolute w-full grid gap-4 grid-cols-auto-fit top-24">
+            {/* left side */}
+            <HomeHeaderLeft />
+            {/* right side */}
+            <HomeHeaderRight />
+          </div>
+          {/* <HomeHeader /> */}
         </Reveal>
-        <ScrollMessage />
-        <Skills />
+        {/* <ScrollMessage />
+        <Skills /> */}
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };

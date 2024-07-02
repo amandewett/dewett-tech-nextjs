@@ -3,9 +3,7 @@ import { AnimatePresence, useIsPresent } from "framer-motion";
 import { usePathname } from "next/navigation";
 import PageTransition from "@/components/PageTransition";
 
-const PageTransitionLayout: React.FC<{ children: React.ReactNode }> = ({
-  children,
-}) => {
+const PageTransitionLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const pathName = usePathname();
   const isPresent = useIsPresent();
   return (

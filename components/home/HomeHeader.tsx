@@ -24,20 +24,20 @@ const HomeHeader = () => {
     <>
       <div
         key="homeHeader"
-        className="w-full h-[80vh] xxlMonitor:h-[85vh] lgMonitor:h-[85vh] laptop:h-[85vh] flex flex-row pt-20 xxlMonitor:pt-40 tablet:flex-col phone:flex-col tablet:items-center phone:items-center"
+        className="w-full h-[80vh] xxlMonitor:h-[85vh] lgMonitor:h-[85vh] laptop:h-[85vh] flex flex-row pt-20 xxlMonitor:pt-40 tablet:flex-col phone:flex-col tablet:items-center phone:items-center bg-rose-400"
       >
         {/* left side */}
         <div className="flex w-[40%] flex-col pl-20 tablet:w-[100%] phone:w-[100%] tablet:p-10 laptop:p-12 phone:p-5">
-          <h3 className="uppercase text-slate-300/90 text-xl xxlMonitor:text-2xl tablet:text-xl phone:text-lg">hi there</h3>
-          <h1 className="text-white text-4xl xxlMonitor:text-6xl laptop:text-2xl tablet:text-xl phone:text-lg mt-2">
-            I&#39;m <span className="font-extrabold phone:font-bold">Aman Dewett</span>
-          </h1>
+
+          <h3 className="uppercase text-xl xxlMonitor:text-2xl tablet:text-xl phone:text-lg">hi there</h3>
+          <h1 className="text-4xl xxlMonitor:text-6xl laptop:text-2xl tablet:text-xl phone:text-lg mt-2">I&#39;m</h1>
 
           <h1 className="text-3xl xxlMonitor:text-5xl laptop:text-2xl tablet:text-2xl phone:text-xl mt-3 h-14 xxlMonitor:h-20 text-appPrimaryColor font-bold overflow-hidden">
             <span>&#60;&#47;</span>
-            <TextScrambler arrString={["Frontend", "Backend", "Mobile"]} className="inline-block text-white" />
+            <TextScrambler arrString={["Frontend", "Backend", "Mobile"]} className="inline-block text-appLightTextColor dark:text-appDarkTextColor" />
+
             <span>
-              <span className="text-white">&#09;Developer</span>&#62;
+              <span className="text-appLightTextColor dark:text-appDarkTextColor">&#09;Developer</span>&#62;
             </span>
           </h1>
           <div className="mt-3 text-base text-pretty xxlMonitor:text-xl tablet:text-lg phone:text-base">
@@ -56,11 +56,6 @@ const HomeHeader = () => {
                     Resume <FaExternalLinkAlt className="ml-1" size={12} />
                   </div>
                 </AppButton>
-              </Reveal>
-            </a>
-            <a href="mailto:amandewett@gmail.com?subject=Requirement" className="ml-5">
-              <Reveal>
-                <AppButton>Reach Out</AppButton>
               </Reveal>
             </a>
           </div>
