@@ -28,12 +28,14 @@ const HomeHeader = () => {
       >
         {/* left side */}
         <div className="flex w-[40%] flex-col pl-20 tablet:w-[100%] phone:w-[100%] tablet:p-10 laptop:p-12 phone:p-5">
+
           <h3 className="uppercase text-xl xxlMonitor:text-2xl tablet:text-xl phone:text-lg">hi there</h3>
           <h1 className="text-4xl xxlMonitor:text-6xl laptop:text-2xl tablet:text-xl phone:text-lg mt-2">I&#39;m</h1>
 
           <h1 className="text-3xl xxlMonitor:text-5xl laptop:text-2xl tablet:text-2xl phone:text-xl mt-3 h-14 xxlMonitor:h-20 text-appPrimaryColor font-bold overflow-hidden">
             <span>&#60;&#47;</span>
             <TextScrambler arrString={["Frontend", "Backend", "Mobile"]} className="inline-block text-appLightTextColor dark:text-appDarkTextColor" />
+
             <span>
               <span className="text-appLightTextColor dark:text-appDarkTextColor">&#09;Developer</span>&#62;
             </span>
