@@ -11,7 +11,7 @@ const Bio = () => {
           <p className="font-semibold text-lg phone:text-xs tablet:text-lg lgMonitor:text-base laptop:text-sm inline-block text-pretty">
             <span className="text-appPrimaryColor font-bold text-4xl lgMonitor:text-3xl laptop:text-2xl phone:text-xl inline-block">Bonjour</span>, Driven by a curiosity for technology and a passion
             for building software that makes a difference, I am eager to bring my talents as a Full Stack Developer to your team and collaborate with creative thinker professionals on exciting
-            projects. Myself Aman Dewett, an experienced Full Stack Developer with over 5 years of expertise in{" "}
+            projects. Myself <b>Aman Dewett</b>, an experienced Full Stack Developer with over 5 years of expertise in{" "}
             <span className="text-appPrimaryColor font-bold">NextJS, React, React Native, NodeJS, NestJS and Flutter</span> development.
             <br />
             <br />
