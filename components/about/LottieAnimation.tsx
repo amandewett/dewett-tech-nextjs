@@ -1,6 +1,5 @@
 "use client";
 import Lottie, { Options } from "react-lottie";
-import * as animationData from "@/public/animation/meditation.json";
 import Reveal from "../shared/Reveal";
 import { LottieAnimationProps } from "@/utils/appTypes";
 
