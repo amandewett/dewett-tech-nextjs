@@ -19,7 +19,7 @@
 
 .gradientAnimation {
   background: linear-gradient(to left, var(--appPrimaryColor), var(--appSecondaryColor), #3498DB, #9B59B6, #F39C12);
-  background-size: 500% 100%;
+  background-size: 300%;
   animation: move 10s infinite;
 }
 

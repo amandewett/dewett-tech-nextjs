@@ -83,6 +83,14 @@ export type LottieAnimationProps = {
   className?: string;
 };
 
+export type AppLottieContainerProps = {
+  animationData: any;
+  width?: string;
+  height?: string;
+  className?: string;
+  loop?: boolean;
+};
+
 export type ProjectsTimelineElementProps = {
   icon: IconType;
   imageSrc: string;

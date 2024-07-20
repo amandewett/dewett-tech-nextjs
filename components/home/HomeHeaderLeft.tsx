@@ -1,5 +1,5 @@
 import TextScrambler from "@/components/shared/TextScrambler";
-import { FaExternalLinkAlt } from "react-icons/fa";
+import { FaCanadianMapleLeaf, FaExternalLinkAlt } from "react-icons/fa";
 import Reveal from "../shared/Reveal";
 import AppButton from "../shared/AppButton";
 
@@ -15,12 +15,16 @@ const HomeHeaderLeft = () => {
           <span className="text-appLightTextColor dark:text-appDarkTextColor">&#09;Developer</span>&#62;
         </span>
       </h1>
-      <div className="mt-[3rem] xxlMonitor:text-2xl">
+      <section className="mt-[3rem] xxlMonitor:text-2xl">
         <p>
-          A seasoned Full Stack Developer based in <span className="text-appRedColor font-extrabold uppercase">Canada</span>. Who enjoy helping people to make the world a better place through quality
-          software.
+          An experienced Full Stack Developer based in
+          <span className=" font-extrabold uppercase inline">
+            <p className="inline">&nbsp;Canada&nbsp;</p>
+            <FaCanadianMapleLeaf className="inline text-appRedColor mb-[0.6rem]" />
+          </span>
+          . Who enjoy helping people to make the world a better place through quality software.
         </p>
-      </div>
+      </section>
     </div>
   );
 };

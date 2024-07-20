@@ -7,6 +7,7 @@ import Link from "next/link";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import LottieAnimation from "../about/LottieAnimation";
 import Reveal from "../shared/Reveal";
+import AppLottieContainer from "../shared/AppLottieContainer";
 
 const HomeHeader = () => {
   const arrCarouselImages = [
@@ -28,7 +29,6 @@ const HomeHeader = () => {
       >
         {/* left side */}
         <div className="flex w-[40%] flex-col pl-20 tablet:w-[100%] phone:w-[100%] tablet:p-10 laptop:p-12 phone:p-5">
-
           <h3 className="uppercase text-xl xxlMonitor:text-2xl tablet:text-xl phone:text-lg">hi there</h3>
           <h1 className="text-4xl xxlMonitor:text-6xl laptop:text-2xl tablet:text-xl phone:text-lg mt-2">I&#39;m</h1>
 
@@ -77,7 +77,7 @@ const HomeHeader = () => {
               );
             })}
           /> */}
-          <LottieAnimation
+          <AppLottieContainer
             animationData={CodingLottieOne}
             className="ml-auto mr-auto p-0 z-10 xxlMonitor:w-[550px] xxlMonitor:h-[550px] m-0 xlMonitor:w-[450px] xlMonitor:h-[450px] lgMonitor:w-[400px] lgMonitor:h-[400px] laptop:w-[400px] laptop:h-[400px] tablet:w-[350px] tablet:h-[350px] phone:w-[300px] phone:h-[300px]"
           />

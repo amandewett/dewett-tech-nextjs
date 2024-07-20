@@ -51,6 +51,7 @@ export { default as CodingLottieTwo } from "@/public/animation/coding_two.json";
 export { default as ProjectDevelopmentLottie } from "@/public/animation/project_development.json";
 export { default as HireMeLottie } from "@/public/animation/hire_me_logo.json";
 export { default as HireMeFooterLottie } from "@/public/animation/hire_me_footer_logo.json";
+export { default as ArrowLottie } from "@/public/animation/arrow_animation.json";
 
 /* projects */
 export { default as ProjectsAirBnb } from "@/public/projects/airbnb.png";

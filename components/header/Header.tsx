@@ -17,7 +17,7 @@ const Header = () => {
         href="mailto:amandewett@gmail.com?subject=Requirement"
         initial={{ display: "none", height: "0px", opacity: 0 }}
         animate={{ display: "flex", height: "auto", opacity: 1 }}
-        transition={{ duration: 0.5, delay: 4 }}
+        transition={{ duration: 0.5, delay: 6 }}
         className="w-full justify-center items-center gradientAnimation text-appDarkBgColor cursor-pointer"
       >
         <p className="p-1">
@@ -35,10 +35,17 @@ const Header = () => {
         <div id="lg-nav" className="block">
           <ul className="flex justify-end rounded-2xl overflow-hidden mr-5 pt-1 pb-1 pl-5 pr-5 backdrop-blur-lg items-center z-0">
             <li className="mx-5">
-              <motion.button initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="flex justify-start items-center p-2 min-w-[8rem] rounded-md gradientButton text-appLightTextColor group">
+              <motion.a
+                href="/resume/Resume.pdf"
+                target="_blank"
+                download
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                className="flex justify-start items-center p-2 min-w-[8rem] rounded-md gradientButton text-appLightTextColor group"
+              >
                 <h3 className="transitionBtn font-semibold">Resume</h3>
                 <FaExternalLinkAlt size={12} className="mx-1 transitionBtn group-hover:ml-[2rem]" />
-              </motion.button>
+              </motion.a>
             </li>
             <li className="ml-5">
               <ThemeSwitchButton />

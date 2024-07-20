@@ -11,19 +11,20 @@ import HomeHeaderRight from "@/components/home/HomeHeaderRight";
 const HomePage: React.FC = () => {
   return (
     <>
-      <main className="relative">
-        <SocialMediaComponent />
-        <Reveal>
-          <div className="absolute w-full grid gap-4 grid-cols-auto-fit top-24">
-            {/* left side */}
-            <HomeHeaderLeft />
-            {/* right side */}
-            <HomeHeaderRight />
-          </div>
-          {/* <HomeHeader /> */}
-        </Reveal>
-        {/* <ScrollMessage />
-        <Skills /> */}
+      <main>
+        <section className="relative">
+          <SocialMediaComponent />
+          <Reveal>
+            <div className="absolute w-full grid gap-4 grid-cols-auto-fit top-24">
+              {/* left side */}
+              <HomeHeaderLeft />
+              {/* right side */}
+              <HomeHeaderRight />
+            </div>
+          </Reveal>
+        </section>
+        <ScrollMessage />
+        {/* <Skills /> */}
       </main>
       {/* <Footer /> */}
     </>
