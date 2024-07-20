@@ -14,9 +14,9 @@ const ScrollMessage = () => {
         initial={{ y: -10, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         style={{ opacity: opacityValue }}
-        transition={{ delay: 0, type: "tween" }}
+        transition={{ delay: 5, type: "tween" }}
       >
-        <AppLottieContainer animationData={ArrowLottie} className="ml-auto mr-auto p-0 z-10 rotate-90 h-[5rem]" />
+        <AppLottieContainer animationData={ArrowLottie} className="ml-auto mr-auto p-0 z-10 rotate-90 h-[5rem]" loop={false} />
       </motion.section>
     </AnimatePresence>
   );

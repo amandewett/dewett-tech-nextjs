@@ -19,7 +19,7 @@ const HomeHeaderLeft = () => {
         <p>
           An experienced Full Stack Developer based in
           <span className=" font-extrabold uppercase inline">
-            <p className="inline">&nbsp;Canada&nbsp;</p>
+            &nbsp;Canada&nbsp;
             <FaCanadianMapleLeaf className="inline text-appRedColor mb-[0.6rem]" />
           </span>
           . Who enjoy helping people to make the world a better place through quality software.

@@ -88,7 +88,7 @@ export type AppLottieContainerProps = {
   width?: string;
   height?: string;
   className?: string;
-  loop?: boolean;
+  loop?: number | boolean;
 };
 
 export type ProjectsTimelineElementProps = {

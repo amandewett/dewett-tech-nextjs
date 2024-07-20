@@ -34,10 +34,10 @@ const SocialMediaComponent = () => {
   };
 
   return (
-    <motion.div className="inline-block right-0 absolute mr-[3.3rem] z-[100]" ref={ref}>
+    <motion.div ref={ref} className="self-center fixed right-0 mr-[2.5rem]">
       {isInView && (
         <motion.ul variants={container} initial="hidden" animate="show" className="flex flex-col justify-center items-center space-y-5 text-3xl text-appLightTextColor">
-          <motion.li variants={item} className="w-[0.3rem] h-[6rem] bg-appDarkBgColor dark:bg-appLightBgColor"></motion.li>
+          <motion.li variants={item} className="w-[0.3rem] h-[6rem] bg-appDarkBgColor dark:bg-appLightBgColor" />
           <motion.a
             href="mailto:amandewett@gmail.com?subject=Requirement"
             target="_blank"

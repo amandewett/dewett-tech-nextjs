@@ -22,7 +22,8 @@ const RootLayout: React.FC<React.PropsWithChildren> = ({ children }) => {
       <ThemeProvider>
         <body className={`themeTransition ${appFont.className} bg-appLightBgColor dark:bg-appDarkBgColor text-appLightTextColor dark:text-appDarkTextColor`}>
           <Header />
-          <PageTransitionLayout>{children}</PageTransitionLayout>
+          {/* <PageTransitionLayout>{children}</PageTransitionLayout> */}
+          {children}
           <HireMeButton />
         </body>
       </ThemeProvider>
