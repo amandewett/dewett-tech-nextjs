@@ -13,16 +13,16 @@ const HomePage: React.FC = () => {
     <>
       <main className="flex flex-col h-[84vh] justify-center w-screen">
         <section>
-          <section className="block lg:hidden mt-10 lg:mt-0">
-            <SocialMediaComponent />
-          </section>
           <Reveal>
-            <div className="w-full flex flex-col lg:flex-row mt-[3rem] md:mt-[15rem] lg:mt-0">
+            <section className="w-full flex flex-col lg:flex-row mt-[3rem] md:mt-[15rem] lg:mt-0">
+              <section className="block lg:hidden ml-[2.4rem] mb-[1rem]">
+                <SocialMediaComponent />
+              </section>
               {/* left side */}
               <HomeHeaderLeft />
               {/* right side */}
               <HomeHeaderRight />
-            </div>
+            </section>
           </Reveal>
         </section>
         <ScrollMessage />

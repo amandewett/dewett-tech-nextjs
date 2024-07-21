@@ -40,7 +40,7 @@ const SocialMediaComponent = () => {
           variants={container}
           initial="hidden"
           animate="show"
-          className="flex flex-row lg:flex-col lg:justify-center items-center space-x-5 lg:space-x-0 lg:space-y-5 text-3xl text-appLightTextColor"
+          className="flex flex-row lg:flex-col lg:justify-center items-center space-x-2 lg:space-x-0 lg:space-y-5 text-3xl text-appLightTextColor"
         >
           <motion.li variants={item} className="w-[6rem] h-[0.3rem] lg:w-[0.3rem] lg:h-[6rem] bg-appDarkBgColor dark:bg-appLightBgColor" />
           <motion.a
