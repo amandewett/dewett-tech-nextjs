@@ -5,17 +5,17 @@ import AppButton from "../shared/AppButton";
 
 const HomeHeaderLeft = () => {
   return (
-    <div className="flex w-[90%] flex-col justify-center px-10 ml-auto mr-auto">
-      <h3 className="uppercase md:text-2xl">hi there!,</h3>
-      <h1 className="xl:text-5xl sm:text-3xl font-bold mt-2 text-appLightTextColor dark:text-appDarkTextColor">I&#39;m Aman Dewett</h1>
-      <h1 className="xl:text-5xl sm:text-3xl mt-3 text-appPrimaryColor font-bold overflow-hidden">
+    <div className="w-full flex flex-col justify-center px-10">
+      <h3 className="uppercase text-lg lg:text-2xl">hi there!,</h3>
+      <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mt-2 text-appLightTextColor dark:text-appDarkTextColor">I&#39;m Aman Dewett</h1>
+      <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl mt-3 text-appPrimaryColor font-bold overflow-hidden">
         <span>&#60;&#47;</span>
         <TextScrambler arrString={["Frontend", "Backend", "Mobile"]} className="inline-block text-appLightTextColor dark:text-appDarkTextColor" />
         <span>
           <span className="text-appLightTextColor dark:text-appDarkTextColor">&#09;Developer</span>&#62;
         </span>
       </h1>
-      <section className="mt-[3rem] xl:text-2xl sm:text-xl">
+      <section className="mt-[2rem] text-base md:text-xl xl:text-2xl">
         <p>
           An experienced software developer based in
           <span className="font-extrabold uppercase inline">

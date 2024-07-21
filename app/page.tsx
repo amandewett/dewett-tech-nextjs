@@ -13,8 +13,11 @@ const HomePage: React.FC = () => {
     <>
       <main className="flex flex-col h-[84vh] justify-center w-screen">
         <section>
+          <section className="block lg:hidden mt-10 lg:mt-0">
+            <SocialMediaComponent />
+          </section>
           <Reveal>
-            <div className="w-screen grid gap-4 md:gap-6 grid-cols-auto-fit">
+            <div className="w-full flex flex-col lg:flex-row mt-[3rem] md:mt-[15rem] lg:mt-0">
               {/* left side */}
               <HomeHeaderLeft />
               {/* right side */}

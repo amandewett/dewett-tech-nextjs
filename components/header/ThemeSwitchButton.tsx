@@ -17,8 +17,7 @@ const ThemeSwitchButton = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 50 }}
             transition={{ type: "tween", duration: 0.4, ease: "linear" }}
-            style={{ fontSize: "2rem" }}
-            className="text-appLightBgColor"
+            className="text-appLightBgColor text-[1.5rem] sm:text-[2rem]"
           >
             <MdDarkMode />
           </motion.div>
@@ -29,8 +28,7 @@ const ThemeSwitchButton = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 50 }}
             transition={{ type: "tween", duration: 0.4, ease: "linear" }}
-            style={{ fontSize: "2rem" }}
-            className="text-appDarkBgColor"
+            className="text-appDarkBgColor text-[1.5rem] sm:text-[2rem]"
           >
             <MdLightMode />
           </motion.div>

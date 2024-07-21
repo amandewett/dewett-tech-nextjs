@@ -13,7 +13,7 @@ const HeaderTitle = () => {
         initial={{ x: -400, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ type: "tween", delay: 1, duration: 1 }}
-        className="ml-5 font-bold text-lg sm:text-3xl xl:text-4xl text-transparent gradientText"
+        className="font-bold text-transparent gradientText text-lg sm:text-2xl md:text-3xl"
       >
         <motion.span
           variants={blinkVariants}

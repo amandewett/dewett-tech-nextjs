@@ -6,11 +6,13 @@ import SocialMediaComponent from "./SocialMediaComponent";
 
 const HomeHeaderRight = () => {
   return (
-    <div className="w-full px-0 ml-auto mr-auto flex justify-evenly mt-[6rem] lg:mt-[0rem]">
+    <div className="w-full flex justify-evenly mt-[4rem] lg:mt-[0rem]">
       <Tilt tiltReverse={true} scale={1.1}>
-        <LottieAnimation animationData={CodingLottieOne} className="ml-auto mr-auto p-0 z-10 2xl:w-[35rem] 2xl:h-[35rem] xl:w-[28rem] xl:h-[28rem]" />
+        <LottieAnimation animationData={CodingLottieOne} className="ml-auto mr-auto p-0 w-[20rem] h-[20rem] md:w-[30rem] md:h-[30rem] lg:w-[28rem] lg:h-[28rem] 2xl:w-[33rem] 2xl:h-[33rem]" />
       </Tilt>
-      <SocialMediaComponent />
+      <section className="self-center fixed right-0 mr-[2.5rem] hidden lg:block">
+        <SocialMediaComponent />
+      </section>
     </div>
   );
 };
