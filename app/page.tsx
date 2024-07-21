@@ -11,10 +11,10 @@ import HomeHeaderRight from "@/components/home/HomeHeaderRight";
 const HomePage: React.FC = () => {
   return (
     <>
-      <main className="flex flex-col">
-        <section className="mt-[5rem]">
+      <main className="flex flex-col h-[84vh] justify-center w-screen">
+        <section>
           <Reveal>
-            <div className="w-full grid gap-4 grid-cols-auto-fit">
+            <div className="w-screen grid gap-4 md:gap-6 grid-cols-auto-fit">
               {/* left side */}
               <HomeHeaderLeft />
               {/* right side */}

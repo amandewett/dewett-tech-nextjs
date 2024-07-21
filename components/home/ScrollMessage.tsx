@@ -10,13 +10,13 @@ const ScrollMessage = () => {
   return (
     <AnimatePresence initial>
       <motion.section
-        className="flex flex-col items-center tablet:hidden phone:hidden fixed bottom-10 w-full"
+        className="flex-col items-center hidden lg:flex fixed bottom-10 w-full"
         initial={{ y: -10, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         style={{ opacity: opacityValue }}
         transition={{ delay: 5, type: "tween" }}
       >
-        <AppLottieContainer animationData={ArrowLottie} className="ml-auto mr-auto p-0 z-10 rotate-90 h-[5rem]" loop={false} />
+        <AppLottieContainer animationData={ArrowLottie} className="ml-auto mr-auto p-0 z-10 rotate-90 h-[5rem]" loop={4} />
       </motion.section>
     </AnimatePresence>
   );

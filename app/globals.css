@@ -54,3 +54,18 @@
 }
 
 /* gradient button on hover */
+
+/* gradient text on hover */
+.gradientText {
+  background-image: linear-gradient(to right, var(--appSecondaryColor) 50%, var(--appPrimaryColor) 50%);
+  background-size: 200%;
+  background-clip: text;
+  background-position: right;
+  transition: all 0.7s ease;
+}
+
+.gradientText:hover {
+  background-position: left;
+}
+
+/* gradient text on hover */

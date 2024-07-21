@@ -3,7 +3,6 @@ import { Nunito } from "next/font/google";
 import "./globals.css";
 import ThemeProvider from "@/store/themeContext/ThemeProvider";
 import { Header } from "@/components/header";
-import PageTransitionLayout from "@/layouts/PageTransitionLayout";
 import HireMeButton from "@/components/HireMeButton";
 
 const appFont = Nunito({
@@ -22,7 +21,6 @@ const RootLayout: React.FC<React.PropsWithChildren> = ({ children }) => {
       <ThemeProvider>
         <body className={`themeTransition ${appFont.className} bg-appLightBgColor dark:bg-appDarkBgColor text-appLightTextColor dark:text-appDarkTextColor`}>
           <Header />
-          {/* <PageTransitionLayout>{children}</PageTransitionLayout> */}
           {children}
           <HireMeButton />
         </body>

@@ -18,7 +18,7 @@ const Header = () => {
         initial={{ display: "none", height: "0px", opacity: 0 }}
         animate={{ display: "flex", height: "auto", opacity: 1 }}
         transition={{ duration: 0.5, delay: 6 }}
-        className="w-full justify-center items-center gradientAnimation text-appDarkBgColor cursor-pointer"
+        className="w-screen justify-center items-center gradientAnimation text-appDarkBgColor cursor-pointer sm:text-lg text-xs phone:text-sm"
       >
         <p className="p-1">
           Need a beautiful web or mobile application? <b>Let&apos;s connect!</b>

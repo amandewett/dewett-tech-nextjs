@@ -31,7 +31,7 @@ const config: Config = {
       },
     },
     screens: {
-      phone: { min: "350px", max: "639px" },
+      phone: { min: "350px" },
       // => @media (min-width: 350px and max-width: 639px) { ... }
 
       tablet: { min: "640px", max: "767px" },
