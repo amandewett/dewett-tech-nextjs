@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --appPrimaryColor: #00C49A;
-  --appSecondaryColor: #FB8F67;
+  --appPrimaryColor: #f0b339;
+  --appSecondaryColor: #fbfbfc;
 }
 
 * {

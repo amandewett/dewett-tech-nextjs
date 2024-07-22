@@ -11,17 +11,18 @@ const config: Config = {
         "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       colors: {
+        //light
         appLightBgColor: "#F0F8FF",
         appLightTextColor: "#242124",
-
+        //dark
+        appDarkBgColor: "#1a1a1a",
+        appDarkTextColor: "#F0F8FF",
+        //general
         appColorWhiteSmoke: "#F5F5F5",
         appColorDimBlack: "#252525",
         appRedColor: "#E53935",
-        appPrimaryColor: "#00C49A",
-        appSecondaryColor: "#FB8F67",
-        //dark
-        appDarkBgColor: "#242124",
-        appDarkTextColor: "#F0F8FF",
+        appPrimaryColor: "var(--appPrimaryColor)",
+        appSecondaryColor: "var(--appSecondaryColor)",
       },
       fontFamily: {
         appFont: [`var(--app-font)`],

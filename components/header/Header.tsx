@@ -27,7 +27,7 @@ const Header = () => {
           Need a beautiful web or mobile application? <b>Let&apos;s connect!</b>
         </p>
         <LottieAnimation width="2rem" height="2rem" animationData={HireMeLottie} />
-        {`w: ${width} h: ${height}`}
+        {/* {`w: ${width} h: ${height}`} */}
       </motion.a>
 
       <nav className="flex justify-between items-center p-4">
