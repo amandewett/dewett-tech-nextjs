@@ -1,7 +1,6 @@
 "use client";
 import { useScroll, motion, useSpring } from "framer-motion";
 import { useRef } from "react";
-// import ExperienceCard from "./ExperienceCard";
 import dynamic from "next/dynamic";
 const ExperienceCard = dynamic(() => import("./ExperienceCard"), {
   ssr: false,
@@ -69,18 +68,6 @@ const Experience = () => {
               location=""
               position="Android Developer"
               stack="Java, Kotlin, XML, Flutter, Firebase and serverless functions etc."
-            />
-            <ExperienceCard
-              company="Freelance"
-              description={[
-                "Crafted a script using JavaScript and Puppeteer, extracted feedback and rating data from a popular shopping website. Helped client to analyse and improve their product.",
-                "Contributed as a member of a team of 3 and helped to develop a small Android mobile application to calculate body mass index (BMI) for an Upwork client.",
-              ]}
-              duration="October 2018 – June 2019"
-              location=""
-              position="Software Developer"
-              stack="Java, JavaScript, Puppeteer."
-              isLeft
             />
           </ul>
         </div>
