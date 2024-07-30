@@ -43,7 +43,7 @@ const Reveal = ({ children, willSwipe, willSwipeUp = true, once = true }: Reveal
           {willSwipe && (
             <motion.div
               key="slide-left"
-              className="absolute top-0 bottom-0 left-0 right-0 z-20 bg-[#1E3A8A]"
+              className="absolute top-0 bottom-0 left-0 right-0 z-20 bg-appPrimaryColor"
               variants={{
                 hidden: { left: 0 },
                 visible: { left: "100%" },

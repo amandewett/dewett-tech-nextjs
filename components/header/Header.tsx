@@ -10,18 +10,19 @@ import { motion } from "framer-motion";
 import LottieAnimation from "../about/LottieAnimation";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import useScreenSize from "@/app/hooks/useScreenSize";
+import SocialMediaComponent from "../home/SocialMediaComponent";
 
 const Header = () => {
   const { width, height } = useScreenSize();
 
   return (
-    <header>
+    <header className="w-full">
       <motion.a
         href="mailto:amandewett@gmail.com?subject=Requirement"
         initial={{ display: "none", height: "0px", opacity: 0 }}
         animate={{ display: "flex", height: "auto", opacity: 1 }}
         transition={{ duration: 0.5, delay: 6 }}
-        className="w-screen justify-center items-center gradientAnimation text-appDarkBgColor cursor-pointer text-xs sm:text-base md:text-lg"
+        className="w-full justify-center items-center gradientAnimation text-appDarkBgColor cursor-pointer text-xs sm:text-base md:text-lg"
       >
         <p className="p-1">
           Need a beautiful web or mobile application? <b>Let&apos;s connect!</b>
@@ -53,6 +54,9 @@ const Header = () => {
           </ul>
         </div>
       </nav>
+      <section className="block lg:hidden ml-[1.4rem] mb-[1rem]">
+        <SocialMediaComponent />
+      </section>
     </header>
   );
 };

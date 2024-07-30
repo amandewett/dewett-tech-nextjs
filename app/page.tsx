@@ -8,29 +8,25 @@ import SocialMediaComponent from "@/components/home/SocialMediaComponent";
 import HomeHeaderLeft from "@/components/home/HomeHeaderLeft";
 import HomeHeaderRight from "@/components/home/HomeHeaderRight";
 import WorkWithComponent from "@/components/home/WorkWithComponent";
+import { WorldMapVector } from "@/public";
+import Image from "next/image";
+import Numbers from "@/components/about/Numbers";
 
 const HomePage: React.FC = () => {
   return (
     <>
-      <main className="flex flex-col justify-center w-screen">
+      <main className="flex flex-col justify-center w-full">
         <section>
           <Reveal>
-            <section className="w-full flex flex-col lg:flex-row mt-[3rem] md:mt-[5rem]">
-              <section className="block lg:hidden ml-[2.4rem] mb-[1rem]">
-                <SocialMediaComponent />
-              </section>
-              {/* left side */}
+            <section className="w-full flex flex-col lg:flex-row mt-[3rem] md:mt-[8rem]">
               <HomeHeaderLeft />
-              {/* right side */}
               <HomeHeaderRight />
             </section>
           </Reveal>
         </section>
         <ScrollMessage />
         <WorkWithComponent />
-        {/* <Skills /> */}
       </main>
-      {/* <Footer /> */}
     </>
   );
 };

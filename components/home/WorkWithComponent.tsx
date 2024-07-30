@@ -3,10 +3,11 @@
 import React, { useRef } from "react";
 import { PiArrowSquareUpRight } from "react-icons/pi";
 import { motion, useInView } from "framer-motion";
+import WorldMapComponent from "./WorldMapComponent";
 
 const WorkWithComponent = () => {
   const ref = useRef(null);
-  const inView = useInView(ref);
+  const inView = useInView(ref, { once: false });
 
   const container = {
     hidden: { opacity: 0, x: 1000 },
@@ -33,24 +34,27 @@ const WorkWithComponent = () => {
   };
 
   return (
-    <section ref={ref} className="w-full h-[60vh] flex flex-col justify-evenly items-center md:flex-row mt-[15rem]">
+    <section ref={ref} className="h-[40rem] flex flex-col justify-between items-center md:flex-row relative top-[13rem] px-20">
       {inView && (
-        <motion.section initial={{ x: -1000, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ type: "tween", duration: 1 }} className="xl:text-6xl font-bold">
-          I often work with:
+        <motion.section initial={{ x: -1000, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ type: "tween", duration: 1 }}>
+          <WorldMapComponent />
         </motion.section>
       )}
       {inView && (
-        <section>
+        <section className="ml-auto mr-auto">
           <motion.ul variants={container} initial="hidden" animate="show" className="xl:text-4xl font-medium space-y-10">
             <motion.li variants={item} className="flex space-x-6">
-              <PiArrowSquareUpRight />
+              <p>I often work with:</p>
+            </motion.li>
+            <motion.li variants={item} className="flex space-x-6">
+              <PiArrowSquareUpRight className="text-appPrimaryColor" />
               <p>Startups</p>
             </motion.li>
             <motion.li variants={item} className="flex space-x-6">
-              <PiArrowSquareUpRight /> <p>Agencies</p>
+              <PiArrowSquareUpRight className="text-appPrimaryColor" /> <p>Agencies</p>
             </motion.li>
             <motion.li variants={item} className="flex space-x-6">
-              <PiArrowSquareUpRight /> <p>B2B Businesses</p>
+              <PiArrowSquareUpRight className="text-appPrimaryColor" /> <p>B2B Businesses</p>
             </motion.li>
           </motion.ul>
         </section>

@@ -19,7 +19,7 @@ const RootLayout: React.FC<React.PropsWithChildren> = ({ children }) => {
   return (
     <html lang="en">
       <ThemeProvider>
-        <body className={`themeTransition ${appFont.className} bg-appLightBgColor dark:bg-appDarkBgColor text-appLightTextColor dark:text-appDarkTextColor`}>
+        <body className={`themeTransition ${appFont.className} bg-appLightBgColor dark:bg-appDarkBgColor text-appLightTextColor dark:text-appDarkTextColor overflow-x-hidden`}>
           <Header />
           {children}
           <HireMeButton />

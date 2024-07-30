@@ -43,6 +43,8 @@ export { default as VectorSeven } from "@/public/images/vectors/7.svg";
 export { default as VectorEight } from "@/public/images/vectors/8.svg";
 export { default as VectorNine } from "@/public/images/vectors/9.svg";
 export { default as VectorTen } from "@/public/images/vectors/10.svg";
+export { default as AiRobo } from "@/public/images/vectors/robo_ai.svg";
+export { default as WorldMapVector } from "@/public/images/vectors/world_map.svg";
 
 /* animations */
 export { default as MeditationLottie } from "@/public/animation/meditation.json";
