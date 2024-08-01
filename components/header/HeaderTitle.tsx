@@ -1,5 +1,6 @@
 "use client";
 import { useScroll, motion, useTransform } from "framer-motion";
+import ScreenSizeComponent from "../shared/ScreenSizeComponent";
 
 const HeaderTitle = () => {
   const blinkVariants = {

@@ -8,15 +8,15 @@ import Numbers from "../about/Numbers";
 
 const WorldMapComponent = () => {
   return (
-    <section className="relative w-[30rem] h-[30rem] xl:w-[45rem] xl:h-[35rem] 2xl:w-[50rem] 2xl:h-[35rem]">
+    <section className="relative w-[40rem] h-[15rem] md:w-[50rem] md:h-[25rem] lg:w-[50rem] lg:h-[25rem] xl:w-[55rem] xl:h-[30rem] 2xl:w-[60rem] 2xl:h-[35rem]">
       <ImageContainer src={WorldMapVector.src} className="w-full h-full absolute z-0" alt="world_map" />
-      <div className="absolute z-1 text-appPrimaryColor top-[30%] bottom-[70%] left-[10%]">
+      <div className="absolute z-1 text-appPrimaryColor top-[15%] bottom-[85%] left-[30%] md:left-[10%]">
         <Numbers text="Happy Clients" count={50} />
       </div>
-      <div className="absolute z-1 text-appPrimaryColor top-[70%] bottom-[30%] left-[40%]">
+      <div className="absolute z-1 text-appPrimaryColor top-[65%] bottom-[35%] md:bottom-[25%] left-[40%]">
         <Numbers text="Projects Delivered" count={70} />
       </div>
-      <div className="absolute z-1 text-appPrimaryColor top-[40%] bottom-[60%] right-[5%]">
+      <div className="absolute z-1 text-appPrimaryColor top-[40%] bottom-[60%] right-[25%] md:right-[5%]">
         <Numbers text="Years Of Experience" count={4} />
       </div>
     </section>

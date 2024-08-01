@@ -1,20 +1,13 @@
 "use client";
-import { GithubWhite, HireMeLottie, LinkedIn } from "@/public";
-import { NavItem, HeaderTitle, NavLogoItem, MobileNavBar } from "./";
-import Link from "next/link";
-import ImageContainer from "../shared/ImageContainer";
-import { useTheme } from "@/store/themeContext/context";
-import { Theme } from "@/enums/enums";
+import { HireMeLottie } from "@/public";
+import { HeaderTitle } from "./";
 import ThemeSwitchButton from "./ThemeSwitchButton";
 import { motion } from "framer-motion";
 import LottieAnimation from "../about/LottieAnimation";
 import { FaExternalLinkAlt } from "react-icons/fa";
-import useScreenSize from "@/app/hooks/useScreenSize";
 import SocialMediaComponent from "../home/SocialMediaComponent";
 
 const Header = () => {
-  const { width, height } = useScreenSize();
-
   return (
     <header className="w-full">
       <motion.a
@@ -28,7 +21,6 @@ const Header = () => {
           Need a beautiful web or mobile application? <b>Let&apos;s connect!</b>
         </p>
         <LottieAnimation width="2rem" height="2rem" animationData={HireMeLottie} />
-        {/* {`w: ${width} h: ${height}`} */}
       </motion.a>
 
       <nav className="flex justify-between items-center p-4">

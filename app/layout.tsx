@@ -4,6 +4,7 @@ import "./globals.css";
 import ThemeProvider from "@/store/themeContext/ThemeProvider";
 import { Header } from "@/components/header";
 import HireMeButton from "@/components/HireMeButton";
+import ScreenSizeComponent from "@/components/shared/ScreenSizeComponent";
 
 const appFont = Nunito({
   subsets: ["latin"],
@@ -20,6 +21,7 @@ const RootLayout: React.FC<React.PropsWithChildren> = ({ children }) => {
     <html lang="en">
       <ThemeProvider>
         <body className={`themeTransition ${appFont.className} bg-appLightBgColor dark:bg-appDarkBgColor text-appLightTextColor dark:text-appDarkTextColor overflow-x-hidden`}>
+          <ScreenSizeComponent />
           <Header />
           {children}
           <HireMeButton />

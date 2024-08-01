@@ -24,11 +24,11 @@ const Numbers = ({ count, text }: NumbersProps) => {
     <AnimatePresence mode="wait">
       <Reveal key="one" willSwipe={false} willSwipeUp={false}>
         <div ref={viewRef} className="flex flex-col items-center">
-          <div className="font-extrabold flex text-2xl 2xl:text-5xl">
+          <div className="font-extrabold flex text-2xl md:text-4xl lg:text-3xl xl:text-5xl">
             <motion.div key="two">{rounded}</motion.div>
             <p>&#43;</p>
           </div>
-          <motion.p className="text-lg 2xl:text-2xl font-semibold">{text}</motion.p>
+          <motion.p className="text-sm md:text-xl lg:text-xl xl:text-2xl font-semibold">{text}</motion.p>
         </div>
       </Reveal>
     </AnimatePresence>

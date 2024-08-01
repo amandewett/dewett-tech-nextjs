@@ -34,26 +34,26 @@ const WorkWithComponent = () => {
   };
 
   return (
-    <section ref={ref} className="h-[40rem] flex flex-col justify-between items-center md:flex-row relative top-[13rem] px-20">
+    <section ref={ref} className="h-[40rem] flex flex-col justify-between items-center lg:flex-row relative top-[5rem] lg:top-[13rem]">
       {inView && (
         <motion.section initial={{ x: -1000, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ type: "tween", duration: 1 }}>
           <WorldMapComponent />
         </motion.section>
       )}
       {inView && (
-        <section className="ml-auto mr-auto">
-          <motion.ul variants={container} initial="hidden" animate="show" className="xl:text-4xl font-medium space-y-10">
+        <section className="ml-auto mr-auto mt-[5rem] lg:mt-0">
+          <motion.ul variants={container} initial="hidden" animate="show" className="text-3xl md:text-4xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-medium space-y-10">
             <motion.li variants={item} className="flex space-x-6">
               <p>I often work with:</p>
             </motion.li>
-            <motion.li variants={item} className="flex space-x-6">
+            <motion.li variants={item} whileHover={{ x: -20, transition: { duration: 0.5 } }} className="flex space-x-6 cursor-pointer">
               <PiArrowSquareUpRight className="text-appPrimaryColor" />
               <p>Startups</p>
             </motion.li>
-            <motion.li variants={item} className="flex space-x-6">
+            <motion.li variants={item} whileHover={{ x: -20, transition: { duration: 0.5 } }} className="flex space-x-6 cursor-pointer">
               <PiArrowSquareUpRight className="text-appPrimaryColor" /> <p>Agencies</p>
             </motion.li>
-            <motion.li variants={item} className="flex space-x-6">
+            <motion.li variants={item} whileHover={{ x: -20, transition: { duration: 0.5 } }} className="flex space-x-6 cursor-pointer">
               <PiArrowSquareUpRight className="text-appPrimaryColor" /> <p>B2B Businesses</p>
             </motion.li>
           </motion.ul>
