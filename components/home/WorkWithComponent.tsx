@@ -42,7 +42,7 @@ const WorkWithComponent = () => {
       )}
       {inView && (
         <section className="ml-auto mr-auto mt-[5rem] lg:mt-0">
-          <motion.ul variants={container} initial="hidden" animate="show" className="text-3xl md:text-4xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-medium space-y-10">
+          <motion.ul variants={container} initial="hidden" animate="show" className="text-2xl md:text-4xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-medium space-y-10">
             <motion.li variants={item} className="flex space-x-6">
               <p>I often work with:</p>
             </motion.li>
