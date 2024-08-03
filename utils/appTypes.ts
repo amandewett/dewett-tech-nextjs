@@ -103,3 +103,16 @@ export type ThemeContextType = {
   theme: string;
   toggleTheme: () => void;
 };
+
+export type SkillItemComponentProps = {
+  bgColor?: string;
+  text?: string;
+  SkillIcon?: IconType;
+  isLight?: boolean;
+};
+
+export type TechStackItemProps = {
+  heading: string;
+  arrItems: string[];
+  arrIcons: IconType[];
+};
