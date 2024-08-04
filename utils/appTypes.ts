@@ -109,10 +109,13 @@ export type SkillItemComponentProps = {
   text?: string;
   SkillIcon?: IconType;
   isLight?: boolean;
+  isSmall?: boolean;
 };
 
 export type TechStackItemProps = {
   heading: string;
   arrItems: string[];
   arrIcons: IconType[];
+  arrColors: string[];
+  arrIsLight: boolean[];
 };

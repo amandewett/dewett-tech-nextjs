@@ -34,14 +34,14 @@ const WorkWithComponent = () => {
   };
 
   return (
-    <section ref={ref} className="flex flex-col justify-between items-center lg:flex-row mt-[5rem] lg:mt-[13rem]">
+    <section ref={ref} className="flex flex-col flex-1 justify-between items-center lg:flex-row mt-[5rem] lg:mt-[12rem] overflow-hidden">
       {inView && (
         <motion.section initial={{ x: -1000, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ type: "tween", duration: 1 }}>
           <WorldMapComponent />
         </motion.section>
       )}
       {inView && (
-        <section className="ml-auto mr-auto mt-[5rem] lg:mt-0">
+        <section className="ml-auto mr-auto mt-[0rem] lg:mt-0">
           <motion.ul variants={container} initial="hidden" animate="show" className="text-2xl md:text-4xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-medium space-y-10">
             <motion.li variants={item} className="flex space-x-6">
               <p>I often work with:</p>

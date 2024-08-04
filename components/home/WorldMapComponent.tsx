@@ -7,16 +7,16 @@ import Numbers from "../about/Numbers";
 
 const WorldMapComponent = () => {
   return (
-    <section className="relative w-[40rem] h-[15rem] md:w-[50rem] md:h-[25rem] lg:w-[50rem] lg:h-[25rem] xl:w-[55rem] xl:h-[30rem] 2xl:w-[60rem] 2xl:h-[35rem]">
+    <section className="relative w-[90vw] h-[90vw] lg:w-[55vw] lg:h-[55vh]">
       <ImageContainer src={WorldMapVector.src} className="hidden dark:inline w-full h-full absolute z-0 blah" alt="world_map" />
       <ImageContainer src={WorldMapDarkVector.src} className="inline dark:hidden w-full h-full absolute z-0 blah" alt="world_map" />
-      <div className="absolute z-1 text-appPrimaryColor top-[15%] bottom-[85%] left-[30%] md:left-[10%]">
+      <div className="absolute z-1 text-appPrimaryColor top-[35%] bottom-[65%] lg:top-[25%] lg:bottom-[75%] left-[20%] md:left-[20%]">
         <Numbers text="Happy Clients" count={50} />
       </div>
-      <div className="absolute z-1 text-appPrimaryColor top-[65%] bottom-[35%] md:bottom-[25%] left-[40%]">
+      <div className="absolute z-1 text-appPrimaryColor top-[60%] bottom-[40%] md:bottom-[25%] left-[40%]">
         <Numbers text="Projects Delivered" count={70} />
       </div>
-      <div className="absolute z-1 text-appPrimaryColor top-[40%] bottom-[60%] right-[25%] md:right-[5%]">
+      <div className="absolute z-1 text-appPrimaryColor top-[40%] bottom-[60%] right-[6vw] md:top-[40%] md:bottom-[60%]">
         <Numbers text="Years Of Experience" count={4} />
       </div>
     </section>

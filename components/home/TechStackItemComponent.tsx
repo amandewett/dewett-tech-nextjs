@@ -3,17 +3,18 @@
 import { TechStackItemProps } from "@/utils/appTypes";
 import React from "react";
 import SkillItemComponent from "./SkillItemComponent";
+import TechStackTechItemComponent from "./TechStackTechItemComponent";
 
-const TechStackItemComponent = ({ heading, arrItems, arrIcons }: TechStackItemProps) => {
+const TechStackItemComponent = ({ heading, arrItems, arrIcons, arrColors, arrIsLight }: TechStackItemProps) => {
   return (
-    <>
-      <h6 className="mt-5 text-2xl">{heading}:</h6>
-      <span className="w-full space-y-5 flex flex-wrap">
+    <li className="flex justify-center flex-col items-center">
+      <h6 className="text-2xl mt-7 text-center">{heading}:</h6>
+      <ul className="w-full flex flex-wrap mt-2 gap-y-4 items-center justify-center">
         {arrItems.map((item: string, index: number) => {
-          return <SkillItemComponent key={item} text={item} bgColor="e63946" SkillIcon={arrIcons[index]} />;
+          return <SkillItemComponent key={item} isSmall text={item} SkillIcon={arrIcons[index]} bgColor={arrColors[index]} isLight={arrIsLight[index]} />;
         })}
-      </span>
-    </>
+      </ul>
+    </li>
   );
 };
 
