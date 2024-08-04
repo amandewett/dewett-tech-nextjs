@@ -8,8 +8,8 @@ import Numbers from "../about/Numbers";
 const WorldMapComponent = () => {
   return (
     <section className="relative w-[90vw] h-[90vw] lg:w-[55vw] lg:h-[55vh]">
-      <ImageContainer src={WorldMapVector.src} className="hidden dark:inline w-full h-full absolute z-0 blah" alt="world_map" />
-      <ImageContainer src={WorldMapDarkVector.src} className="inline dark:hidden w-full h-full absolute z-0 blah" alt="world_map" />
+      <ImageContainer src={WorldMapVector.src} className="hidden dark:inline w-full h-full absolute z-0" alt="world_map" />
+      <ImageContainer src={WorldMapDarkVector.src} className="inline dark:hidden w-full h-full absolute z-0" alt="world_map" />
       <div className="absolute z-1 text-appPrimaryColor top-[35%] bottom-[65%] lg:top-[25%] lg:bottom-[75%] left-[20%] md:left-[20%]">
         <Numbers text="Happy Clients" count={50} />
       </div>
