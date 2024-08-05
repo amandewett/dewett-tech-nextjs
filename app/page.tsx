@@ -13,7 +13,7 @@ const HomePage: React.FC = () => {
       <main className="flex flex-col justify-center w-full">
         <section>
           <Reveal>
-            <section className="w-full flex flex-col lg:flex-row mt-[3rem] md:mt-[8rem]">
+            <section className="w-full flex flex-col lg:flex-row mt-[3vh] md:mt-[12vh]">
               <HomeHeaderLeft />
               <HomeHeaderRight />
             </section>

@@ -8,7 +8,7 @@ const PageTransitionLayout: React.FC<{ children: React.ReactNode }> = ({ childre
   const isPresent = useIsPresent();
   return (
     <>
-      <AnimatePresence mode="wait" initial={false}>
+      <AnimatePresence mode="wait" initial={true}>
         <PageTransition key={pathName} isPresent={isPresent} />
       </AnimatePresence>
       {children}

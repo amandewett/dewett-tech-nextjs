@@ -46,6 +46,7 @@ export { default as VectorTen } from "@/public/images/vectors/10.svg";
 export { default as AiRobo } from "@/public/images/vectors/robo_ai.svg";
 export { default as WorldMapVector } from "@/public/images/vectors/world_map.svg";
 export { default as WorldMapDarkVector } from "@/public/images/vectors/world_map_dark.svg";
+export { default as CanadaFlag } from "@/public/images/vectors/canada_flag.svg";
 
 /* animations */
 export { default as MeditationLottie } from "@/public/animation/meditation.json";
@@ -56,6 +57,7 @@ export { default as HireMeLottie } from "@/public/animation/hire_me_logo.json";
 export { default as HireMeFooterLottie } from "@/public/animation/hire_me_footer_logo.json";
 export { default as ArrowLottie } from "@/public/animation/arrow_animation.json";
 export { default as MonitorsLottie } from "@/public/animation/monitors.json";
+export { default as CatScratchLottie } from "@/public/animation/cat_scratch.json";
 
 /* projects */
 export { default as ProjectsAirBnb } from "@/public/projects/airbnb.png";

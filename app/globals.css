@@ -69,3 +69,10 @@
 }
 
 /* gradient text on hover */
+
+.canadaFlag {
+  background-image: url("../public/images/vectors/canada_flag.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(80%);
+}
