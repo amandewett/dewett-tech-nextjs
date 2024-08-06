@@ -6,6 +6,7 @@ import HomeHeaderRight from "@/components/home/HomeHeaderRight";
 import WorkWithComponent from "@/components/home/WorkWithComponent";
 import SkillsComponent from "@/components/home/SkillsComponent";
 import TechStackComponent from "@/components/home/TechStackComponent";
+import WorkExperienceComponent from "@/components/home/WorkExperienceComponent";
 
 const HomePage: React.FC = () => {
   return (
@@ -24,6 +25,9 @@ const HomePage: React.FC = () => {
         <SkillsComponent />
         <Reveal willSwipeUp once={false}>
           <TechStackComponent />
+        </Reveal>
+        <Reveal willSwipeUp once={false}>
+          <WorkExperienceComponent />
         </Reveal>
       </main>
     </>

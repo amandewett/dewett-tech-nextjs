@@ -119,3 +119,11 @@ export type TechStackItemProps = {
   arrColors: string[];
   arrIsLight: boolean[];
 };
+
+export type WorkExperienceCardComponentProps = {
+  bgColor?: string;
+  imageSrc?: string;
+  companyName: string;
+  position: string;
+  duration: string;
+};

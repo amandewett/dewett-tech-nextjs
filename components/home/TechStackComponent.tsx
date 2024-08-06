@@ -45,6 +45,7 @@ import {
   SiGitlab,
 } from "react-icons/si";
 import { TbBrandReactNative } from "react-icons/tb";
+import SectionHeading from "./SectionHeading";
 
 const TechStackComponent = () => {
   return (
@@ -54,7 +55,7 @@ const TechStackComponent = () => {
       </section>
       <ul className="self-start w-[100%] lg:w-[50%] p-2 flex flex-col items-center space-y-3">
         <li>
-          <h2 className="uppercase text-4xl font-bold">Tech Stack:</h2>
+          <SectionHeading>Tech Stack</SectionHeading>
         </li>
         <TechStackItemComponent
           heading="Languages"

@@ -66,3 +66,8 @@ export { default as ProjectsVideoTube } from "@/public/projects/videotube.png";
 export { default as ProjectsAuth } from "@/public/projects/auth.png";
 export { default as ProjectsShoppingStore } from "@/public/projects/shopping_store.jpg";
 export { default as ProjectsChitChat } from "@/public/projects/chitChat.png";
+
+/* company logos */
+export { default as CodefernsTechnologiesLogo } from "@/public/images/company_logos/codeferns.png";
+export { default as ThirtyFourSoftSystemsLogo } from "@/public/images/company_logos/thirtyfour_soft_systems.png";
+export { default as InfowizLogo } from "@/public/images/company_logos/infowiz.png";
