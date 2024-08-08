@@ -1,15 +1,17 @@
-import React from "react";
+import { lazy, Suspense } from "react";
 import ScrollMessage from "@/components/home/ScrollMessage";
 import Reveal from "@/components/shared/Reveal";
 import HomeHeaderLeft from "@/components/home/HomeHeaderLeft";
 import HomeHeaderRight from "@/components/home/HomeHeaderRight";
-import WorkWithComponent from "@/components/home/WorkWithComponent";
-import SkillsComponent from "@/components/home/SkillsComponent";
-import TechStackComponent from "@/components/home/TechStackComponent";
-import WorkExperienceComponent from "@/components/home/WorkExperienceComponent";
-import EducationComponent from "@/components/home/EducationComponent";
+import AppCircularLoader from "@/components/shared/AppCircularLoader";
 
-const HomePage: React.FC = () => {
+const WorkWithComponent = lazy(() => import("@/components/home/WorkWithComponent"));
+const SkillsComponent = lazy(() => import("@/components/home/SkillsComponent"));
+const TechStackComponent = lazy(() => import("@/components/home/TechStackComponent"));
+const WorkExperienceComponent = lazy(() => import("@/components/home/WorkExperienceComponent"));
+const EducationComponent = lazy(() => import("@/components/home/EducationComponent"));
+
+const HomePage = () => {
   return (
     <>
       <main className="flex flex-col justify-center w-full">
@@ -22,17 +24,27 @@ const HomePage: React.FC = () => {
           </Reveal>
         </section>
         <ScrollMessage />
-        <WorkWithComponent />
-        <SkillsComponent />
-        <Reveal willSwipeUp once={false}>
-          <TechStackComponent />
-        </Reveal>
-        <Reveal willSwipeUp once={false}>
-          <WorkExperienceComponent />
-        </Reveal>
-        <Reveal willSwipeUp once={false}>
-          <EducationComponent />
-        </Reveal>
+        <Suspense fallback={<AppCircularLoader />}>
+          <WorkWithComponent />
+        </Suspense>
+        <Suspense fallback={<AppCircularLoader />}>
+          <SkillsComponent />
+        </Suspense>
+        <Suspense fallback={<AppCircularLoader />}>
+          <Reveal willSwipeUp once={false}>
+            <TechStackComponent />
+          </Reveal>
+        </Suspense>
+        <Suspense fallback={<AppCircularLoader />}>
+          <Reveal willSwipeUp once={false}>
+            <WorkExperienceComponent />
+          </Reveal>
+        </Suspense>
+        <Suspense fallback={<AppCircularLoader />}>
+          <Reveal willSwipeUp once={false}>
+            <EducationComponent />
+          </Reveal>
+        </Suspense>
       </main>
     </>
   );

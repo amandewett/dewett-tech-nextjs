@@ -1,12 +1,15 @@
 import type { Metadata } from "next";
+import { lazy, Suspense } from "react";
 import { Nunito } from "next/font/google";
 import "./globals.css";
 import ThemeProvider from "@/store/themeContext/ThemeProvider";
 import { Header } from "@/components/header";
-import HireMeButton from "@/components/HireMeButton";
 import ScreenSizeComponent from "@/components/shared/ScreenSizeComponent";
 import PageTransitionLayout from "@/layouts/PageTransitionLayout";
+import AppCircularLoader from "@/components/shared/AppCircularLoader";
 import CustomCursor from "@/components/shared/CustomCursor";
+
+const HireMeButton = lazy(() => import("@/components/HireMeButton"));
 
 const appFont = Nunito({
   subsets: ["latin"],
@@ -28,7 +31,9 @@ const RootLayout: React.FC<React.PropsWithChildren> = ({ children }) => {
             <ScreenSizeComponent />
             <Header />
             {children}
-            <HireMeButton />
+            <Suspense fallback={<AppCircularLoader />}>
+              <HireMeButton />
+            </Suspense>
           </PageTransitionLayout>
         </body>
       </ThemeProvider>

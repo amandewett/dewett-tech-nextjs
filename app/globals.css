@@ -30,7 +30,7 @@
   inset: 0 100% 0 0;
   border-radius: inherit;
   background: currentColor;
-  animation: l6 3s normal;
+  animation: l6 3s infinite alternate;
 }
 
 @keyframes l6 {
@@ -40,6 +40,24 @@
 }
 
 /* loading */
+
+/* circular loading */
+.circular-loader {
+  width: 50px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 8px solid;
+  border-color: var(--appPrimaryColor) var(--appPrimaryColor);
+  animation: l1 1s infinite;
+}
+
+@keyframes l1 {
+  to {
+    transform: rotate(.5turn)
+  }
+}
+
+/* circular loading */
 
 ::-webkit-scrollbar {
   width: 0.4em;
