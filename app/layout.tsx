@@ -6,6 +6,7 @@ import { Header } from "@/components/header";
 import HireMeButton from "@/components/HireMeButton";
 import ScreenSizeComponent from "@/components/shared/ScreenSizeComponent";
 import PageTransitionLayout from "@/layouts/PageTransitionLayout";
+import CustomCursor from "@/components/shared/CustomCursor";
 
 const appFont = Nunito({
   subsets: ["latin"],
@@ -22,6 +23,7 @@ const RootLayout: React.FC<React.PropsWithChildren> = ({ children }) => {
     <html lang="en">
       <ThemeProvider>
         <body className={`themeTransition ${appFont.className} bg-appLightBgColor dark:bg-appDarkBgColor text-appLightTextColor dark:text-appDarkTextColor overflow-x-hidden`}>
+          <CustomCursor />
           <PageTransitionLayout>
             <ScreenSizeComponent />
             <Header />
