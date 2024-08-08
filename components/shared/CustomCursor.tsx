@@ -59,12 +59,12 @@ const CustomCursor = () => {
           <motion.div
             animate={{ x: mousePosition.x - 17.5, y: mousePosition.y - 17.5 }}
             transition={{ duration: 0.1, type: "tween" }}
-            className={`pointer-events-none w-[35px] h-[35px] rounded-[50%] border-solid border-2 border-appLightTextColor dark:border-appDarkTextColor fixed z-50`}
+            className={`pointer-events-none w-[35px] h-[35px] rounded-[50%] border-solid border-2 border-appLightTextColor dark:border-appDarkTextColor fixed z-50 hidden md:inline`}
           />
           <motion.div
             animate={{ x: mousePosition.x - 2.5, y: mousePosition.y - 2.5 }}
             transition={{ duration: 0, type: "spring", stiffness: 100 }}
-            className="pointer-events-none w-[5px] h-[5px] rounded-[50%] bg-appPrimaryColor fixed z-50"
+            className="pointer-events-none w-[5px] h-[5px] rounded-[50%] bg-appPrimaryColor fixed z-50 hidden md:inline"
           />
         </>
       )}
