@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@property --rotate-value {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
 :root {
   --appPrimaryColor: #EC644E;
   --appSecondaryColor: #9ABAE3;
@@ -135,4 +141,25 @@
   background-repeat: no-repeat;
   background-size: cover;
   filter: brightness(80%);
+}
+
+@keyframes spin {
+  0% {
+    --rotate-value: 0deg;
+  }
+
+  100% {
+    --rotate-value: 360deg;
+  }
+}
+
+.glow-card-bg .glow-card-bg-child {
+  transition: all 0.3s linear;
+}
+
+.glow-card-bg:hover .glow-card-bg-child {
+  background: conic-gradient(from var(--rotate-value), var(--appPrimaryColor), var(--appSecondaryColor), #3498DB, #9B59B6, #F39C12, #9B59B6, #3498DB, var(--appSecondaryColor), var(--appPrimaryColor));
+  background-size: 100%;
+  filter: blur(0.5rem);
+  animation: spin 5s linear infinite;
 }

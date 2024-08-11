@@ -47,6 +47,8 @@ export { default as AiRobo } from "@/public/images/vectors/robo_ai.svg";
 export { default as WorldMapVector } from "@/public/images/vectors/world_map.svg";
 export { default as WorldMapDarkVector } from "@/public/images/vectors/world_map_dark.svg";
 export { default as CanadaFlag } from "@/public/images/vectors/canada_flag.svg";
+export { default as WireFrameSvg } from "@/public/images/vectors/wire_frame_bg.svg";
+export { default as FreelancerSvg } from "@/public/images/vectors/freelancer.svg";
 
 /* animations */
 export { default as MeditationLottie } from "@/public/animation/meditation.json";

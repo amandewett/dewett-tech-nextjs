@@ -8,7 +8,7 @@ import AppCircularLoader from "@/components/shared/AppCircularLoader";
 const WorkWithComponent = lazy(() => import("@/components/home/WorkWithComponent"));
 const SkillsComponent = lazy(() => import("@/components/home/SkillsComponent"));
 const TechStackComponent = lazy(() => import("@/components/home/TechStackComponent"));
-const WorkExperienceComponent = lazy(() => import("@/components/home/WorkExperienceComponent"));
+const ExperienceComponent = lazy(() => import("@/components/home/ExperienceComponent"));
 const EducationComponent = lazy(() => import("@/components/home/EducationComponent"));
 
 const HomePage = () => {
@@ -31,17 +31,15 @@ const HomePage = () => {
           <SkillsComponent />
         </Suspense>
         <Suspense fallback={<AppCircularLoader />}>
-          <Reveal willSwipeUp once={false}>
+          <Reveal willSwipeUp>
             <TechStackComponent />
           </Reveal>
         </Suspense>
         <Suspense fallback={<AppCircularLoader />}>
-          <Reveal willSwipeUp once={false}>
-            <WorkExperienceComponent />
-          </Reveal>
+          <ExperienceComponent />
         </Suspense>
         <Suspense fallback={<AppCircularLoader />}>
-          <Reveal willSwipeUp once={false}>
+          <Reveal willSwipeUp>
             <EducationComponent />
           </Reveal>
         </Suspense>

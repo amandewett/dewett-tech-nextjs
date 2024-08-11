@@ -7,7 +7,7 @@ import WorldMapComponent from "./WorldMapComponent";
 
 const WorkWithComponent = () => {
   const ref = useRef(null);
-  const inView = useInView(ref, { once: false });
+  const inView = useInView(ref, { once: true });
 
   const container = {
     hidden: { opacity: 0, x: 1000 },

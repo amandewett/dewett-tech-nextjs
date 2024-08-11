@@ -49,7 +49,7 @@ import SectionHeading from "./SectionHeading";
 
 const TechStackComponent = () => {
   return (
-    <section className="flex justify-around items-center my-[2rem]">
+    <section className="flex justify-around items-center my-[10rem]">
       <section className="hidden lg:inline">
         <AppLottieContainer animationData={MonitorsLottie} className="w-[70%] h-[70%]" />
       </section>
