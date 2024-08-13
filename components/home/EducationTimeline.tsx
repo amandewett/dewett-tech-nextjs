@@ -16,7 +16,7 @@ const EducationTimeline = () => {
   });
 
   return (
-    <section ref={ref} className="w-full relative mt-10 h-[60vh]">
+    <section ref={ref} className="w-full relative mt-10 h-[35rem]">
       <motion.div style={{ scaleY }} className="absolute w-[5px] h-full bg-appPrimaryColor origin-top" />
       <ul className="absolute -left-[5px] flex flex-col mt-10 gap-10">
         <EducationItemComponent degree="Master of Computer Applications" duration="June 2017 - May 2019" institute="Chandigarh University, India" />
