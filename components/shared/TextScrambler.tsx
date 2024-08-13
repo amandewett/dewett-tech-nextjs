@@ -1,20 +1,8 @@
 "use client";
 import { HomeHeaderProps } from "@/utils/appTypes";
-import dynamic from "next/dynamic";
-const Scramble = dynamic(() => import("@twistezo/react-text-scramble"), {
-  ssr: false,
-});
+import { TypeAnimation } from "react-type-animation";
 
 const TextScrambler = ({ arrString, className }: HomeHeaderProps) => {
-  return (
-    <Scramble
-      texts={arrString}
-      className={className}
-      letterSpeed={100}
-      nextLetterSpeed={100}
-      pauseTime={2000}
-      paused={false}
-    />
-  );
+  return <TypeAnimation className={className} repeat={Infinity} speed={50} sequence={["Frontend", 2500, "Backend", 2500, "Mobile", 2500]} />;
 };
 export default TextScrambler;

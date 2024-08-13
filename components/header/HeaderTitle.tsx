@@ -1,14 +1,7 @@
 "use client";
-import { useScroll, motion, useTransform } from "framer-motion";
+import { motion } from "framer-motion";
 
 const HeaderTitle = () => {
-  const { scrollY } = useScroll();
-  const titleOpacity = useTransform(
-    scrollY,
-    [0, 30, 60, 90, 100],
-    [1, 0.7, 0.4, 0.1, 0]
-  );
-
   const blinkVariants = {
     visible: { opacity: 1 },
     hidden: { opacity: 0 },
@@ -17,17 +10,12 @@ const HeaderTitle = () => {
   return (
     <>
       <motion.h1
-        initial={{ y: -10, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        style={{
-          opacity: titleOpacity,
-          transition: "opacity 350ms",
-        }}
-        transition={{ type: "smooth", delay: 1, duration: 0.5 }}
-        className="ml-5 font-bold text-2xl tablet:text-lg phone:text-base"
+        initial={{ x: -400, opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{ type: "tween", delay: 1, duration: 1 }}
+        className="font-bold text-transparent gradientText text-lg sm:text-2xl md:text-3xl"
       >
         <motion.span
-          className="text-appPrimaryColor"
           variants={blinkVariants}
           initial="hidden"
           animate="visible"
@@ -37,9 +25,7 @@ const HeaderTitle = () => {
             repeatType: "mirror",
             repeat: Infinity,
           }}
-        >
-          &#123;
-        </motion.span>
+        ></motion.span>
         Full Stack Developer
         <motion.span
           className="text-appPrimaryColor"
@@ -52,9 +38,7 @@ const HeaderTitle = () => {
             repeatType: "mirror",
             repeat: Infinity,
           }}
-        >
-          &#125;
-        </motion.span>
+        ></motion.span>
       </motion.h1>
     </>
   );

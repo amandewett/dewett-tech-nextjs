@@ -1,12 +1,11 @@
-import { ScrambleTexts } from "@twistezo/react-text-scramble";
 import { IconTree, IconType } from "react-icons";
 
-export type Props = {
+export type DefaultProps = {
   children?: React.ReactNode;
 };
 
 export type HomeHeaderProps = {
-  arrString: ScrambleTexts;
+  arrString?: string[];
   className: string;
 };
 
@@ -24,7 +23,7 @@ export type ImageCarouselProps = {
   className?: string;
 };
 
-export type RevealProps = Props & {
+export type RevealProps = DefaultProps & {
   willSwipe?: boolean;
   willSwipeUp?: boolean;
   once?: boolean;
@@ -34,7 +33,7 @@ export type TimelineIconProps = {
   icon: IconType;
 };
 
-export type TimelineElementProps = Props & {
+export type TimelineElementProps = DefaultProps & {
   icon: IconType;
   className: string;
 };
@@ -47,7 +46,7 @@ export type TimelineImageContainerProps = {
   className?: string;
 };
 
-export type AppButtonProps = Props & {
+export type AppButtonProps = DefaultProps & {
   onClick?: () => void;
   revert?: boolean;
 };
@@ -84,10 +83,71 @@ export type LottieAnimationProps = {
   className?: string;
 };
 
+export type AppLottieContainerProps = {
+  animationData: any;
+  width?: string;
+  height?: string;
+  className?: string;
+  loop?: number | boolean;
+};
+
 export type ProjectsTimelineElementProps = {
   icon: IconType;
   imageSrc: string;
   projectName: string;
   aboutProject: string;
   url: string;
+};
+
+export type ThemeContextType = {
+  theme: string;
+  toggleTheme: () => void;
+};
+
+export type SkillItemComponentProps = {
+  bgColor?: string;
+  text?: string;
+  SkillIcon?: IconType;
+  isLight?: boolean;
+  isSmall?: boolean;
+};
+
+export type TechStackItemProps = {
+  heading: string;
+  arrItems: string[];
+  arrIcons: IconType[];
+  arrColors: string[];
+  arrIsLight: boolean[];
+};
+
+export type WorkExperienceCardComponentProps = {
+  bgColor?: string;
+  imageSrc?: string;
+  companyName: string;
+  position: string;
+  duration: string;
+};
+
+export type EducationItemComponentProps = {
+  degree: string;
+  duration: string;
+  institute: string;
+};
+
+export type VisitButtonProps = {
+  link: string;
+};
+
+export type RecentProjectsItemComponentProps = {
+  projectName: string;
+  projectDescription: string;
+  projectIcon: IconType;
+  link: string;
+};
+
+export type ContactItemComponentProps = {
+  link: string;
+  bgColor: string;
+  iconColor: string;
+  socialIcon: IconType;
 };
