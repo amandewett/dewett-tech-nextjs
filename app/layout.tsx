@@ -28,7 +28,7 @@ const RootLayout: React.FC<React.PropsWithChildren> = ({ children }) => {
         <body className={`themeTransition ${appFont.className} bg-appLightBgColor dark:bg-appDarkBgColor text-appLightTextColor dark:text-appDarkTextColor overflow-x-hidden`}>
           <CustomCursor />
           <PageTransitionLayout>
-            <ScreenSizeComponent />
+            {/* <ScreenSizeComponent /> */}
             <Header />
             {children}
             <Suspense fallback={<AppCircularLoader />}>

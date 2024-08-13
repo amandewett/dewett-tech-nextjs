@@ -18,10 +18,10 @@ type ExperienceCardComponentProps = {
 
 const ExperienceCardComponent = ({ logo = "", position, company, website = "", duration, arrDescriptions }: ExperienceCardComponentProps) => {
   return (
-    <div className="relative w-[60vw] h-[40vh] md:w-[50vw] md:h-[50vh] lg:w-[70vw] lg:h-[50vh] rounded-[15px] border-solid border-2 border-zinc-500 glow-card-bg">
+    <div className="relative w-[60vw] h-[50vh] md:w-[50vw] md:h-[60vh] lg:w-[70vw] lg:h-[60vh] rounded-[15px] border-solid border-2 border-zinc-500 glow-card-bg">
       <section className="w-full h-full rounded-[inherit] absolute glow-card-bg-child" />
       <ImageContainer src={WireFrameSvg.src} className="w-full h-full rounded-[inherit] absolute object-cover" />
-      <section className="w-full h-full absolute rounded-[inherit] top-[-0.8rem] left-[-0.8rem] bg-appLightBgColor dark:bg-appDarkBgColor border-zinc-500 border-solid border-2 flex justify-between">
+      <section className="w-full h-full absolute rounded-[inherit] overflow-hidden top-[-0.8rem] left-[-0.8rem] bg-appLightBgColor dark:bg-appDarkBgColor border-zinc-500 border-solid border-2 flex justify-between">
         <section className="w-full lg:w-[50%] h-[50%] lg:h-full rounded-[inherit] flex flex-col items-center p-5">
           {website !== "" && (
             <motion.a

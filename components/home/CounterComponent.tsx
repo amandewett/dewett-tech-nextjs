@@ -23,7 +23,7 @@ const CounterComponent = ({ count, text }: NumbersProps) => {
   return (
     <>
       <AnimatePresence mode="wait">
-        <Reveal key="one" willSwipe willSwipeUp={false}>
+        <Reveal key="one" willSwipeUp={false}>
           <div ref={viewRef} className="flex flex-col items-center">
             <div className="font-extrabold flex text-2xl md:text-4xl lg:text-3xl xl:text-5xl">
               <motion.div key="two">{rounded}</motion.div>
