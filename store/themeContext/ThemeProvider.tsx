@@ -13,8 +13,12 @@ const ThemeProvider = ({ children }: DefaultProps) => {
     if (theme) {
       setTheme(theme === Theme.light ? Theme.light : Theme.dark);
     } else {
-      const isDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-      setTheme(isDark ? Theme.dark : Theme.light);
+      /* to fetch system theme */
+      /* const isDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      setTheme(isDark ? Theme.dark : Theme.light); */
+
+      /* set dark by default initially */
+      setTheme(Theme.dark);
     }
   }, []);
 
