@@ -1,6 +1,5 @@
 import React from "react";
 import SectionHeading from "./SectionHeading";
-import AppCardComponent from "../shared/AppCardComponent";
 import RecentProjectsItemComponent from "./RecentProjectsItemComponent";
 import { CiChat1, CiShoppingCart, CiYoutube } from "react-icons/ci";
 import { FaAirbnb } from "react-icons/fa";
