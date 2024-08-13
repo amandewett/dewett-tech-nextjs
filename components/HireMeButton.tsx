@@ -20,7 +20,7 @@ const HireMeButton = () => {
       className="fixed bottom-10 right-[2rem] z-50 flex justify-center items-center flex-col"
     >
       <AppLottieContainer width="5rem" height="5rem" animationData={HireMeFooterLottie} />
-      <p className="uppercase font-bold">Hire me!</p>
+      <p className="uppercase font-bold">Connect!</p>
     </motion.a>
   );
 };
