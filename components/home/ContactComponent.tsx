@@ -12,7 +12,7 @@ import { motion } from "framer-motion";
 
 const ContactComponent = () => {
   return (
-    <section className="px-8">
+    <section className="px-8 mt-10">
       <SectionHeading>Contact</SectionHeading>
       <section className="flex flex-col lg:flex-row justify-between items-start my-10">
         <div className="w-[40%] hidden lg:inline">

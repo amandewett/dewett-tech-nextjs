@@ -7,7 +7,7 @@ import { FaAirbnb } from "react-icons/fa";
 
 const RecentProjectsComponent = () => {
   return (
-    <section className="px-8 flex flex-col justify-center my-20">
+    <section className="px-8 flex flex-col justify-center mt-32">
       <SectionHeading>Recent Projects</SectionHeading>
       <ul className="recent-projects-grid my-16">
         <RecentProjectsItemComponent
