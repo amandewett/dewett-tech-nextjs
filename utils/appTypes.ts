@@ -127,3 +127,9 @@ export type WorkExperienceCardComponentProps = {
   position: string;
   duration: string;
 };
+
+export type EducationItemComponentProps = {
+  degree: string;
+  duration: string;
+  institute: string;
+};

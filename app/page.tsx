@@ -30,19 +30,19 @@ const HomePage = () => {
         <Suspense fallback={<AppCircularLoader />}>
           <SkillsComponent />
         </Suspense>
-        <Suspense fallback={<AppCircularLoader />}>
-          <Reveal willSwipeUp>
+        <Reveal willSwipeUp>
+          <Suspense fallback={<AppCircularLoader />}>
             <TechStackComponent />
-          </Reveal>
-        </Suspense>
+          </Suspense>
+        </Reveal>
         <Suspense fallback={<AppCircularLoader />}>
           <ExperienceComponent />
         </Suspense>
-        <Suspense fallback={<AppCircularLoader />}>
-          <Reveal willSwipeUp>
+        <Reveal willSwipeUp>
+          <Suspense fallback={<AppCircularLoader />}>
             <EducationComponent />
-          </Reveal>
-        </Suspense>
+          </Suspense>
+        </Reveal>
       </main>
     </>
   );

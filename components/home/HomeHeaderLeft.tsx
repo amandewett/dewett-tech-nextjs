@@ -1,7 +1,5 @@
 import TextScrambler from "@/components/shared/TextScrambler";
 import { FaCanadianMapleLeaf, FaExternalLinkAlt } from "react-icons/fa";
-import Reveal from "../shared/Reveal";
-import AppButton from "../shared/AppButton";
 
 const HomeHeaderLeft = () => {
   return (

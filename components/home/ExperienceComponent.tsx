@@ -9,13 +9,15 @@ import SectionHeading from "./SectionHeading";
 const ExperienceComponent = () => {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({ target: ref });
-  const xValue = useTransform(scrollYProgress, [0, 1], ["0%", "-50%"]);
+  const xValue = useTransform(scrollYProgress, [0, 1], ["0%", "-60%"]);
 
   return (
-    <section ref={ref} className="relative h-[160vh]">
-      <SectionHeading>Experience</SectionHeading>
-      <div className="sticky top-0 flex h-screen items-center overflow-hidden">
-        <motion.div style={{ x: xValue }} className="flex gap-16 p-16">
+    <section ref={ref} className="relative h-[300vh]">
+      <section className="px-8">
+        <SectionHeading>Experience</SectionHeading>
+      </section>
+      <div className="sticky top-0 h-screen flex items-center overflow-hidden">
+        <motion.div style={{ x: xValue }} className="flex gap-10 lg:gap-16 p-16">
           <ExperienceCardComponent
             logo={FreelancerSvg.src}
             position="Full Stack Developer"
@@ -48,11 +50,8 @@ const ExperienceComponent = () => {
             company="Thirtyfour Soft Systems"
             duration="Aug 2019 - Nov 2019 (3m)"
             arrDescriptions={[
-              "Designed and developed a React-based interface for practicing IELTS and PTE tests. Providing real-time mock exams to enhance English language skills, resulting in improvement in test scores by 30%.",
-              "Hired, trained, code review and lead Agile team of 3 software engineers.",
-              "Worked closely with cross-functional team members to gather requirements, resulting in 95% customer satisfaction rate and 25% increase in sales revenue.",
-              "Built a hybrid mobile app with React native for Android and iOS, connecting mentors and mentees, resulting in 20,000+ active users and over 100,000 chat messages exchanged monthly powered by Firebase. Helped thousands to graciously exchange and acquire knowledge with clean code methodologies.",
-              "Developed a mobile app using Flutter, connecting farmers directly with buyers, helping thousands of farmers sell their crops at fair prices. Ensured traceable, authentic products meeting consumer and regulatory demands.",
+              "Worked as part of a team to define and implement solutions for a taxi-hiring mobile application, resulting in a 20% increase in the client’s customer base and company’s profits.",
+              "Implemented GPS tracking and real-time location updates, enhancing the accuracy of driver routes and improving customer satisfaction by 15%.",
             ]}
           />
         </motion.div>

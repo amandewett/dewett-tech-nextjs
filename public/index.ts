@@ -49,6 +49,7 @@ export { default as WorldMapDarkVector } from "@/public/images/vectors/world_map
 export { default as CanadaFlag } from "@/public/images/vectors/canada_flag.svg";
 export { default as WireFrameSvg } from "@/public/images/vectors/wire_frame_bg.svg";
 export { default as FreelancerSvg } from "@/public/images/vectors/freelancer.svg";
+export { default as EducationSvg } from "@/public/images/vectors/education.svg";
 
 /* animations */
 export { default as MeditationLottie } from "@/public/animation/meditation.json";

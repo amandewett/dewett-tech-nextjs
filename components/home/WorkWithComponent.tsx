@@ -34,7 +34,7 @@ const WorkWithComponent = () => {
   };
 
   return (
-    <section ref={ref} className="flex flex-col flex-1 justify-between items-center lg:flex-row mt-[10vh] lg:mt-[20vh] overflow-hidden">
+    <section ref={ref} className="flex flex-col flex-1 justify-between items-center lg:flex-row mt-[10vh] lg:mt-[24vh] overflow-hidden">
       {inView && (
         <motion.section initial={{ x: -1000, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ type: "tween", duration: 1 }}>
           <WorldMapComponent />

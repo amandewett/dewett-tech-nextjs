@@ -3,9 +3,9 @@ import { HireMeLottie } from "@/public";
 import { HeaderTitle } from "./";
 import ThemeSwitchButton from "./ThemeSwitchButton";
 import { motion } from "framer-motion";
-import LottieAnimation from "../about/LottieAnimation";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import SocialMediaComponent from "../home/SocialMediaComponent";
+import AppLottieContainer from "../shared/AppLottieContainer";
 
 const Header = () => {
   return (
@@ -20,7 +20,7 @@ const Header = () => {
         <p className="p-1">
           Need a beautiful web or mobile application? <b>Let&apos;s connect!</b>
         </p>
-        <LottieAnimation width="2rem" height="2rem" animationData={HireMeLottie} />
+        <AppLottieContainer width="2rem" height="2rem" animationData={HireMeLottie} />
       </motion.a>
 
       <nav className="flex justify-between items-center p-4">

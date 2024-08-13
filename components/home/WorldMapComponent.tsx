@@ -3,7 +3,7 @@
 import React from "react";
 import ImageContainer from "../shared/ImageContainer";
 import { WorldMapVector, WorldMapDarkVector } from "@/public";
-import Numbers from "../about/Numbers";
+import CounterComponent from "./CounterComponent";
 
 const WorldMapComponent = () => {
   return (
@@ -11,13 +11,13 @@ const WorldMapComponent = () => {
       <ImageContainer src={WorldMapVector.src} className="hidden dark:inline w-full h-full absolute z-0" alt="world_map" />
       <ImageContainer src={WorldMapDarkVector.src} className="inline dark:hidden w-full h-full absolute z-0" alt="world_map" />
       <div className="absolute z-1 text-appPrimaryColor top-[35%] bottom-[65%] lg:top-[25%] lg:bottom-[75%] left-[20%] md:left-[20%]">
-        <Numbers text="Happy Clients" count={50} />
+        <CounterComponent text="Happy Clients" count={50} />
       </div>
       <div className="absolute z-1 text-appPrimaryColor top-[60%] bottom-[40%] md:bottom-[25%] left-[40%]">
-        <Numbers text="Projects Delivered" count={70} />
+        <CounterComponent text="Projects Delivered" count={70} />
       </div>
       <div className="absolute z-1 text-appPrimaryColor top-[40%] bottom-[60%] right-[6vw] md:top-[40%] md:bottom-[60%]">
-        <Numbers text="Years Of Experience" count={4} />
+        <CounterComponent text="Years of Experience" count={4} />
       </div>
     </section>
   );

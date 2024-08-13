@@ -1,7 +1,7 @@
 "use client";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { HireMeFooterLottie } from "@/public";
-import LottieAnimation from "./about/LottieAnimation";
+import AppLottieContainer from "./shared/AppLottieContainer";
 
 const HireMeButton = () => {
   const { scrollY } = useScroll();
@@ -19,7 +19,7 @@ const HireMeButton = () => {
       transition={{ duration: 1.5, repeat: Infinity, repeatType: "loop" }}
       className="fixed bottom-10 right-[2rem] z-50 flex justify-center items-center flex-col"
     >
-      <LottieAnimation width="5rem" height="5rem" animationData={HireMeFooterLottie} />
+      <AppLottieContainer width="5rem" height="5rem" animationData={HireMeFooterLottie} />
       <p className="uppercase font-bold">Hire me!</p>
     </motion.a>
   );
