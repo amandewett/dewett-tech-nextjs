@@ -6,7 +6,7 @@ import { EducationItemComponentProps } from "@/utils/appTypes";
 const EducationItemComponent = ({ degree, duration, institute }: EducationItemComponentProps) => {
   return (
     <section>
-      <section className="w-4 h-4 rounded-[50%] bg-appLightTextColor dark:bg-appDarkTextColor" />
+      <div className="w-4 h-4 rounded-[50%] bg-appLightTextColor dark:bg-appDarkTextColor" />
       <div className="relative w-[80vw] h-[10rem] lg:w-[35rem] lg:h-[8rem] xl:w-[40rem] xl:h-[10rem] rounded-[15px] border-solid border-2 border-zinc-500 glow-card-bg ml-10">
         <section className="w-full h-full rounded-[inherit] absolute glow-card-bg-child" />
         <ImageContainer src={WireFrameSvg.src} className="w-full h-full rounded-[inherit] absolute object-cover" />

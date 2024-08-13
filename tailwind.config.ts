@@ -6,6 +6,9 @@ const config: Config = {
   darkMode: "selector",
   theme: {
     extend: {
+      gridTemplateColumns: {
+        "auto-fit-min240": "repeat(auto-fit, minmax(50px, 1fr))",
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
@@ -26,9 +29,6 @@ const config: Config = {
       },
       fontFamily: {
         appFont: [`var(--app-font)`],
-      },
-      gridTemplateColumns: {
-        "auto-fit": "repeat(auto-fit, minmax(500px, 1fr))",
       },
     },
     screens: {

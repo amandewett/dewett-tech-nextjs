@@ -10,6 +10,8 @@ const SkillsComponent = lazy(() => import("@/components/home/SkillsComponent"));
 const TechStackComponent = lazy(() => import("@/components/home/TechStackComponent"));
 const ExperienceComponent = lazy(() => import("@/components/home/ExperienceComponent"));
 const EducationComponent = lazy(() => import("@/components/home/EducationComponent"));
+const RecentProjectsComponent = lazy(() => import("@/components/home/RecentProjectsComponent"));
+const ContactComponent = lazy(() => import("@/components/home/ContactComponent"));
 
 const HomePage = () => {
   return (
@@ -41,6 +43,16 @@ const HomePage = () => {
         <Reveal willSwipeUp>
           <Suspense fallback={<AppCircularLoader />}>
             <EducationComponent />
+          </Suspense>
+        </Reveal>
+        <Reveal willSwipeUp>
+          <Suspense fallback={<AppCircularLoader />}>
+            <RecentProjectsComponent />
+          </Suspense>
+        </Reveal>
+        <Reveal willSwipeUp>
+          <Suspense fallback={<AppCircularLoader />}>
+            <ContactComponent />
           </Suspense>
         </Reveal>
       </main>

@@ -133,3 +133,21 @@ export type EducationItemComponentProps = {
   duration: string;
   institute: string;
 };
+
+export type VisitButtonProps = {
+  link: string;
+};
+
+export type RecentProjectsItemComponentProps = {
+  projectName: string;
+  projectDescription: string;
+  projectIcon: IconType;
+  link: string;
+};
+
+export type ContactItemComponentProps = {
+  link: string;
+  bgColor: string;
+  iconColor: string;
+  socialIcon: IconType;
+};

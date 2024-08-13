@@ -136,13 +136,6 @@
 
 /* gradient text on hover */
 
-.canadaFlag {
-  background-image: url("../public/images/vectors/canada_flag.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  filter: brightness(80%);
-}
-
 @keyframes spin {
   0% {
     --rotate-value: 0deg;
@@ -162,4 +155,16 @@
   background-size: 100%;
   filter: blur(0.5rem);
   animation: spin 5s linear infinite;
+}
+
+.recent-projects-grid {
+  display: grid;
+  gap: 2.5rem;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+}
+
+.recent-projects-grid li {
+  max-width: 25rem;
 }
