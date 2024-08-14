@@ -22,7 +22,8 @@
     "react-icons": "^5.0.1",
     "react-lottie": "^1.2.4",
     "react-parallax-tilt": "^1.7.228",
-    "react-type-animation": "^3.2.0"
+    "react-type-animation": "^3.2.0",
+    "sharp": "^0.33.4"
   },
   "devDependencies": {
     "@types/node": "^20",
