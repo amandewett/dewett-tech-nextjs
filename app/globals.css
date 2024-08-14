@@ -19,7 +19,26 @@
   padding: 0;
 }
 
-/* loading */
+/* scrollbar config */
+
+::-webkit-scrollbar {
+  width: 0.4em;
+  height: 0.4em;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--appSecondaryColor);
+  border-radius: 15px;
+}
+
+/* scrollbar config */
+
+/* bar loading */
+
 .loader {
   width: 120px;
   height: 22px;
@@ -45,9 +64,10 @@
   }
 }
 
-/* loading */
+/* bar loading */
 
 /* circular loading */
+
 .circular-loader {
   width: 50px;
   aspect-ratio: 1;
@@ -64,20 +84,6 @@
 }
 
 /* circular loading */
-
-::-webkit-scrollbar {
-  width: 0.4em;
-  height: 0.4em;
-}
-
-::-webkit-scrollbar-track {
-  border-radius: 100vw;
-}
-
-::-webkit-scrollbar-thumb {
-  background: var(--appSecondaryColor);
-  border-radius: 15px;
-}
 
 .themeTransition {
   transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
@@ -104,6 +110,7 @@
 }
 
 /* gradient button on hover */
+
 .gradientButton {
   background-image: linear-gradient(to right, var(--appSecondaryColor) 50%, var(--appPrimaryColor) 50%);
   background-size: 200% 100%;
@@ -122,6 +129,7 @@
 /* gradient button on hover */
 
 /* gradient text on hover */
+
 .gradientText {
   background-image: linear-gradient(to right, var(--appSecondaryColor) 50%, var(--appPrimaryColor) 50%);
   background-size: 200%;
