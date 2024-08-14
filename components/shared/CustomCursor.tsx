@@ -31,24 +31,16 @@ const CustomCursor = () => {
       setIsVisible(false);
     };
 
-    if (window) {
-      window.addEventListener("mousemove", mouseMove);
-      window.addEventListener("mouseenter", mouseEnter);
-      window.addEventListener("mouseleave", mouseLeave);
+    const targetElement = document.body;
 
-      document.addEventListener("mouseenter", mouseEnter);
-      document.addEventListener("mouseleave", mouseLeave);
-    }
+    targetElement.addEventListener("mousemove", mouseMove);
+    targetElement.addEventListener("mouseenter", mouseEnter);
+    targetElement.addEventListener("mouseleave", mouseLeave);
 
     return () => {
-      if (window) {
-        window.removeEventListener("mousemove", mouseMove);
-        window.removeEventListener("mouseenter", mouseEnter);
-        window.removeEventListener("mouseleave", mouseLeave);
-
-        document.removeEventListener("mouseenter", mouseEnter);
-        document.removeEventListener("mouseleave", mouseLeave);
-      }
+      targetElement.removeEventListener("mousemove", mouseMove);
+      targetElement.removeEventListener("mouseenter", mouseEnter);
+      targetElement.removeEventListener("mouseleave", mouseLeave);
     };
   }, []);
 
