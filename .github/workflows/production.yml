@@ -9,7 +9,7 @@ jobs:
     runs-on: [self-hosted, production]    
     strategy:
       matrix:
-        node-version: [20.x]
+        node-version: [20.15.1]
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
