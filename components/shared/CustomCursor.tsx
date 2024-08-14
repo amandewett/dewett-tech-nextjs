@@ -55,7 +55,7 @@ const CustomCursor = () => {
   return (
     <>
       {isVisible && (
-        <section className="relative">
+        <>
           <motion.div
             animate={{ x: mousePosition.x - 17.5, y: mousePosition.y - 17.5 }}
             transition={{ duration: 0.1, type: "tween" }}
@@ -66,7 +66,7 @@ const CustomCursor = () => {
             transition={{ duration: 0, type: "spring", stiffness: 100 }}
             className="pointer-events-none w-[5px] h-[5px] rounded-[50%] bg-appPrimaryColor fixed z-50 hidden md:inline"
           />
-        </section>
+        </>
       )}
     </>
   );
