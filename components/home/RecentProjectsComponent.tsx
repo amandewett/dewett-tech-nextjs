@@ -13,7 +13,7 @@ const RecentProjectsComponent = () => {
           projectName="Chat App (ReactJS)"
           projectDescription="This real-time chat application utilizes React for a dynamic user interface and Node.js + Prisma + MongoDB for a robust backend. It enables seamless communication with features like
             message history and user list. Built with scalability in mind, this project showcases my ability to handle complex web applications."
-          link="https://chitchat.dewett.tech"
+          link="https://chitchat.dewett.ca"
           projectIcon={CiChat1}
         />
         <RecentProjectsItemComponent
@@ -35,13 +35,13 @@ const RecentProjectsComponent = () => {
             to store listings and users. In addition, I have used
             power of NextAuth and implemented Google, Github and
             Credentials authentications."
-          link="https://rent.dewett.tech"
+          link="https://rent.dewett.ca"
           projectIcon={FaAirbnb}
         />
         <RecentProjectsItemComponent
           projectName="Youtube Clone (ReactJS)"
           projectDescription="Its a Youtube clone made with ReactJS, Typescript and vanilla CSS for styling. I have used RapidAPI to fetch videos."
-          link="https://videotube.dewett.tech"
+          link="https://videotube.dewett.ca"
           projectIcon={CiYoutube}
         />
       </ul>
