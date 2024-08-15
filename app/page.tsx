@@ -4,6 +4,7 @@ import Reveal from "@/components/shared/Reveal";
 import HomeHeaderLeft from "@/components/home/HomeHeaderLeft";
 import HomeHeaderRight from "@/components/home/HomeHeaderRight";
 import AppCircularLoader from "@/components/shared/AppCircularLoader";
+import { Header } from "@/components/header";
 
 const WorkWithComponent = lazy(() => import("@/components/home/WorkWithComponent"));
 const SkillsComponent = lazy(() => import("@/components/home/SkillsComponent"));
@@ -16,6 +17,7 @@ const ContactComponent = lazy(() => import("@/components/home/ContactComponent")
 const HomePage = () => {
   return (
     <>
+      <Header />
       <main className="flex flex-col justify-center w-full">
         <section>
           <Reveal>

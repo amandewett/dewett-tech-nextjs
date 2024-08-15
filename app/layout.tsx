@@ -3,8 +3,7 @@ import { lazy, Suspense } from "react";
 import { Nunito } from "next/font/google";
 import "./globals.css";
 import ThemeProvider from "@/store/themeContext/ThemeProvider";
-import { Header } from "@/components/header";
-import ScreenSizeComponent from "@/components/shared/ScreenSizeComponent";
+// import ScreenSizeComponent from "@/components/shared/ScreenSizeComponent";
 import PageTransitionLayout from "@/layouts/PageTransitionLayout";
 import AppCircularLoader from "@/components/shared/AppCircularLoader";
 import CustomCursor from "@/components/shared/CustomCursor";
@@ -29,7 +28,6 @@ const RootLayout: React.FC<React.PropsWithChildren> = ({ children }) => {
           <CustomCursor />
           <PageTransitionLayout>
             {/* <ScreenSizeComponent /> */}
-            <Header />
             {children}
             <Suspense fallback={<AppCircularLoader />}>
               <HireMeButton />
