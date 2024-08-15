@@ -1,5 +1,7 @@
 ARG NODE_VERSION=20.15.1
-FROM node:${NODE_VERSION}-alpine
+
+FROM node:${NODE_VERSION}-bullseye-slim
+
 WORKDIR /app
 COPY ./package.json ./
 RUN npm i
