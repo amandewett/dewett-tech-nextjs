@@ -14,7 +14,7 @@ const Header = () => {
         href="mailto:amandewett@gmail.com?subject=Requirement"
         initial={{ display: "none", height: "0px", opacity: 0 }}
         animate={{ display: "flex", height: "auto", opacity: 1 }}
-        transition={{ duration: 0.5, delay: 6 }}
+        transition={{ duration: 1, delay: 5 }}
         className="w-full justify-center items-center gradientAnimation text-appDarkBgColor cursor-pointer text-xs sm:text-base md:text-lg"
       >
         <p className="p-1">
