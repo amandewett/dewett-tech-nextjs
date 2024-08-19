@@ -7,12 +7,12 @@
     "start:dev": "next start -p 3005",
     "dev": "next dev -p 3000",
     "build": "next build",
-    "postbuild": "next-sitemap --config next-sitemap.config.js",
     "lint": "next lint",
     "prod": "rmdir .next /s /q && next build && next start -p 3000",
     "docker:watch": "docker-compose watch",
     "docker:start": "docker-compose -f compose.prod.yaml up -d --build",
-    "docker:stop": "docker-compose -f compose.prod.yaml down"
+    "docker:stop": "docker-compose -f compose.prod.yaml down",
+    "generate-sitemap": "next-sitemap --config next-sitemap.config.js"
   },
   "dependencies": {
     "framer-motion": "^11.0.3",
