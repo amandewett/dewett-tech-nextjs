@@ -7,6 +7,7 @@
     "start:dev": "next start -p 3005",
     "dev": "next dev -p 3000",
     "build": "next build",
+    "postbuild": "next-sitemap --config next-sitemap.config.js",
     "lint": "next lint",
     "prod": "rmdir .next /s /q && next build && next start -p 3000",
     "docker:watch": "docker-compose watch",
@@ -16,6 +17,7 @@
   "dependencies": {
     "framer-motion": "^11.0.3",
     "next": "^14.2.5",
+    "next-sitemap": "^4.2.3",
     "react": "^18",
     "react-alice-carousel": "^2.8.0",
     "react-dom": "^18",
