@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://dewett.ca
+
+# Sitemaps
+Sitemap: https://dewett.ca/sitemap.xml

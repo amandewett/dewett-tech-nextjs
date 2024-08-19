@@ -11,11 +11,13 @@
     "prod": "rmdir .next /s /q && next build && next start -p 3000",
     "docker:watch": "docker-compose watch",
     "docker:start": "docker-compose -f compose.prod.yaml up -d --build",
-    "docker:stop": "docker-compose -f compose.prod.yaml down"
+    "docker:stop": "docker-compose -f compose.prod.yaml down",
+    "generate-sitemap": "next-sitemap --config next-sitemap.config.js"
   },
   "dependencies": {
     "framer-motion": "^11.0.3",
     "next": "^14.2.5",
+    "next-sitemap": "^4.2.3",
     "react": "^18",
     "react-alice-carousel": "^2.8.0",
     "react-dom": "^18",
