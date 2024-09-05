@@ -151,3 +151,7 @@ export type ContactItemComponentProps = {
   iconColor: string;
   socialIcon: IconType;
 };
+
+export type ScrollMessageProps = {
+  arrScrollYPosition?: number[];
+};

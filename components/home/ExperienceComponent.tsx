@@ -5,6 +5,7 @@ import { motion, useTransform, useScroll } from "framer-motion";
 import ExperienceCardComponent from "./ExperienceCardComponent";
 import { CodefernsTechnologiesLogo, FreelancerSvg, ThirtyFourSoftSystemsLogo } from "@/public";
 import SectionHeading from "./SectionHeading";
+import ScrollMessage from "./ScrollMessage";
 
 const ExperienceComponent = () => {
   const ref = useRef<HTMLDivElement>(null);
@@ -56,6 +57,7 @@ const ExperienceComponent = () => {
           />
         </motion.div>
       </div>
+      <ScrollMessage arrScrollYPosition={[3200, 3400, 5200]} />
     </section>
   );
 };
