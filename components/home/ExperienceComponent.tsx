@@ -16,7 +16,7 @@ const ExperienceComponent = () => {
       <section className="px-8">
         <SectionHeading>Experience</SectionHeading>
       </section>
-      <div className="sticky top-0 h-screen flex items-center overflow-hidden">
+      <div className="sticky top-0 flex items-center overflow-hidden">
         <motion.div style={{ x: xValue }} className="flex gap-10 lg:gap-16 p-16">
           <ExperienceCardComponent
             logo={FreelancerSvg.src}
