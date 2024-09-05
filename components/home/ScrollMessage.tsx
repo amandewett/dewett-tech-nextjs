@@ -8,7 +8,7 @@ import { ScrollMessageProps } from "@/utils/appTypes";
 
 const ScrollMessage = ({ arrScrollYPosition }: ScrollMessageProps) => {
   const { scrollY } = useScroll();
-  const opacityValue = useTransform(scrollY, arrScrollYPosition ? arrScrollYPosition : [0, 30, 60, 90, 100], arrScrollYPosition ? [0, 1, 0].reverse() : [1, 0.8, 0.5, 0.2, 0]);
+  const opacityValue = useTransform(scrollY, arrScrollYPosition ? arrScrollYPosition : [0, 30, 60, 90, 100], arrScrollYPosition ? [0, 0.9, 1, 0.9, 0].reverse() : [1, 0.8, 0.5, 0.2, 0]);
 
   return (
     <AnimatePresence initial>

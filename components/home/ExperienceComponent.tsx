@@ -57,7 +57,7 @@ const ExperienceComponent = () => {
           />
         </motion.div>
       </div>
-      <ScrollMessage arrScrollYPosition={[3200, 3400, 5200]} />
+      <ScrollMessage arrScrollYPosition={[3200, 3201, 3400, 5199, 5200]} />
     </section>
   );
 };
