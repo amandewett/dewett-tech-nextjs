@@ -17,7 +17,7 @@ const AppLottieContainer = ({ animationData, className, height = "100%", width =
   return (
     <Reveal>
       <div className={className}>
-        <Lottie options={defaultOptions} height={height} width={width} isClickToPauseDisabled />
+        <Lottie options={defaultOptions} height={height} width={width} isClickToPauseDisabled style={{ cursor: "default" }} />
       </div>
     </Reveal>
   );

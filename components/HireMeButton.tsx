@@ -17,7 +17,7 @@ const HireMeButton = () => {
       animate={{ y: -50 }}
       exit={{ y: 0 }}
       transition={{ duration: 1.5, repeat: Infinity, repeatType: "loop" }}
-      className="fixed bottom-10 right-[2rem] z-50 flex justify-center items-center flex-col"
+      className="fixed bottom-10 right-[2rem] z-50 flex justify-center items-center flex-col cursor-pointer"
     >
       <AppLottieContainer width="5rem" height="5rem" animationData={HireMeFooterLottie} />
       <p className="uppercase font-bold">Connect!</p>
