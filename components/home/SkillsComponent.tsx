@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import Marquee from "react-fast-marquee";
 import SkillItemComponent from "./SkillItemComponent";
 import { FaHtml5, FaCss3, FaAws, FaCloudflare } from "react-icons/fa";
@@ -39,7 +39,7 @@ import { TbBrandReactNative } from "react-icons/tb";
 const SkillsComponent = () => {
   return (
     <section className="space-y-12 mt-[10rem] my-[3rem]">
-      <Marquee className="cursor-pointer" pauseOnHover loop={0} autoFill speed={12}>
+      <Marquee pauseOnHover loop={0} autoFill speed={12}>
         <ul className="flex transition-all duration-500">
           <SkillItemComponent text="HTML5" bgColor="e63946" SkillIcon={FaHtml5} />
           <SkillItemComponent text="CSS3" bgColor="219ebc" SkillIcon={FaCss3} />
@@ -52,7 +52,7 @@ const SkillsComponent = () => {
           <SkillItemComponent text="JSON" bgColor="fcf6bd" SkillIcon={SiJson} isLight />
         </ul>
       </Marquee>
-      <Marquee className="cursor-pointer" pauseOnHover loop={0} direction="right" autoFill speed={12}>
+      <Marquee pauseOnHover loop={0} direction="right" autoFill speed={12}>
         <ul className="flex">
           <SkillItemComponent text="AWS" bgColor="fb8500" SkillIcon={FaAws} isLight />
           <SkillItemComponent text="Cloudflare" bgColor="00f5d4" SkillIcon={FaCloudflare} isLight />
@@ -65,7 +65,7 @@ const SkillsComponent = () => {
           <SkillItemComponent text="Jira" bgColor="52b788" SkillIcon={SiJira} isLight />
         </ul>
       </Marquee>
-      <Marquee className="cursor-pointer" pauseOnHover loop={0} autoFill speed={12}>
+      <Marquee pauseOnHover loop={0} autoFill speed={12}>
         <ul className="flex">
           <SkillItemComponent text="NextJS" bgColor="0d2d45" SkillIcon={SiNextdotjs} />
           <SkillItemComponent text="React" bgColor="1e96ff" SkillIcon={SiReact} />

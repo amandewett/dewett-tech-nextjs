@@ -1,9 +1,7 @@
 "use client";
-import { AnimatePresence, motion, useMotionValueEvent, useScroll, useTransform } from "framer-motion";
-import { CiDesktopMouse2 } from "react-icons/ci";
+import { AnimatePresence, motion, useScroll, useTransform } from "framer-motion";
 import AppLottieContainer from "../shared/AppLottieContainer";
 import { ArrowLottie } from "@/public";
-import { useEffect } from "react";
 import { ScrollMessageProps } from "@/utils/appTypes";
 
 const ScrollMessage = ({ arrScrollYPosition }: ScrollMessageProps) => {
