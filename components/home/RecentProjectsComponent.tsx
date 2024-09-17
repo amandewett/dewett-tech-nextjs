@@ -1,14 +1,25 @@
 import React from "react";
 import SectionHeading from "./SectionHeading";
 import RecentProjectsItemComponent from "./RecentProjectsItemComponent";
-import { CiChat1, CiShoppingCart, CiYoutube } from "react-icons/ci";
+import { CiChat1, CiShop, CiShoppingCart, CiYoutube } from "react-icons/ci";
 import { FaAirbnb } from "react-icons/fa";
+import { MdOutlineRealEstateAgent } from "react-icons/md";
 
 const RecentProjectsComponent = () => {
   return (
     <section className="px-8 flex flex-col justify-center mt-16">
-      <SectionHeading>Recent Projects</SectionHeading>
+      <SectionHeading>Projects</SectionHeading>
       <ul className="recent-projects-grid my-16">
+        <RecentProjectsItemComponent
+          projectName="Real Estate Investment Platform (Angular)"
+          projectDescription="Led the development of a real estate SaaS platform using AngularJS, Node.js, and MySQL, achieving 99.9% uptime and supporting 1,000+ concurrent users. Reduced decision-making time by 30%, increasing investment efficiency by 20%."
+          projectIcon={MdOutlineRealEstateAgent}
+        />
+        <RecentProjectsItemComponent
+          projectName="E-commerce Platform (ReactJS)"
+          projectDescription="Developed a high-performance e-commerce platform with ReactJS and PostgreSQL, boosting site speed by 30% and increasing sales by 20%. Integrated Stripe for payments and improved customer retention by 25% using Google Analytics."
+          projectIcon={CiShop}
+        />
         <RecentProjectsItemComponent
           projectName="Chat App (ReactJS)"
           projectDescription="This real-time chat application utilizes React for a dynamic user interface and Node.js + Prisma + MongoDB for a robust backend. It enables seamless communication with features like
