@@ -142,7 +142,7 @@ export type RecentProjectsItemComponentProps = {
   projectName: string;
   projectDescription: string;
   projectIcon: IconType;
-  link: string;
+  link?: string;
 };
 
 export type ContactItemComponentProps = {

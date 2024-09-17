@@ -25,9 +25,9 @@ const ExperienceComponent = () => {
             company="Freelancer"
             duration="Sep 2023 - Present (10m)"
             arrDescriptions={[
-              "Crafted an e-commerce mobile application using React native, resulting in 10,000+ downloads and a revenue increase of 40% within the first three months of launch.",
-              "Optimized server-side rendering of a pre-developed NextJS application by leveraging dynamic imports, lazy loading for images and caching frequently used content for a textile business, leading to a 25% decrease in page load times and increase in annual online sales revenue by $30,000.",
-              "Collaborated on a partially developed React, AWS, and Node.js application focused on bus service tracking. Successfully troubleshooted and restored its tracking system, ensuring consistent timing for bus stops. Achieved 95% uptime and Increased reliability by 60% through improved user experience delivery.",
+              "Developed an e-commerce mobile app using React Native, resulting in 10,000+ downloads and a 40% revenue increase within the first three months.",
+              "Optimized server-side rendering for a NextJS application by utilizing dynamic imports and caching strategies, decreasing page load times by 25% and boosting annual online sales by $30,000.",
+              "Revamped the tracking system for a React, AWS, and Node.js public bus service app, achieving 95% uptime and improving system reliability by 60%, delivering a smoother user experience.",
             ]}
           />
           <ExperienceCardComponent
@@ -37,11 +37,10 @@ const ExperienceComponent = () => {
             company="Codeferns Technologies"
             duration="Dec 2019 - Aug 2023 (3y 8m)"
             arrDescriptions={[
-              "Designed and developed a React-based interface for practicing IELTS and PTE tests. Providing real-time mock exams to enhance English language skills, resulting in improvement in test scores by 30%.",
-              "Hired, trained, code review and lead Agile team of 3 software engineers.",
-              "Worked closely with cross-functional team members to gather requirements, resulting in 95% customer satisfaction rate and 25% increase in sales revenue.",
-              "Built a hybrid mobile app with React native for Android and iOS, connecting mentors and mentees, resulting in 20,000+ active users and over 100,000 chat messages exchanged monthly powered by Firebase. Helped thousands to graciously exchange and acquire knowledge with clean code methodologies.",
-              "Developed a mobile app using Flutter, connecting farmers directly with buyers, helping thousands of farmers sell their crops at fair prices. Ensured traceable, authentic products meeting consumer and regulatory demands.",
+              "Designed and developed a React-based interface for IELTS and PTE test practice, improving user test scores by 30% through real-time mock exams.",
+              "Led an Agile team of three engineers, contributing to a 25% increase in sales revenue and 95% customer satisfaction by delivering features that met customer needs.",
+              "Built a hybrid mobile app using React Native for Android and iOS, connecting mentors and mentees, reaching 20,000+ active users and facilitating 100,000+ monthly messages.",
+              "Developed a Flutter app connecting farmers with buyers, helping thousands of farmers sell their crops at fair prices, and ensuring traceability and compliance with regulatory standards.",
             ]}
           />
           <ExperienceCardComponent
@@ -51,8 +50,8 @@ const ExperienceComponent = () => {
             company="Thirtyfour Soft Systems"
             duration="Aug 2019 - Nov 2019 (3m)"
             arrDescriptions={[
-              "Worked as part of a team to define and implement solutions for a taxi-hiring mobile application, resulting in a 20% increase in the client’s customer base and company’s profits.",
-              "Implemented GPS tracking and real-time location updates, enhancing the accuracy of driver routes and improving customer satisfaction by 15%.",
+              "Contributed to the development of a taxi-hiring mobile app, increasing the client’s customer base by 20% and boosting profits through enhanced GPS tracking and real-time updates.",
+              "Improved customer satisfaction by 15% by implementing precise GPS tracking and route accuracy for drivers.",
             ]}
           />
         </motion.div>
