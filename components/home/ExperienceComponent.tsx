@@ -23,7 +23,7 @@ const ExperienceComponent = () => {
             logo={FreelancerSvg.src}
             position="Full Stack Developer"
             company="Freelancer"
-            duration="Sep 2023 - Present (10m)"
+            duration="Sep 2023 - Present (1y 2m)"
             arrDescriptions={[
               "Developed an e-commerce mobile app using React Native, resulting in 10,000+ downloads and a 40% revenue increase within the first three months.",
               "Optimized server-side rendering for a NextJS application by utilizing dynamic imports and caching strategies, decreasing page load times by 25% and boosting annual online sales by $30,000.",
