@@ -6,6 +6,7 @@ import ImageContainer from "../shared/ImageContainer";
 import { FiExternalLink } from "react-icons/fi";
 import { CiCalendar } from "react-icons/ci";
 import { motion } from "framer-motion";
+import { durationCalculator } from "@/utils/durationCalculator";
 
 type ExperienceCardComponentProps = {
   logo?: string;
@@ -14,9 +15,11 @@ type ExperienceCardComponentProps = {
   website?: string;
   duration: string;
   arrDescriptions: string[];
+  joiningDate: Date;
+  relievingDate?: Date | undefined;
 };
 
-const ExperienceCardComponent = ({ logo = "", position, company, website = "", duration, arrDescriptions }: ExperienceCardComponentProps) => {
+const ExperienceCardComponent = ({ logo = "", position, company, website = "", duration, arrDescriptions, joiningDate, relievingDate }: ExperienceCardComponentProps) => {
   return (
     <div className="relative w-[60vw] h-[40vh] md:w-[50vw] md:h-[50vh] lg:w-[70vw] lg:h-[60vh] rounded-[15px] border-solid border-2 border-zinc-500 glow-card-bg">
       <section className="w-full h-full rounded-[inherit] absolute glow-card-bg-child" />
@@ -55,7 +58,7 @@ const ExperienceCardComponent = ({ logo = "", position, company, website = "", d
               <h3>{position}</h3>
               <h3 className="mb-5">{`@${company}`}</h3>
               <CiCalendar className="text-xl md:text-2xl lg:text-2xl mb-2" />
-              <p className="text-sm md:text-lg lg:text-sm xl:text-lg font-light text-zinc-800 dark:text-zinc-300">{duration}</p>
+              <p className="text-sm md:text-lg lg:text-sm xl:text-lg font-light text-zinc-800 dark:text-zinc-300">{`${duration} (${durationCalculator(joiningDate, relievingDate)})`}</p>
             </section>
           </section>
         </section>
