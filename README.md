@@ -2,7 +2,8 @@
 
 ### Requirements
 
-- It requires NODE v18.7 or above to run in your machine.
+- NODE v20.15.x
+- NPM 10.7.x
 
 ## Installation
 
