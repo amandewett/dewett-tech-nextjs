@@ -31,6 +31,8 @@ const ExperienceComponent = () => {
               "Developed an e-commerce mobile app using React Native, resulting in 10,000+ downloads and a 40% revenue increase within the first three months.",
               "Optimized server-side rendering for a NextJS application by utilizing dynamic imports and caching strategies, decreasing page load times by 25% and boosting annual online sales by $30,000.",
               "Revamped the tracking system for a React, AWS, and Node.js public bus service app, achieving 95% uptime and improving system reliability by 60%, delivering a smoother user experience.",
+              "Implemented a microservices-based architecture with Docker and Kubernetes, improving scalability and reducing deployment times from hours to minutes.",
+              "Introduced a GraphQL layer to streamline data fetching between frontend and backend services, cutting API response times by 20% and simplifying code maintenance.",
             ]}
           />
           <ExperienceCardComponent
