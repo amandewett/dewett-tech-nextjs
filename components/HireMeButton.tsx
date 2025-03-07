@@ -11,7 +11,7 @@ const HireMeButton = () => {
 
   return (
     <motion.a
-      href="mailto:amandewett@gmail.com?subject=Requirement"
+      href="mailto:connect@dewett.ca?subject=Requirement"
       style={{ y: yTransform, opacity: opacityTransform, display: displayTransform, transition: "transform 0.5s" }}
       initial={{ y: 0 }}
       animate={{ y: -50 }}

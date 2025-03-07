@@ -24,7 +24,7 @@ const ContactComponent = () => {
             <ContactItemComponent link="https://www.linkedin.com/in/amandewett" socialIcon={FaLinkedin} iconColor="1565C0" bgColor="BBDEFB" />
             <ContactItemComponent link="https://twitter.com/amandewett" socialIcon={FaXTwitter} iconColor="212121" bgColor="BDBDBD" />
             <ContactItemComponent link="https://www.facebook.com/dewettaman" socialIcon={FaFacebook} iconColor="00695C" bgColor="B2DFDB" />
-            <ContactItemComponent link="mailto:amandewett@gmail.com?subject=Requirement" socialIcon={MdEmail} iconColor="FF6F00" bgColor="FFECB3" />
+            <ContactItemComponent link="mailto:connect@dewett.ca?subject=Requirement" socialIcon={MdEmail} iconColor="FF6F00" bgColor="FFECB3" />
           </section>
           <motion.a
             href="/resume/Resume.pdf"
