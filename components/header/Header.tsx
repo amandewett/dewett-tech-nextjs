@@ -11,7 +11,7 @@ const Header = () => {
   return (
     <header className="w-full">
       <motion.a
-        href="mailto:connect@dewett.ca?subject=Requirement"
+        href="mailto:contact@dewett.ca?subject=Requirement"
         initial={{ display: "none", height: "0px", opacity: 0 }}
         animate={{ display: "flex", height: "auto", opacity: 1 }}
         transition={{ duration: 1, delay: 5 }}
