@@ -39,7 +39,7 @@ const RecentProjectsComponent = () => {
           link="https://github.com/amandewett/shopping-store-backend"
           projectIcon={CiShoppingCart}
         />
-        <RecentProjectsItemComponent
+        {/* <RecentProjectsItemComponent
           projectName="AirBnb Clone (NextJS)"
           projectDescription="Its an airbnb clone made with NextJS, Typescript and
             Tailwind for styling. I have used MongoDB a NoSql database
@@ -54,7 +54,7 @@ const RecentProjectsComponent = () => {
           projectDescription="Its a Youtube clone made with ReactJS, Typescript and vanilla CSS for styling. I have used RapidAPI to fetch videos."
           link="https://videotube.dewett.ca"
           projectIcon={CiYoutube}
-        />
+        /> */}
       </ul>
     </section>
   );
