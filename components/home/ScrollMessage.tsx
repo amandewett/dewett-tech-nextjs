@@ -1,8 +1,8 @@
-"use client";
-import { AnimatePresence, motion, useScroll, useTransform } from "framer-motion";
-import AppLottieContainer from "../shared/AppLottieContainer";
-import { ArrowLottie } from "@/public";
-import { ScrollMessageProps } from "@/utils/appTypes";
+'use client';
+import { AnimatePresence, motion, useScroll, useTransform } from 'framer-motion';
+import AppLottieContainer from '../shared/AppLottieContainer';
+import { ArrowLottie } from '@/public';
+import { ScrollMessageProps } from '@/utils/appTypes';
 
 const ScrollMessage = ({ arrScrollYPosition }: ScrollMessageProps) => {
   const { scrollY } = useScroll();
@@ -11,11 +11,11 @@ const ScrollMessage = ({ arrScrollYPosition }: ScrollMessageProps) => {
   return (
     <AnimatePresence initial>
       <motion.section
-        className={`flex-col items-center ${arrScrollYPosition ? "flex" : "hidden"} lg:flex fixed bottom-10 w-full`}
+        className={`flex-col items-center ${arrScrollYPosition ? 'hidden' : 'hidden'} lg:flex fixed bottom-10 w-full`}
         initial={{ y: -10, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         style={{ opacity: opacityValue }}
-        transition={{ delay: 5, type: "tween" }}
+        transition={{ delay: 5, type: 'tween' }}
       >
         <AppLottieContainer animationData={ArrowLottie} className="ml-auto mr-auto p-0 z-10 rotate-90 h-[5rem]" loop={4} />
       </motion.section>
