@@ -11,7 +11,7 @@ const ScrollMessage = ({ arrScrollYPosition }: ScrollMessageProps) => {
   return (
     <AnimatePresence initial>
       <motion.section
-        className={`flex-col items-center ${arrScrollYPosition ? 'hidden' : 'hidden'} lg:flex fixed bottom-10 w-full`}
+        className={`flex-col items-center ${arrScrollYPosition ? 'flex' : 'hidden'} lg:flex fixed bottom-10 w-full`}
         initial={{ y: -10, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         style={{ opacity: opacityValue }}
