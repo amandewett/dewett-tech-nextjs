@@ -1,18 +1,18 @@
-import { lazy, Suspense } from "react";
-import ScrollMessage from "@/components/home/ScrollMessage";
-import Reveal from "@/components/shared/Reveal";
-import HomeHeaderLeft from "@/components/home/HomeHeaderLeft";
-import HomeHeaderRight from "@/components/home/HomeHeaderRight";
-import AppCircularLoader from "@/components/shared/AppCircularLoader";
-import { Header } from "@/components/header";
+import { lazy, Suspense } from 'react';
+// import ScrollMessage from "@/components/home/ScrollMessage";
+import Reveal from '@/components/shared/Reveal';
+import HomeHeaderLeft from '@/components/home/HomeHeaderLeft';
+import HomeHeaderRight from '@/components/home/HomeHeaderRight';
+import AppCircularLoader from '@/components/shared/AppCircularLoader';
+import { Header } from '@/components/header';
 
-const WorkWithComponent = lazy(() => import("@/components/home/WorkWithComponent"));
-const SkillsComponent = lazy(() => import("@/components/home/SkillsComponent"));
-const TechStackComponent = lazy(() => import("@/components/home/TechStackComponent"));
-const ExperienceComponent = lazy(() => import("@/components/home/ExperienceComponent"));
-const EducationComponent = lazy(() => import("@/components/home/EducationComponent"));
-const RecentProjectsComponent = lazy(() => import("@/components/home/RecentProjectsComponent"));
-const ContactComponent = lazy(() => import("@/components/home/ContactComponent"));
+const WorkWithComponent = lazy(() => import('@/components/home/WorkWithComponent'));
+const SkillsComponent = lazy(() => import('@/components/home/SkillsComponent'));
+const TechStackComponent = lazy(() => import('@/components/home/TechStackComponent'));
+const ExperienceComponent = lazy(() => import('@/components/home/ExperienceComponent'));
+const EducationComponent = lazy(() => import('@/components/home/EducationComponent'));
+const RecentProjectsComponent = lazy(() => import('@/components/home/RecentProjectsComponent'));
+const ContactComponent = lazy(() => import('@/components/home/ContactComponent'));
 
 const HomePage = () => {
   return (
@@ -27,7 +27,7 @@ const HomePage = () => {
             </section>
           </Reveal>
         </section>
-        <ScrollMessage />
+        {/* <ScrollMessage /> */}
         <Suspense fallback={<AppCircularLoader />}>
           <WorkWithComponent />
         </Suspense>
