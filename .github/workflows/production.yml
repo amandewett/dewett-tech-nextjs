@@ -33,5 +33,5 @@ jobs:
           exit 0
       # - name: Start nssm service
       #   run: nssm start dewett-tech-nextjs
-      # - name: Delete repo files
-        # run: if exist "%GITHUB_WORKSPACE%" rmdir /s /q "%GITHUB_WORKSPACE%"
+      - name: Delete repo files
+        run: if exist "%GITHUB_WORKSPACE%" rmdir /s /q "%GITHUB_WORKSPACE%"
