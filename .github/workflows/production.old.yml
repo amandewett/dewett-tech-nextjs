@@ -1,0 +1,46 @@
+name: Production CI/CD
+
+on:
+  push:
+    branches: [master]
+
+jobs:
+  Checkout:
+    runs-on: [self-hosted, production]    
+    strategy:
+      matrix:
+        node-version: [20.15.1]
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+  StopDockerContainer:
+    runs-on: [self-hosted, production]
+    needs: Checkout
+    steps:
+      - name: Stop previous container
+        run: docker-compose -f compose.prod.yaml down
+        
+  Build:
+    runs-on: [self-hosted, production]
+    needs: [Checkout, StopDockerContainer]
+    strategy:
+      matrix:
+        node-version: [20.15.1]
+    steps:
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: "npm"
+      - name: Check if docker is installed
+        run: docker --version
+      - name: Build docker image
+        run: docker-compose -f compose.prod.yaml up -d --build
+
+  Clean:
+    runs-on: [self-hosted, production]
+    needs: Build
+    steps:
+      - name: Remove pulled project files
+        run: rm -r /root/actions_runners/dewett-tech-nextjs-action-runner/_work/dewett-tech-nextjs/dewett-tech-nextjs/*
