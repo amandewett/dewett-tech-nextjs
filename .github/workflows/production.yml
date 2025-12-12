@@ -33,7 +33,7 @@ jobs:
         
   Build:
     runs-on: [self-hosted, production-runner]
-    needs: [Checkout, StopTaskScheduler]
+    needs: [Checkout, StopTaskScheduler, DeleteOldFiles]
     strategy:
       matrix:
         node-version: [20.15.1]
@@ -52,7 +52,7 @@ jobs:
 
   StartTaskScheduler:
     runs-on: [self-hosted, production-runner]
-    needs: [Checkout, StopTaskScheduler, Build]
+    needs: [Checkout, StopTaskScheduler, DeleteOldFiles, Build]
     steps:
       - name: Stop task scheduler
         run: schtasks /run /tn "dewett.ca-app"
