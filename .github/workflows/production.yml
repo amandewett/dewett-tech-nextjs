@@ -14,11 +14,11 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20.15.1
-          cache: npm
+      # - name: Setup Node
+      #   uses: actions/setup-node@v4
+      #   with:
+      #     node-version: 20.15.1
+      #     cache: npm
       # - name: Install dependencies
       #   run: npm ci
       # - name: Build project
@@ -33,5 +33,12 @@ jobs:
           exit 0
       # - name: Start nssm service
       #   run: nssm start dewett-tech-nextjs
-      - name: Delete repo files
+      # - name: Delete repo files
+      #   run: if exist "%GITHUB_WORKSPACE%" rmdir /s /q "C:\Users\amand\WORKSPACE\action-runners\action-runner-dewett-nextjs\_work\dewett-tech-nextjs\dewett-tech-nextjs"
+
+  Delete:
+    runs-on: [self-hosted, production-runner]
+    needs: Deploy
+    steps:
+      - name: Delete
         run: if exist "%GITHUB_WORKSPACE%" rmdir /s /q "C:\Users\amand\WORKSPACE\action-runners\action-runner-dewett-nextjs\_work\dewett-tech-nextjs\dewett-tech-nextjs"
