@@ -6,7 +6,7 @@ on:
 
 jobs:
   Checkout:
-    runs-on: [self-hosted, production]    
+    runs-on: [self-hosted, production-runner]    
     strategy:
       matrix:
         node-version: [20.15.1]
