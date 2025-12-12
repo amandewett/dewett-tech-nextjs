@@ -52,7 +52,7 @@ jobs:
 
   StartTaskScheduler:
     runs-on: [self-hosted, production-runner]
-    needs: Checkout
+    needs: [Checkout, StopTaskScheduler, Build]
     steps:
       - name: Stop task scheduler
         run: schtasks /run /tn "dewett.ca-app"
