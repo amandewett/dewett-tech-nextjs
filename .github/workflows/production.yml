@@ -29,7 +29,7 @@ jobs:
         node-version: [20.15.1]
     steps:
       - name: Deleting old project files
-        run: cmd /c rmdir /s /q "C:\Users\amand\WORKSPACE\hosting\dewett-tech-nextjs"
+        run: cmd /c "if exist \"C:\Users\amand\WORKSPACE\hosting\dewett-tech-nextjs\" rmdir /s /q \"C:\Users\amand\WORKSPACE\hosting\dewett-tech-nextjs\""
         
   Build:
     runs-on: [self-hosted, production-runner]
@@ -73,4 +73,4 @@ jobs:
         node-version: [20.15.1]
     steps:
       - name: Deleting old project files
-        run: cmd /c rmdir /s /q "C:\Users\amand\WORKSPACE\action-runners\action-runner-dewett-nextjs\_work\dewett-tech-nextjs"
+        run: cmd /c "if exist \"C:\Users\amand\WORKSPACE\action-runners\action-runner-dewett-nextjs\_work\dewett-tech-nextjs\" rmdir /s /q \"C:\Users\amand\WORKSPACE\action-runners\action-runner-dewett-nextjs\_work\dewett-tech-nextjs\""
