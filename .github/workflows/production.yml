@@ -14,31 +14,24 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-      # - name: Setup Node
-      #   uses: actions/setup-node@v4
-      #   with:
-      #     node-version: 20.15.1
-      #     cache: npm
-      # - name: Install dependencies
-      #   run: npm ci
-      # - name: Build project
-      #   run: npm run build
-      # - name: Stop nssm service
-      #   run: nssm stop dewett-tech-nextjs
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20.15.1
+          cache: npm
+      - name: Install dependencies
+        run: npm ci
+      - name: Build project
+        run: npm run build
+      - name: Stop nssm service
+        run: nssm stop dewett-tech-nextjs
       - name: Delete old project files
         run: if exist "C:\Users\amand\WORKSPACE\hosting\dewett-tech-nextjs" rmdir /s /q "C:\Users\amand\WORKSPACE\hosting\dewett-tech-nextjs"
       - name: Copy new project files
         run: |
           robocopy "%GITHUB_WORKSPACE%" "C:\Users\amand\WORKSPACE\hosting\dewett-tech-nextjs" /E /NFL /NDL
           exit 0
-      # - name: Start nssm service
-      #   run: nssm start dewett-tech-nextjs
+      - name: Start nssm service
+        run: nssm start dewett-tech-nextjs
       # - name: Delete repo files
       #   run: if exist "%GITHUB_WORKSPACE%" rmdir /s /q "C:\Users\amand\WORKSPACE\action-runners\action-runner-dewett-nextjs\_work\dewett-tech-nextjs\dewett-tech-nextjs"
-
-  Delete:
-    runs-on: [self-hosted, production-runner]
-    needs: Deploy
-    steps:
-      - name: Delete
-        run: if exist "%GITHUB_WORKSPACE%" rmdir /s /q "C:\Users\amand\WORKSPACE\action-runners\action-runner-dewett-nextjs\_work\dewett-tech-nextjs\dewett-tech-nextjs"
