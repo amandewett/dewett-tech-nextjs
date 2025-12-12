@@ -9,16 +9,11 @@ defaults:
     shell: cmd
 
 jobs:
-  Checkout:
+  Deploy:
     runs-on: [self-hosted, production-runner]        
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-        
-  Build:
-    runs-on: [self-hosted, production-runner]
-    needs: Checkout
-    steps:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
@@ -28,11 +23,6 @@ jobs:
         run: npm ci
       - name: Build project
         run: npm run build
-
-  UpdateProjectFiles:
-    runs-on: [self-hosted, production-runner]
-    needs: Build
-    steps:
       - name: Stop nssm service
         run: nssm stop dewett-tech-nextjs
       - name: Delete old project files
