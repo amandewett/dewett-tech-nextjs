@@ -19,4 +19,4 @@ jobs:
     needs: Checkout
     steps:
       - name: Stop task scheduler
-        run: schtasks /end /tn "dewett.ca-app"
+        run: cmd /c "schtasks /end /tn \"dewett.ca-app\""
