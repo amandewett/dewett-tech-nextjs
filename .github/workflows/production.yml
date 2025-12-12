@@ -56,7 +56,9 @@ jobs:
         node-version: [20.15.1]
     steps:
       - name: Move project directory
-        run: robocopy "C:\Users\amand\WORKSPACE\action-runners\action-runner-dewett-nextjs\_work\dewett-tech-nextjs" "C:\Users\amand\WORKSPACE\hosting" /E /NFL /NDL || exit 0
+        run: |
+          robocopy "C:\Users\amand\WORKSPACE\action-runners\action-runner-dewett-nextjs\_work\dewett-tech-nextjs" "C:\Users\amand\WORKSPACE\hosting" /E /NFL /NDL
+          exit 0
 
   StartTaskScheduler:
     runs-on: [self-hosted, production-runner]
