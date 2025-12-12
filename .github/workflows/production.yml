@@ -43,12 +43,12 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: "npm"
-      - name: Install dependencies
-        run: npm install --save
-      - name: Make build
-        run: npm run build
+      # - name: Install dependencies
+      #   run: npm install --save
+      # - name: Make build
+      #   run: npm run build
 
-  MoveProject:
+  CopyProject:
     runs-on: [self-hosted, production-runner]
     needs: [Checkout, StopTaskScheduler, DeleteOldFiles, Build]
     strategy:
@@ -60,17 +60,17 @@ jobs:
 
   StartTaskScheduler:
     runs-on: [self-hosted, production-runner]
-    needs: [Checkout, StopTaskScheduler, DeleteOldFiles, Build, MoveProject]
+    needs: [Checkout, StopTaskScheduler, DeleteOldFiles, Build, CopyProject]
     steps:
       - name: Stop task scheduler
         run: schtasks /run /tn "dewett.ca-app"
 
   ClearCache:
     runs-on: [self-hosted, production-runner]
-    needs: [Checkout, StopTaskScheduler, DeleteOldFiles, Build, MoveProject]
+    needs: [Checkout, StopTaskScheduler, DeleteOldFiles, Build, CopyProject]
     strategy:
       matrix:
         node-version: [20.15.1]
     steps:
       - name: Deleting old project files
-        run: cmd /c rmdir /s /q "C:\Users\amand\WORKSPACE\hosting\dewett-tech-nextjs"
+        run: cmd /c rmdir /s /q "C:\Users\amand\WORKSPACE\action-runners\action-runner-dewett-nextjs\_work\dewett-tech-nextjs"
