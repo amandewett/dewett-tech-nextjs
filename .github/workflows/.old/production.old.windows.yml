@@ -1,0 +1,78 @@
+name: Production CI/CD
+
+on:
+  push:
+    branches: [master]
+
+jobs:
+  Checkout:
+    runs-on: [self-hosted, production-runner]    
+    strategy:
+      matrix:
+        node-version: [20.15.1]
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+  StopTaskScheduler:
+    runs-on: [self-hosted, production-runner]
+    needs: Checkout
+    steps:
+      - name: Stop task scheduler
+        run: schtasks /end /tn "dewett.ca-app"
+
+  DeleteOldFiles:
+    runs-on: [self-hosted, production-runner]
+    needs: [Checkout, StopTaskScheduler]
+    strategy:
+      matrix:
+        node-version: [20.15.1]
+    steps:
+      - name: Deleting old project files
+        run: cmd /c 'if exist "C:\Users\amand\WORKSPACE\hosting\dewett-tech-nextjs" rmdir /s /q "C:\Users\amand\WORKSPACE\hosting\dewett-tech-nextjs"'
+        
+  Build:
+    runs-on: [self-hosted, production-runner]
+    needs: [Checkout, StopTaskScheduler, DeleteOldFiles]
+    strategy:
+      matrix:
+        node-version: [20.15.1]
+    steps:
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: "npm"
+      - name: Install dependencies
+        run: npm install --save
+      - name: Make build
+        run: npm run build
+
+  CopyProject:
+    runs-on: [self-hosted, production-runner]
+    needs: [Checkout, StopTaskScheduler, DeleteOldFiles, Build]
+    strategy:
+      matrix:
+        node-version: [20.15.1]
+    steps:
+      - name: Move project directory
+        run: |
+          robocopy "C:\Users\amand\WORKSPACE\action-runners\action-runner-dewett-nextjs\_work\dewett-tech-nextjs" "C:\Users\amand\WORKSPACE\hosting" /E /NFL /NDL
+          exit 0
+
+  StartTaskScheduler:
+    runs-on: [self-hosted, production-runner]
+    needs: [Checkout, StopTaskScheduler, DeleteOldFiles, Build, CopyProject]
+    steps:
+      - name: Stop task scheduler
+        run: schtasks /run /tn "dewett.ca-app"
+
+  ClearCache:
+    runs-on: [self-hosted, production-runner]
+    needs: [Checkout, StopTaskScheduler, DeleteOldFiles, Build, CopyProject]
+    strategy:
+      matrix:
+        node-version: [20.15.1]
+    steps:
+      - name: Deleting old project files
+        run: cmd /c 'if exist "C:\Users\amand\WORKSPACE\action-runners\action-runner-dewett-nextjs\_work\dewett-tech-nextjs" rmdir /s /q "C:\Users\amand\WORKSPACE\action-runners\action-runner-dewett-nextjs\_work\dewett-tech-nextjs"'
