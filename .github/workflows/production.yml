@@ -47,12 +47,20 @@ jobs:
         run: npm install --save
       - name: Make build
         run: npm run build
+
+  MoveProject:
+    runs-on: [self-hosted, production-runner]
+    needs: [Checkout, StopTaskScheduler, DeleteOldFiles, Build]
+    strategy:
+      matrix:
+        node-version: [20.15.1]
+    steps:
       - name: Move project directory
-        run: robocopy "C:\Users\amand\WORKSPACE\action-runners\action-runner-dewett-nextjs\_work\dewett-tech-nextjs\dewett-tech-nextjs" "C:\Users\amand\WORKSPACE\hosting" /MOVE /E
+        run: robocopy "C:\Users\amand\WORKSPACE\action-runners\action-runner-dewett-nextjs\_work\dewett-tech-nextjs" "C:\Users\amand\WORKSPACE\hosting" /MOVE /E
 
   StartTaskScheduler:
     runs-on: [self-hosted, production-runner]
-    needs: [Checkout, StopTaskScheduler, DeleteOldFiles, Build]
+    needs: [Checkout, StopTaskScheduler, DeleteOldFiles, Build, MoveProject]
     steps:
       - name: Stop task scheduler
         run: schtasks /run /tn "dewett.ca-app"
