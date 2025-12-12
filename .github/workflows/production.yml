@@ -33,5 +33,12 @@ jobs:
           exit 0
       # - name: Start nssm service
       #   run: nssm start dewett-tech-nextjs
-      - name: Delete repo files
+      # - name: Delete repo files
+      #   run: if exist "%GITHUB_WORKSPACE%" rmdir /s /q "C:\Users\amand\WORKSPACE\action-runners\action-runner-dewett-nextjs\_work\dewett-tech-nextjs\dewett-tech-nextjs"
+
+  Delete:
+    runs-on: [self-hosted, production-runner]
+    needs: Deploy
+    steps:
+      - name: Delete
         run: if exist "%GITHUB_WORKSPACE%" rmdir /s /q "C:\Users\amand\WORKSPACE\action-runners\action-runner-dewett-nextjs\_work\dewett-tech-nextjs\dewett-tech-nextjs"
