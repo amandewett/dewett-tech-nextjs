@@ -24,7 +24,7 @@ jobs:
       - name: Build project
         run: npm run build
       - name: Stop nssm service
-        run: nssm stop dewett-tech-nextjs
+        run: nssm stop dewett.ca-service
       - name: Delete old project files
         run: if exist "C:\Users\amand\WORKSPACE\hosting\dewett-tech-nextjs" rmdir /s /q "C:\Users\amand\WORKSPACE\hosting\dewett-tech-nextjs"
       - name: Copy new project files
@@ -32,6 +32,6 @@ jobs:
           robocopy "%GITHUB_WORKSPACE%" "C:\Users\amand\WORKSPACE\hosting\dewett-tech-nextjs" /E /NFL /NDL
           exit 0
       - name: Start nssm service
-        run: nssm start dewett-tech-nextjs
+        run: nssm start dewett.ca-service
       # - name: Delete repo files
       #   run: if exist "%GITHUB_WORKSPACE%" rmdir /s /q "C:\Users\amand\WORKSPACE\action-runners\action-runner-dewett-nextjs\_work\dewett-tech-nextjs\dewett-tech-nextjs"
