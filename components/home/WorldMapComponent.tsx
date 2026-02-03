@@ -1,11 +1,12 @@
-"use client";
+'use client';
 
-import React from "react";
-import ImageContainer from "../shared/ImageContainer";
-import { WorldMapVector, WorldMapDarkVector } from "@/public";
-import CounterComponent from "./CounterComponent";
+import React from 'react';
+import ImageContainer from '../shared/ImageContainer';
+import { WorldMapVector, WorldMapDarkVector } from '@/public';
+import CounterComponent from './CounterComponent';
 
 const WorldMapComponent = () => {
+  console.log(WorldMapComponent);
   return (
     <section className="relative w-[90vw] h-[90vw] lg:w-[55vw] lg:h-[55vh]">
       <ImageContainer src={WorldMapVector.src} className="hidden dark:inline w-full h-full absolute z-0" alt="world_map" />
