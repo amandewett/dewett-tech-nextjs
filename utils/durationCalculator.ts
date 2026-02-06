@@ -1,4 +1,4 @@
-export const durationCalculator = (joiningDate: Date, toDate: Date = new Date(Date.now())): string => {
+export const durationCalculator = (joiningDate: Date, toDate: Date = new Date(Date.now()), giveNumber: boolean = false): string | number => {
   const fromYears = joiningDate.getFullYear();
   const fromMonths = joiningDate.getMonth();
 
@@ -14,5 +14,5 @@ export const durationCalculator = (joiningDate: Date, toDate: Date = new Date(Da
     months += 12;
   }
 
-  return years <= 0 ? `${months}m` : `${years}y ${months}m`;
+  return giveNumber ? years : years <= 0 ? `${months}m` : `${years}y ${months}m`;
 };
