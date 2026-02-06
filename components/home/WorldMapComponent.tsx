@@ -18,7 +18,7 @@ const WorldMapComponent = () => {
         <CounterComponent text="Projects Delivered" count={70} />
       </div>
       <div className="absolute z-1 text-appPrimaryColor top-[40%] bottom-[60%] right-[6vw] md:top-[40%] md:bottom-[60%]">
-        <CounterComponent text="Years of Experience" count={durationCalculator(new Date(2019, 7, 1), undefined, true)} />
+        <CounterComponent text="Years of Experience" count={+durationCalculator(new Date(2019, 7, 1), undefined, true)} />
       </div>
     </section>
   );
