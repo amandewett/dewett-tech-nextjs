@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://dewett.ca
+Host: https://amandewett.com
 
 # Sitemaps
-Sitemap: https://dewett.ca/sitemap.xml
+Sitemap: https://amandewett.com/sitemap.xml
