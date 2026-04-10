@@ -1,23 +1,26 @@
-import type { Metadata } from "next";
-import { lazy, Suspense } from "react";
-import { Nunito } from "next/font/google";
-import "./globals.css";
-import ThemeProvider from "@/store/themeContext/ThemeProvider";
+import type { Metadata } from 'next';
+import { lazy, Suspense } from 'react';
+import { Nunito } from 'next/font/google';
+import './globals.css';
+import ThemeProvider from '@/store/themeContext/ThemeProvider';
 // import ScreenSizeComponent from "@/components/shared/ScreenSizeComponent";
-import PageTransitionLayout from "@/layouts/PageTransitionLayout";
-import AppCircularLoader from "@/components/shared/AppCircularLoader";
-import CustomCursor from "@/components/shared/CustomCursor";
+import PageTransitionLayout from '@/layouts/PageTransitionLayout';
+import AppCircularLoader from '@/components/shared/AppCircularLoader';
+import CustomCursor from '@/components/shared/CustomCursor';
 
-const HireMeButton = lazy(() => import("@/components/HireMeButton"));
+const HireMeButton = lazy(() => import('@/components/HireMeButton'));
 
 const appFont = Nunito({
-  subsets: ["latin"],
-  variable: "--app-font",
+  subsets: ['latin'],
+  variable: '--app-font',
 });
 
 export const metadata: Metadata = {
-  title: "Aman Dewett",
+  title: 'Aman Dewett',
   description: "Aman Dewett's portfolio",
+  alternates: {
+    canonical: 'https://amandewett.com',
+  },
 };
 
 const RootLayout: React.FC<React.PropsWithChildren> = ({ children }) => {
