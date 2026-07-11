@@ -1,23 +1,30 @@
-import { AppLottieContainerProps } from "@/utils/appTypes";
-import React from "react";
-import Lottie, { Options } from "react-lottie";
-import Reveal from "./Reveal";
+'use client';
 
-const AppLottieContainer = ({ animationData, className, height = "100%", width = "100%", loop = true }: AppLottieContainerProps) => {
+import { AppLottieContainerProps } from '@/utils/appTypes';
+import React from 'react';
+import dynamic from 'next/dynamic';
+const Lottie = dynamic(() => import('react-lottie'), {
+  ssr: false,
+});
+import type { Options } from 'react-lottie';
+// import Lottie, { Options } from 'react-lottie';
+import Reveal from './Reveal';
+
+const AppLottieContainer = ({ animationData, className, height = '100%', width = '100%', loop = true }: AppLottieContainerProps) => {
   const defaultOptions: Options = {
     loop: loop,
     autoplay: true,
     animationData: animationData,
     rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-      className: "p-0",
+      preserveAspectRatio: 'xMidYMid slice',
+      className: 'p-0',
     },
   };
 
   return (
     <Reveal>
       <div className={className}>
-        <Lottie options={defaultOptions} height={height} width={width} isClickToPauseDisabled style={{ cursor: "default" }} />
+        <Lottie options={defaultOptions} height={height} width={width} isClickToPauseDisabled style={{ cursor: 'default' }} />
       </div>
     </Reveal>
   );
