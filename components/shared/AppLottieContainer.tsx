@@ -3,11 +3,11 @@
 import { AppLottieContainerProps } from '@/utils/appTypes';
 import React from 'react';
 import dynamic from 'next/dynamic';
-const Lottie = dynamic(() => import('react-lottie'), {
+/* const Lottie = dynamic(() => import('react-lottie'), {
   ssr: false,
 });
-import type { Options } from 'react-lottie';
-// import Lottie, { Options } from 'react-lottie';
+import type { Options } from 'react-lottie'; */
+import Lottie, { Options } from 'react-lottie';
 import Reveal from './Reveal';
 
 const AppLottieContainer = ({ animationData, className, height = '100%', width = '100%', loop = true }: AppLottieContainerProps) => {
